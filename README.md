@@ -12,3 +12,5 @@
 >   - [Tensorflow](https://github.com/AYiXi/Learn-for-life/tree/master/Python/Tensorflow)
 >- [材料科学研究方法2](https://github.com/AYiXi/Learn-for-life/tree/master/%E6%9D%90%E6%96%99%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%952)
 >- [Nginx](https://github.com/AYiXi/Learn-for-life/tree/master/Nginx)
+>   - [HTTP协议原理+Nginx+实践](https://github.com/AYiXi/Learn-for-life/tree/master/Nginx/HTTP%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86+Nginx+%E5%AE%9E%E8%B7%B5)
+>   - [Nginx服务器集群](https://github.com/AYiXi/Learn-for-life/tree/master/Nginx/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E7%BE%A4)
