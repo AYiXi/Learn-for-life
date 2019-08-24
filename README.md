@@ -14,3 +14,4 @@
 >    - [Nginx服务器集群](https://github.com/AYiXi/Learn-for-life/tree/master/Nginx/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E7%BE%A4) 
 >- [得到](https://github.com/AYiXi/Learn-for-life/tree/master/%E5%BE%97%E5%88%B0) 
 >    - [薄世宁-医学通识五十讲](https://github.com/AYiXi/Learn-for-life/tree/master/%E5%BE%97%E5%88%B0/%E8%96%84%E4%B8%96%E5%AE%81-%E5%8C%BB%E5%AD%A6%E9%80%9A%E8%AF%86%E4%BA%94%E5%8D%81%E8%AE%B2)
+>    - [张潇雨-个人投资课](https://github.com/AYiXi/Learn-for-life/blob/master/%E5%BE%97%E5%88%B0/%E5%BC%A0%E6%BD%87%E9%9B%A8-%E4%B8%AA%E4%BA%BA%E6%8A%95%E8%B5%84%E8%AF%BE.md)
