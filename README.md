@@ -5,6 +5,7 @@
 >- [简书Markdown](https://www.jianshu.com/writer) 
 ---
 ## 笔记:
+
 ### (请下载PDF文件查看，或者在线打开svg图片) 
 >- [Python](https://github.com/AYiXi/Learn-for-life/tree/master/Python) 
 >   - [后端面试知识点总结](https://github.com/AYiXi/Learn-for-life/tree/master/Python/Python%20Interview(Backend)) 
@@ -16,11 +17,10 @@
 >- [得到](https://github.com/AYiXi/Learn-for-life/tree/master/%E5%BE%97%E5%88%B0) 
 >   - [薄世宁-医学通识五十讲](https://github.com/AYiXi/Learn-for-life/tree/master/%E5%BE%97%E5%88%B0/%E8%96%84%E4%B8%96%E5%AE%81-%E5%8C%BB%E5%AD%A6%E9%80%9A%E8%AF%86%E4%BA%94%E5%8D%81%E8%AE%B2)
 >   
->   - [张潇雨-个人投资课](https://github.com/AYiXi/Learn-for-life/blob/master/%E5%BE%97%E5%88%B0/%E5%BC%A0%E6%BD%87%E9%9B%A8-%E4%B8%AA%E4%BA%BA%E6%8A%95%E8%B5%84%E8%AF%BE.md)
+>   - [张潇雨-个人投资课](\得到\张潇雨-个人投资课\张潇雨-个人投资课.md)
 >   
->   - [许纪霖-传统文化](https://github.com/AYiXi/Learn-for-life/blob/master/%E5%BE%97%E5%88%B0/%E8%AE%B8%E7%BA%AA%E9%9C%96-%E4%BC%A0%E7%BB%9F%E6%96%87%E5%8C%96/%E4%BC%A0%E7%BB%9F%E6%96%87%E5%8C%96-%E8%AE%B8%E7%BA%AA%E9%9C%96.pdf)
+>   - [许纪霖-传统文化](\得到\许纪霖-传统文化\传统文化-许纪霖.pdf)
 >   
->   - [高爽-天文学通识课](/得到/张潇雨-个人投资课/张潇雨-个人投资课.md)
+>   - [高爽-天文学通识课](\得到\高爽-天文学通识课\高爽-天文学通识课.md)
 >   
->       
 
