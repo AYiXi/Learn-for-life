@@ -4,5 +4,14 @@
 
 
 
+### 合并本地文件
 
+```shell
+git commit -m "" __init__.py
+git push
+
+git fetch --all 
+git reset --hard origin/master
+git pull
+```
 
