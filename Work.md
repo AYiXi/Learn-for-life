@@ -58,6 +58,7 @@
 >- [LEARN] 了解 `mysql` 中 `group by` 的逻辑
 
 ### *2019-07-18*
+
 >- [REALI] 安装 `redis`, `mysql`, 能直接在命令行启动
 >- [LEARN] 设置 SSH 超时连接为 1 天
 >- [REALI] 在 `linux` 上面 push 成功并且本地成功 pull
@@ -202,6 +203,7 @@
 >- [REALI] 使用新的程序更新数据库, 更新一次耗时 50s 左右
 
 ### *2019-08-15*
+
 >- [FIXED] 修复每天发送邮件的 API, 因为阿里云宕机了, 所以重新启动程序, 顺便修改了一些必要的文件
 >           目前还需要详细了解 git 的 merge, fetch 等功能 
 >- [REALI] 安装 Node.js, 配置 vscode 的 JavaScript 和 Python 的运行环境
@@ -284,7 +286,6 @@
 >- [LEARN] 学习 css, js
 
 ### *2019-09-04*
-
 >- [LEARN] 搭建好虚拟环境 `virtualenvwrapper` , 并解决引用出错的问题
 >- [LEARN] 使用 `vim` 查找  `/name` 和全局查找 `find / -name virtualenvwrapper.sh`
 >- [LEARN] `alias pycharm="bash xx/xx"` Linux 上快速启动程序
@@ -293,10 +294,25 @@
 >- [LEARN] 学习 css 和 js
 
 ### *2019-09-05*
-
 > - [LEARN] 了解 mycat 和 mysql 的读写分离和主从同步
 > - [REALI] 对于没有未缴费信息的专利号更新 is_paid 字段为 1
 > - [REALI] 用 `Typora` 整理笔记
+
+### *2019-09-09*
+> - [REALI] 重新制作了官网视频, 但还需要改进
+> - [LEARN] 学习 `django`
+
+### *2019-09-10*
+> - [REALI] 继续官网视频, 基本已经完成
+> - [LEARN] 学习 `django`
+
+### *2019-09-11*
+> - [REALI] 检查缴费数据的正确性
+> - [LEARN] 学习 `django`
+
+### *2019-09-12*
+> - [FIXED] 配合张晗修改一个查询费用时间错误的 BUG
+> - [FIXED] 修复有些费用字段未更新的 BUG
 
 
 
