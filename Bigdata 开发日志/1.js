@@ -1015,9 +1015,6 @@ function search(name) {
 
 var result = search('天津市南开区')
 
-<<<<<<< HEAD
-console.log(result)
-=======
 function get_data(obj) {
     var year_data = obj.year_data
 
@@ -1079,4 +1076,3 @@ var c = {
         }
     ]
 }
->>>>>>> f88ea91db00e45db9d53e445a0c81a7255e18693
