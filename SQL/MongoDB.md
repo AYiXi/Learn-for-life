@@ -1,7 +1,7 @@
 ### 操作符号
 find, findOne, findMany
 update, updateOne, updateMany
-count
+count, sort
 $set, $unset
 remove, deleteOne, deleteMany, drop, dropDatabase
 $push, $addToSet

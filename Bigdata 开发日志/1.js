@@ -1064,9 +1064,9 @@ function get_data(obj) {
     return results
 }
 
-get_data(d)
+var da = get_data(d)
 
-
+console.log(da)
 var c = {
     '2002max': 312,
     '2002sum': 321,
@@ -1076,3 +1076,28 @@ var c = {
         }
     ]
 }
+
+
+d = {
+    sei: (() => {
+        var l = []
+        for (var i = 1990; i < 2020; i++) {
+            l.push({
+                title: {
+                    text: i + '天津市专利数量一览表',
+                    left: '15px',
+                    top: '15px',
+                },
+                series: [
+                    { data: 1 }
+                ],
+            })
+        }
+
+        return l
+    })()
+}
+
+
+// var fs = f()
+console.log(d)
