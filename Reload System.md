@@ -32,6 +32,8 @@
 安装 C++ 运行库: [http://www.carrotchou.blog/118.html]
 
 
-
 安装 (MySQL)[https://blog.csdn.net/zhouzezhou/article/details/52446608]
 
+ - Jupyter Notebook Theme
+    pip install jupyterthemes
+    jt -t grade3 -fs 14 -ofs 16 -tfs 14 -nfs 14 -dfs 14

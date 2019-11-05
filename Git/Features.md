@@ -29,4 +29,3 @@
     - https://
     - git://
     - SSH, 比如 user@server:path/to/repo.git 
-    

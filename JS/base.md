@@ -11,4 +11,6 @@ filter()
 find()
 findIndex()
 flat()
+
+class 中, static 关键字可以直接访问, 而未加 static 的需要 new 之后才能访问
 ```

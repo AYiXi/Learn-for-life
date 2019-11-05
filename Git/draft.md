@@ -1,0 +1,2 @@
+ - rm / rm --cached
+ - mv 
