@@ -11,10 +11,10 @@ The computation is called an evaluation
 arithmetic operators
 assignment operator to assign values to variables
 hyphens
-reserved for subtrations
+reserved for subtractions
 punctuations
 algebra
-discriptive
+descriptive
 case-sensitive
 
 addition +, subtraction -, multiplication *, exponentiation **, division -, modulus %, increment ++, decrement --.

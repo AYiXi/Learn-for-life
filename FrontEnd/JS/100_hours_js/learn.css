@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+ul {
+    list-style: none;
+}
+
+#newsBox {
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border: 2px solid lightblue;
+}
+
+#newsBox li {
+    line-height: 40px;
+    border-bottom: 1px dashed lightcoral;
+    text-align: center;
+    cursor: pointer;
+}
+/* 去除最后一个下边框 */
+#newsBox li:nth-last-child(1) {
+    border-bottom: none;
+}
+
+/* 所有的偶数行, 奇数行是 odd */
+#newsBox li:nth-child(even) {
+    background: lightcyan;
+}
+
+#newsBox li:hover {
+    background: lightgreen;
+}
+
+#newsBox li:nth-child(even):hover {
+    background: lightblue;
+}
+
+/*
+ul#newsBox>li*5{第$个元素}
+
+<ul id="newsBox">
+    <li>第1个元素</li>
+    <li>第2个元素</li>
+    <li>第3个元素</li>
+    <li>第4个元素</li>
+    <li>第5个元素</li>
+</ul>
+*/
+
