@@ -51,3 +51,10 @@ ul#newsBox>li*5{第$个元素}
 </ul>
 */
 
+.learn {
+    /* default, width = width + padding + border */
+    box-sizing: content-box; 
+
+    /* new box, width = eventually width */
+    box-sizing: border-box;
+}
