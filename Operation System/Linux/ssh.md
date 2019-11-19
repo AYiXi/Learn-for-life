@@ -5,7 +5,7 @@
 - paste windows public key to `~/.ssh/authorized_keys`
 - client config file
 ```
-Host myaili
+Host myali
   HostName 39.105.37.123
   User root
 Host xiqing
