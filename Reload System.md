@@ -37,3 +37,11 @@
  - Jupyter Notebook Theme
     pip install jupyterthemes
     jt -t grade3 -fs 14 -ofs 16 -tfs 14 -nfs 14 -dfs 14
+
+
+[LINUX]
+```s
+vim /etc/profile (Add 4K resolution)
+xrandr --newmode "3840x2160_60.00"  712.75  3840 4160 4576 5312  2160 2163 2168 2237 -hsync +vsync
+xrandr --addmode Virtual1 "3840x2160_60.00"
+```
