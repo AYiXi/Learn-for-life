@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            /* padding: 0; */
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #newsBox {
+            box-sizing: border-box;
+            margin: 20px auto;
+            padding: 20px;
+            width: 300px;
+            border: 2px solid lightblue;
+        }
+        
+        #newsBox li {
+            line-height: 40px;
+            border-bottom: 1px dashed lightcoral;
+            text-align: center;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul id="newsBox">
+        <li>第1个元素</li>
+        <li>第2个元素</li>
+        <li>第3个元素</li>
+        <li>第4个元素</li>
+        <li>第5个元素</li>
+    </ul>
+
+    <script>
+        let newsBox = document.getElementById('newsBox')
+        let newsList = newsBox.getElementsByTagName('li')
+
+        for (let index = 0; index < newsList.length; index++) {
+            let cc = newsList[index]
+            let bg = cc.style.background = index % 2 === 0 ? '#FFF' : '#DDD'
+
+            cc.onmouseover = () => {
+                cc.style.background = 'lightblue'
+            }
+
+            cc.onmouseleave = () => {
+                cc.style.background = bg
+            }
+        }
+    </script>
+</body>
+
+</html>
