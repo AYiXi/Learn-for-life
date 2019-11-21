@@ -122,3 +122,28 @@ source ~/.bashrc
 vim /etc/hostname
 reboot
 ```
+
+### start shangip projects
+- nohup python3 /root/ShangIp/manage.py runserver - 0.0.0.0:8000 >> /root/update_zhengwu.txt &
+- nohup python3 /root/BigData/manage.py runserver 0.0.0.0:8001 >> /root/bigdata.log &
+- nohup python3 /root/Patent/My_API/send_ma
+il_to_songjiajia.py >> /root/update_zhengwu.log &
+
+### files count 
+- ls -l | grep "^-" | wc -l  // files count by line
+- ls -l | grep "^d" | wc -l  // directory count by line
+
+### curl
+- curl https://ip.cn
+- curl -i https://ip.cn  // display headers
+
+### tree
+- tree -L 2	
+- tree -L 2 -p -d 
+
+### du/df
+- `du <dir>` (disk usage)
+- `du --help`
+- `du -sh <dir> <dir>`
+- `du -h --max-depth=1 <dir> <dir>`
+- `du -ah --max-depth=2`
