@@ -102,32 +102,18 @@ alias pycharm="bash xx/xx"
 source ~/.bashrc
 ```
 
-
-
-### 虚拟环境设置
-
-```sh
-vim ~/.bashrc
-
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.6
-export WORKON_HOME=$HOME/envs
-source /usr/local/bin/virtualenvwrapper.sh
-
-source ~/.bashrc
-```
-
-
 ### Change Computer Hostname
 ```sh
 vim /etc/hostname
 reboot
 ```
 
-### start shangip projects
+### start projects
 - nohup python3 /root/ShangIp/manage.py runserver - 0.0.0.0:8000 >> /root/update_zhengwu.txt &
 - nohup python3 /root/BigData/manage.py runserver 0.0.0.0:8001 >> /root/bigdata.log &
 - nohup python3 /root/Patent/My_API/send_ma
 il_to_songjiajia.py >> /root/update_zhengwu.log &
+- nohup python app.py >> logs.log &
 
 ### files count 
 - ls -l | grep "^-" | wc -l  // files count by line
@@ -147,3 +133,25 @@ il_to_songjiajia.py >> /root/update_zhengwu.log &
 - `du -sh <dir> <dir>`
 - `du -h --max-depth=1 <dir> <dir>`
 - `du -ah --max-depth=2`
+
+### Centos Open Ports
+1. 查看已打开的端口  # netstat -anp
+2. 查看想开的端口是否已开 # firewall-cmd --query-port=666/tcp
+若此提示 FirewallD is not running 
+表示为不可知的防火墙 需要查看状态并开启防火墙
+
+3. 查看防火墙状态  # systemctl status firewalld
+running 状态即防火墙已经开启
+dead 状态即防火墙未开启
+4. 开启防火墙，# systemctl start firewalld  没有任何提示即开启成功
+5. 开启防火墙 # service firewalld start  
+关闭防火墙 # systemctl stop firewalld
+centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.service 然后 # systemctl start firewalld.service
+
+6. 查看想开的端口是否已开 # firewall-cmd --query-port=666/tcp    提示no表示未开
+7. 开永久端口号 firewall-cmd --add-port=666/tcp --permanent   提示    success 表示成功
+8. 重新载入配置  # firewall-cmd --reload    比如添加规则之后，需要执行此命令
+9. 再次查看想开的端口是否已开  # firewall-cmd --query-port=666/tcp  提示yes表示成功
+10. 若移除端口 # firewall-cmd --permanent --remove-port=666/tcp
+
+11. 修改iptables  有些版本需要安装iptables-services # yum install iptables-services 然后修改进目录 /etc/sysconfig/iptables   修改内容
