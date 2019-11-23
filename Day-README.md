@@ -529,7 +529,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2019-11-18*
 >- [LEARN] 禁止软件联网, 语言乱码的修复, `bandicam` 的设置
 >- [LEARN] 学习盒子模型居中以及了解 `flex` 布局, 感觉 `flex` 布局用起来更舒服
->- [LEARN] docker
+>- [LEARN] 学习 docker
 
 ### *2019-11-19*
 >- [FIXED] 修复连接数据库偶尔连接不上的问题, `pymysql.err.OperationalError` 捕获异常, 重新连接
@@ -537,3 +537,17 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [LEARN] 对 ssh 的学习, 私钥公钥的配置以及用 vscode 连接远程服务器进行操作
 >- [LEARN] 对 linux 软连接以及 bash 启动目录 `/usr/bin` 的理解 
 >- [LEARN] 学习 docker
+
+### *2019-11-20*
+>- [LEARN] 对阿里云进行快照备份和开放端口访问
+>- [LEARN] 学习 docker
+
+### *2019-11-21*
+>- [LEARN] 学习 docker
+>- [REALI] 实践操作 docker
+>- [REALI] 用 git 上传项目到公司服务器
+>- [REALI] 对商标信息抓取的研究
+
+### *2019-11-22*
+>- [REALI] 给后端在服务器上搭建接口
+>- [LEARN] 实战操作 `docker`
