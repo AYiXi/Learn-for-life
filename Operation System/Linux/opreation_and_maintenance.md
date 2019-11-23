@@ -1,0 +1,20 @@
+### System partition
+- Partition type
+  - MBR
+    - Max support 2.1TB
+    - Four partitions
+  - GPT
+    - Max support 9.4ZB (ZB > PB > EB > TB)
+    - Unlimited partitions
+    - Windows limited 128 partitions
+- Device name
+  - /dev/sdb5 >> the first logical partition of the second sata interface hard disk
+- Mount point (using an existing empty directory as a mount point)
+  - Must partition
+    - /
+    - swap >> virtual memory
+  - Recommend partition (always must)
+    - /boot
+  - Common partition
+    - /home >> file server
+    - /www  >> web server
