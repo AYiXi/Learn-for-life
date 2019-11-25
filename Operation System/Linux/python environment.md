@@ -37,16 +37,15 @@ source /etc/profile
 - cd /usr/bin
 - ll python*
 
-- yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel 
-- yum install -y git vim wget zsh curl net-tools tree
+- yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel  git vim wget zsh curl net-tools tree epel-release 
+
 
 - apt-get install libpcre3 libpcre3-dev zlib1g-dev openssl libssl-dev  libffi-dev  dist-upgrade  build-essential python-dev python-setuptools python-pip python-smbus build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev 
 
 - [install compile tools and libraries]
 
-- yum -y install epel-release 
-- yum install python-pip
-- pip install wget
+- sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 
 - wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz
 - tar -zxvf Python-3.8.0.tgz
@@ -54,9 +53,15 @@ source /etc/profile
 - ./configure prefix=/usr/local/python3.8
 - make && make install
 
-- rm /usr/bin/python /usr/bin/pip /usr/bin/python-config
+[link]
+- rm /usr/bin/python /usr/bin/pip /usr/bin/python-config /usr/bin/py
 - ln -s /usr/local/python3.8/bin/python3.8 /usr/bin/python 
 - ln -s /usr/local/python3.8/bin/python3.8 /usr/bin/py
 - ln -s /usr/local/python3.8/bin/pip3.8 /usr/bin/pip
 - ln -s /usr/local/python3.8/bin/python3.8-config /usr/bin/python-config
-- 
+- ln -s /usr/local/python3.8/bin/python3.8 /usr/bin/py
+  
+
+[settings](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
+- timedatectl set-timezone Asia/Shanghai
+- hostnamectl set-hostname Ayixi_c
