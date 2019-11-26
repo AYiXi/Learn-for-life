@@ -7,3 +7,9 @@
 
 ## Linux subsystem default root
 - ubuntu1804.exe config --default-user root
+
+
+## Display windows tile
+- [WIN+R] %localappdata%
+- [DELETE] Iconcache.db
+- [RESTART] Windows Explorer
