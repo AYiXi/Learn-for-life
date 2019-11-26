@@ -60,6 +60,7 @@
 - docker rmi -f $(docker images -aq) == docker ps -aq | xargs docker rm  `delete image`
 - docker rm -f $(docker ps -q) `delete all running containers`
 - docker stop/restart/kill
+- docker rmi $(docker images | grep "none" | awk '{print $3}')  `delete "none" image`
 
 ## Docker container
 - docker container ls 

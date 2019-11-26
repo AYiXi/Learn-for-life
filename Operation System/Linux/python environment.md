@@ -42,6 +42,8 @@ source /etc/profile
 
 - apt-get install libpcre3 libpcre3-dev zlib1g-dev openssl libssl-dev  libffi-dev  dist-upgrade  build-essential python-dev python-setuptools python-pip python-smbus build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev 
 
+- sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 - [install compile tools and libraries]
 
 - yum -y install epel-release 

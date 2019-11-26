@@ -551,3 +551,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2019-11-22*
 >- [REALI] 给后端在服务器上搭建接口
 >- [LEARN] 实战操作 `docker`
+
+### *2019-11-25*
+>- [REALI] 测试各网站的商标查询准确性, 除了官方的都不准确
+>- [LEARN] 学习 Linux
