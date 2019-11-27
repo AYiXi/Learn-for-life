@@ -155,3 +155,15 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 10. 若移除端口 # firewall-cmd --permanent --remove-port=666/tcp
 
 11. 修改iptables  有些版本需要安装iptables-services # yum install iptables-services 然后修改进目录 /etc/sysconfig/iptables   修改内容
+
+
+## adduser
+1. useradd ayixi
+2. passwd ayixi
+3. usermod –g root ayixi
+4. chmod 640 /etc/sudoers
+5. vim /etc/sudousers >> append `ayixi    ALL=(ALL)       ALL`
+6. chmod 440 /etc/sudoers
+7. userdel -r ayixi
+   
+   

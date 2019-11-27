@@ -46,9 +46,6 @@ source /etc/profile
 
 - [install compile tools and libraries]
 
-- sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-
 - wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz
 - tar -zxvf Python-3.8.0.tgz
 - cd Python-3.8.0
@@ -67,3 +64,45 @@ source /etc/profile
 [settings](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 - timedatectl set-timezone Asia/Shanghai
 - hostnamectl set-hostname Ayixi_c
+
+
+[Font](https://blog.csdn.net/azhegps/article/details/79385809)
+- cd /usr/share/fonts
+- mkdir fangzheng
+- cp 方正品尚黑简体.ttf /usr/share/fonts/fangzheng/方正品尚黑简体.ttf
+- cd /usr/share/fonts/fangzheng
+- fc-cache -fv
+
+[scrapy]
+- pip install incremental
+- wget https://files.pythonhosted.org/packages/0b/95/5fff90cd4093c79759d736e5f7c921c8eb7e5057a70d753cdb4e8e5895d7/Twisted-19.10.0.tar.bz2#sha256=7394ba7f272ae722a74f3d969dcf599bc4ef093bc392038748a490f1724a515d
+- tar -jxvf Twisted-19.10.0.tar.bz2
+- cd Twisted-19.10.0
+- python setup.py install
+- pip install scrapy
+  
+[google-chrome]
+- wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+- yum install ./google-chrome-stable_current_*.rpm -y
+- google-chrome --version
+- https://cdn.npm.taobao.org/dist/chromedriver/2.36/chromedriver_linux64.zip
+- chmod 755 chromedriver
+- cp Li/files/chromedriver /usr/bin/chromedriver
+
+[virtualwrapper]
+- vim ~/.zshrc
+```sh
+export WORKON_HOME=$HOME/.virtualenvs
+export MSYS_HOME=/c/msys/1.0
+source /usr/local/python3/bin/virtualenvwrapper.sh
+```
+
+[vscode]
+```py3
+{
+    "python.pythonPath": ".virtualenvs/Patent/bin/python",
+    "code-runner.executorMap": {
+        "python": ".virtualenvs/Patent/bin/python",
+    }
+}
+```
