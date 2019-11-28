@@ -80,3 +80,32 @@ find
   - /xx, n, N
   - 1,10s/old/new/g, %s/old/new/g, /1,10s/^/#/g
   - :r /root/1.txt
+  - vim -0 a.txt b.txt
+  - vim -O a.txt b.txt
+
+## software installation
+- source package [.tar.gz]
+- binary package [.rpm] [.dpkg]
+- `/var/lib/rpm` >> system db 
+- rpm -ivh xxx.rpm >> install dependencies is complicated
+- yum
+- apache -> httpd-2.2.15-15.e16.centos.1.i686.rpm
+  - apache process named httpd 
+  - ![apache](./images/apache.png)
+- default installation position
+  - `/etc/`
+  - `/usr/bin/`
+  - `/usr/lib/`
+  - `/usr/share/doc/`
+  - `/usr/share/man/`
+  - ![pkg](./images/linux_pkg.png)
+- service [/etc/init.d/]
+- rpm
+  - rpm pkg use default installation directory
+  - source pgk point installation directory
+  - rpm -qf /bin/ls
+  - rpm -q[ail] python
+  - rpm2cpio /xx/httpdxxx.rpm | cpio -idv ./etc/httpd/conf/httpd.conf
+  - Digital certificate import
+    - rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+    - rpm -qa | grep gpg-pubkey

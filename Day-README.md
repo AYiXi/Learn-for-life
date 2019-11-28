@@ -559,3 +559,12 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2019-11-26 *
 >- [LEARN] 学习 Linux
 >- [LEARN] 学习配置 Linux 环境
+
+### *2019-11-27 *
+>- [LEARN] 学习 Linux
+>- [LEARN] 配置 Linux 环境, 安装 chrome, 新建用户 ayixi, 配置虚拟环境, chromedriver 等
+
+### *2019-11-28 *
+>- [LEARN] 学习 Linux 的 包安装[rpm|source_code] 原理, 证书, yum 等 
+>- [REALI] 在服务器安装好并成功运行 google-chrome
+>- [REALI] 重构 `Patent` 代码, 结构更加合理精简, 删除不必要的文件夹, 但还没完成
