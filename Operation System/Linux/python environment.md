@@ -71,7 +71,10 @@ source /etc/profile
 - mkdir fangzheng
 - cp 方正品尚黑简体.ttf /usr/share/fonts/fangzheng/方正品尚黑简体.ttf
 - cd /usr/share/fonts/fangzheng
+- mkfontscale
+- mkfontdir
 - fc-cache -fv
+- fc-list :lang=zh
 
 [scrapy]
 - pip install incremental

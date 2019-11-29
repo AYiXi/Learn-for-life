@@ -85,10 +85,21 @@ find
 
 ## software installation
 - source package [.tar.gz]
+  - ./configure --prefix=/usr/local/xxx/
+  - make && make install
+  - if error in [./configure|make] --> [make clean] else [delete install directory]
 - binary package [.rpm] [.dpkg]
 - `/var/lib/rpm` >> system db 
 - rpm -ivh xxx.rpm >> install dependencies is complicated
 - yum
+  - yum -y [install|update|remove]
+  - yum list
+  - yum search
+  - yum grouplist
+  - yum groupsearch
+  - yum groupinstall
+  - yum groupremove
+
 - apache -> httpd-2.2.15-15.e16.centos.1.i686.rpm
   - apache process named httpd 
   - ![apache](./images/apache.png)
@@ -109,3 +120,13 @@ find
   - Digital certificate import
     - rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
     - rpm -qa | grep gpg-pubkey
+
+- Authority
+  - system
+    - root
+    - general user
+  - mysql
+
+- user --> /etc/passwd
+- password --> /etc/shadow
+- Add "!" Before the password to temporarily prohibit user login

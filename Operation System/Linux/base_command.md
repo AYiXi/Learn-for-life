@@ -162,7 +162,7 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 2. passwd ayixi
 3. usermod –g root ayixi
 4. chmod 640 /etc/sudoers
-5. vim /etc/sudousers >> append `ayixi    ALL=(ALL)       ALL`, `Defaults    timestamp_timeout = -1`
+5. vim /etc/sudousers >> append `ayixi    ALL=(ALL)       ALL`, `Defaults    timestamp_timeout = -1
 6. chmod 440 /etc/sudoers
 7. userdel -r ayixi
    
@@ -170,11 +170,4 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 ## change permission
 1. chown ayixi .*
 2. chgrp [-R] ayixi .*
-
-## git
-1. yum install -y git
-2. git config [--global] user.name "ayixi"
-3. git config user.email 821346679@qq.com
-4. git config --global core.editor vim
-5. git config credential.helper store
 

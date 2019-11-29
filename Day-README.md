@@ -568,3 +568,6 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [LEARN] 学习 Linux 的 包安装[rpm|source_code] 原理, 证书, yum 等 
 >- [REALI] 在服务器安装好并成功运行 google-chrome
 >- [REALI] 重构 `Patent` 代码, 结构更加合理精简, 删除不必要的文件夹, 但还没完成
+
+### *2019-11-29 *
+>- [REALI] 基本完成重构 `Patent` 代码, 合并 `Apis` 到 `Patent`, 结构清晰明了, windows 和 linux 两个平台代码可以通用
