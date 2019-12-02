@@ -571,3 +571,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 
 ### *2019-11-29 *
 >- [REALI] 基本完成重构 `Patent` 代码, 合并 `Apis` 到 `Patent`, 结构清晰明了, windows 和 linux 两个平台代码可以通用
+
+### *2019-12-02 *
+>- [REALI] 使用 redis 做专利爬虫的时效验证, 以及学习 redis 的一些项, 如默认端口, 守护进程的配置
+>- [REALI] 重构专利爬虫的代码

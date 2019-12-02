@@ -11,5 +11,10 @@
 >
 > 6. 修改 redis.conf 中的 daemonize yes 为后台持久化运行
 
+- vim /etc/redis.conf
+- ps -ef | grep redis
+- kill xxxx
+- redis /etc/redis.conf 
+- redis-cli -h 39.105.72.96 -p xxxx
 
 
