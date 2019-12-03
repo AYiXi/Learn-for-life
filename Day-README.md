@@ -575,3 +575,8 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2019-12-02 *
 >- [REALI] 使用 redis 做专利爬虫的时效验证, 以及学习 redis 的一些项, 如默认端口, 守护进程的配置
 >- [REALI] 重构专利爬虫的代码
+
+### *2019-12-03 *
+>- [LEARN] 学习 linux 的 `rwx|umask|suid|acl|sudo|chattr` 权限管理和文件系统
+>- [REALI] 重建 django 项目到 patent 目录下, 准备以后都放在一起
+>- [REALI] 对投票网站的探索, 刷屏, 需要更换 ip, 对爬虫 ip 的更换使用
