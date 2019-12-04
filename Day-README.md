@@ -580,3 +580,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [LEARN] 学习 linux 的 `rwx|umask|suid|acl|sudo|chattr` 权限管理和文件系统
 >- [REALI] 重建 django 项目到 patent 目录下, 准备以后都放在一起
 >- [REALI] 对投票网站的探索, 刷屏, 需要更换 ip, 对爬虫 ip 的更换使用
+
+### *2019-12-04 *
+>- [LEARN] 对国资局网站加密方式的研究
+>- [LEARN] 大致了解 cookie 的生成方式, 有道翻译, 某个ip网址参数加密的破解方法, 还得动手实现才行.

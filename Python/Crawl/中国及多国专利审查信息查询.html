@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://cpquery.cnipa.gov.cn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>中国及多国专利审查信息查询</title>
+<link href="./中国及多国专利审查信息查询_files/layout1440.css" rel="stylesheet" type="text/css">
+<link href="./中国及多国专利审查信息查询_files/main.css" rel="stylesheet" type="text/css">
+<link href="./中国及多国专利审查信息查询_files/jquery.toastmessage.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="cookie_gen.js"></script>
+<script>
+var ctx = "http://cpquery.cnipa.gov.cn:80";
+</script>
+<!-- <script type="text/javascript" src="./中国及多国专利审查信息查询_files/jquery-1.7.2.min.js.download"></script>
+<script type="text/javascript" src="./中国及多国专利审查信息查询_files/extend.js.download"></script>
+<script type="text/javascript" src="./中国及多国专利审查信息查询_files/layout.js.download"></script>
+<script type="text/javascript" src="./中国及多国专利审查信息查询_files/captcha.js.download"></script>
+<script type="text/javascript" src="./中国及多国专利审查信息查询_files/jquery.toastmessage.js.download"></script>
+<script src="./中国及多国专利审查信息查询_files/cpquery.common.js.download"></script>
+<script src="./中国及多国专利审查信息查询_files/common.js.download"></script>
+<script src="./中国及多国专利审查信息查询_files/jqueryui.files.js.download"></script><link rel="stylesheet" type="text/css" href="./中国及多国专利审查信息查询_files/jquery-ui.css">
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/jquery-ui-1.10.4.custom.min.js.download"></script>
+
+<script src="./中国及多国专利审查信息查询_files/browser.js.download"></script>
+<script src="./中国及多国专利审查信息查询_files/browsebox.files.js.download"></script><link rel="stylesheet" type="text/css" href="./中国及多国专利审查信息查询_files/browsebox.css">
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/browsebox.min.js.download"></script>
+
+<script src="./中国及多国专利审查信息查询_files/jquery.noty.files.js.download"></script><script language="JavaScript" src="./中国及多国专利审查信息查询_files/jquery.noty.packaged.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/default.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/topCenter.js.download"></script>
+
+
+<script src="./中国及多国专利审查信息查询_files/jquery.opendialog.files.js.download"></script><link rel="stylesheet" type="text/css" href="./中国及多国专利审查信息查询_files/opendialog.css">
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/jquery.blockUI.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/jquery.easing.1.3.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/jquery.opendialog.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/opendialog.api.js.download"></script>
+
+
+<script src="./中国及多国专利审查信息查询_files/open.files.js.download"></script><script language="JavaScript" src="./中国及多国专利审查信息查询_files/open-datepicker.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/open-xurl.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/public-func.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/open-page.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/open-page-value.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/open-page-window.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/fz-form.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/open-form.js.download"></script>
+
+<script type="text/javascript" src="./中国及多国专利审查信息查询_files/base64.js.download"></script>
+<script src="./中国及多国专利审查信息查询_files/jquery.validation.files.js.download"></script><script language="JavaScript" src="./中国及多国专利审查信息查询_files/validation.api.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/jquery.validationEngine.js.download"></script>
+<script language="JavaScript" src="./中国及多国专利审查信息查询_files/jquery.validationEngine-zh.js.download"></script>
+
+
+<script src="./中国及多国专利审查信息查询_files/jquery.i18n.properties-1.0.9.js.download"></script> -->
+
+<!-- <script type="text/javascript">
+var lang = 'zh';
+var globalUser = {
+		"language" : "zh"
+	};
+notic();
+
+var flag_show = "true";
+var flag_show_dz = "true";
+var flag_show_temp = "true";
+var serverIP = "cpquery.cnipa.gov.cn";
+var serverName = "cpquery.sipo.gov.cn";
+var newserverName = "cpquery.cnipa.gov.cn";
+function login(logout_flag,userrole,usertype){
+	var name = document.getElementById("username").value;
+	var pwd  = document.getElementById("password").value;
+	//var code= document.getElementById("add-code").value;
+	var code = $("#selectyzm_text_dz").html();
+	//用户名User
+	//密码Password
+	var wrongName = "用户名或密码不正确！";
+	if((''==name) || (null==name) || name=="账号"){ 
+	   showMsg("[账号]不能是空！");
+	   document.getElementById("username").focus();
+	   return false;
+	}      
+	if((''==pwd) || (null==pwd) || pwd=="密码Password"){ 
+		showMsg("[密码]不能是空！"); 
+	      document.getElementById("password").focus();
+	      return false;
+	}
+	/* if((''==code) || (null==code) || code=="验证码"){ 
+	      alert("[验证码]不能是空！"); 
+	      document.getElementById("add-code").focus();
+	      return false;
+	} */
+	if(code!="验证成功" || null == code){
+		showMsg("请进行图片校验！");
+		return false;
+	}
+	
+	if(code == "验证成功"){
+		code = "1";
+	}
+	$.ajax({
+		type: "POST",
+		url: "/txn999999.ajax?usertype="+usertype,
+		dataType: "xml",
+		//data: 'username='+base64encode(name)+'&password='+base64encode(pwd)+'&userrole='+userrole+'&add-code='+code+'&language='+lang+"&logout_flag="+logout_flag,
+		data: 'username='+base64encode(name)+'&password='+encodeURIComponent(base64encode(pwd))+'&userrole='+userrole+'&vidcode='+code+'&language='+lang+"&logout_flag="+logout_flag,
+		success: function(msg){
+		   var res = _getXmlNodeValues(msg,"/context/error-code");
+		   var res2 = _getXmlNodeValue(msg,"/context/error-code");
+		   var res3 =_getXmlNodeValue(msg, "record:msg");
+		   //if(res[0]&&res[0]=="000000"){
+		   if(((res[0]&&res[0]=="000000") || res2 == "000000") && res3 == ""){
+			//location.href = "pact.jsp";
+			   window.location = "/txnDisclaimerDetail.do?time=" + new Date().getTime()+"&select-key:yuzhong="+lang+"&select-key:gonggaolx=3";
+		   }else{
+			   //alert("error-code:"+res2);
+			   if(res[0] == 'SQL000'){
+				   showMsg("用户注册代码或密码不对,或没有这个用户");
+			       document.getElementById("username").value="";
+			       document.getElementById("password").value="";
+			       //document.getElementById("add-code").value="";
+			       document.getElementById("username").focus();
+			       vad_reload_dz();
+			       //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }else if(res[0]=='ADDC01'){
+				   showMsg("验证码错误");
+			        document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        //document.getElementById("add-code").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			        //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }else if(res3=='SA0001'){
+				   showMsg("您的账号已被禁用!");
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			   }else if(res3=='BLZ000'){
+				   showMsg("提示：账户连续五次密码输入错误，已被系统锁定当天不能再登录系统");
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			   }else if(res3=='CHA001'){
+				   showMsg("您的账户密码过于简单，请尽快到中国专利申请网修改密码。密码应包含数字、小写字母、大写字母、特殊字符（~,!,@, #,$,%,^,&amp;,*），长度8至18位！");
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			   }else if(res3 == "CHA002"){
+				    var flag = '2';
+				    ModPwdInfo(flag);				    
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			   }else if(res3 == "DSG000"){
+				    var flag = '1';
+				    ModPwdInfo(flag);				    
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			   }else if(res3=='UTL001'){
+				   var page = new pageDefine("/app/cpquery/manage/user/public-force-logout.jsp","登录用户达到上限","dialog",440,330);
+					page.goPage();
+			   }else if(res3=='wrongName'){
+				    showMsg(wrongName);
+			        document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			   }/*else if(res2=='SA0001'){
+				   	showMsg("您的账号已被禁用!");
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        //document.getElementById("add-code").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			        //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }else if(res2=='BLZ000'){
+				   showMsg("提示：账户连续五次密码输入错误，已被系统锁定当天不能再登录系统");
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        //document.getElementById("add-code").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			        //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }else if(res2=='CHA001'){
+				   showMsg("您的账户密码过于简单，请尽快到中国专利申请网修改密码。密码应包含数字、小写字母、大写字母、特殊字符（~,!,@, #,$,%,^,&amp;,*），长度8至18位！");
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        //document.getElementById("add-code").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			        //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }else if(res2=='CHA002'){
+				    var flag = '2';
+				    ModPwdInfo(flag);				    
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        //document.getElementById("add-code").value="";
+			        document.getElementById("username").focus();
+			        //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }else if(res2=='DSG000'){
+				   	var flag = '1';
+				   	ModPwdInfo(flag);
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        //document.getElementById("add-code").value="";
+			        document.getElementById("username").focus();
+			        //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }else if(res2=='UTL001'){
+				   var page = new pageDefine("/app/cpquery/manage/user/public-force-logout.jsp","登录用户达到上限","dialog",440,330);
+					page.goPage();
+			   }else{
+				   showMsg(wrongName);
+			        document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        //document.getElementById("add-code").value="";
+			        document.getElementById("username").focus();
+			        vad_reload_dz();
+			        //reloadCaptchaNo(document.getElementById("captchaImg"));
+			   }*/
+		  }
+		}
+	});
+}
+
+//验证校验码
+var validateCaptchaCode = function(captchaCode) {
+	var dfd = $.Deferred();
+	if (!captchaCode) {
+		dfd.reject(true);
+	}
+	$.ajax({   
+		url: "CaptchaServlet?type=validate&captchaNo=" + captchaCode + "&time=" + new Date(),   
+		success: function(str){   
+			if ("true" == str) {
+				dfd.resolve();
+			} else {
+				dfd.reject(true);
+			}
+		},
+		error: function() {
+			dfd.reject(true);
+		}
+	});   
+	return dfd.promise();
+};
+//切换验证码
+var changeCaptchaCode = function($captchaCode) {
+	var $captchaCode = $captchaCode || $(".captchaCode");
+	if ($captchaCode.length) {
+		$captchaCode.hide();
+		$captchaCode.attr("src", "/CaptchaServlet?type=genarate&time=" + new Date());
+		$captchaCode.fadeIn(300);
+	}
+};
+
+//公众用户登录
+function publicLogin(logout_flag,userrole,usertype){
+	var name = document.getElementById("username1").value;
+	var pwd  = document.getElementById("password1").value;
+	//var code= document.getElementById("add-code1").value;
+	//var code = document.getElementById("yzmmc").value;
+	var code = $("#selectyzm_text").html();
+	//用户名User
+	//密码Password
+	var wrongName = "用户名或密码不正确！";
+	//if((''==name) || (null==name) || name=="账号/手机号/电子邮箱"){ 
+	if((''==name) || (null==name) || name=="账号/手机号"){ 
+		showMsg("[账号]不能是空！");
+	   document.getElementById("username1").focus();
+	   return false;
+	}      
+	if((''==pwd) || (null==pwd) || pwd=="密码Password"){ 
+		showMsg("[密码]不能是空！"); 
+	      document.getElementById("password1").focus();
+	      return false;
+	}
+	/* if((''==code) || (null==code) || code=="验证码"){ 
+	      alert("[验证码]不能是空！"); 
+	      document.getElementById("add-code1").focus();
+	      return false;
+	} */
+	if(code!="验证成功" || null == code){
+		showMsg("请进行图片校验！");
+		return false;
+	}
+	
+	if(code == "验证成功"){
+		code = "1";
+	}
+	
+	$.ajax({
+		type: "POST",
+		url: "/txn999999.ajax?usertype="+usertype,
+		dataType: "xml",
+		//data: 'username='+base64encode(name)+'&password='+base64encode(pwd)+'&userrole='+userrole+'&add-code='+code+'&language='+lang+"&logout_flag="+logout_flag+"&logintype=0",
+		data: 'username='+base64encode(name)+'&password='+encodeURIComponent(base64encode(pwd))+'&userrole='+userrole+'&vidcode='+code+'&language='+lang+"&logout_flag="+logout_flag+"&logintype=0",
+		success: function(msg){
+		   var res = _getXmlNodeValues(msg,"/context/error-code");
+		   var res2 = _getXmlNodeValue(msg,"/context/error-code");
+		   var res3 =_getXmlNodeValue(msg, "record:msg");
+		   //if(res[0]&&res[0]=="000000"){
+		   if(((res[0]&&res[0]=="000000") || res2 == "000000") && res3 == ""){
+			//location.href = "pact.jsp";
+			   window.location = "/txnDisclaimerDetail.do?time=" + new Date().getTime()+"&select-key:yuzhong="+lang+"&select-key:gonggaolx=3";
+		   }else{
+			   //alert("error-code:"+res2);
+			   if(res[0] == 'SQL000'){
+				   showMsg("用户注册代码或密码不对,或没有这个用户");
+			       document.getElementById("username1").value="";
+			       document.getElementById("password1").value="";
+			       //document.getElementById("add-code1").value="";
+			       document.getElementById("username1").focus();
+			       vad_reload();
+			       //reloadCaptchaNo(document.getElementById("captchaImg1"));
+			   }else if(res[0]=='ADDC01'){
+				   showMsg("验证码错误");
+			        document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        //document.getElementById("add-code1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			        //reloadCaptchaNo(document.getElementById("captchaImg1"));
+			   }else if(res3=='SA0001'){
+				   showMsg("您的账号已被禁用!");
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			   }else if(res3=='BLZ000'){
+				    showMsg("提示：账户连续五次密码输入错误，已被系统锁定当天不能再登录系统");
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			   }else if(res3=='CHA001'){
+				   showMsg("您的账户密码过于简单，请尽快到中国专利申请网修改密码。密码应包含数字、小写字母、大写字母、特殊字符（~,!,@, #,$,%,^,&amp;,*），长度8至18位！");
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			   }else if(res3 == "TZ001"){
+				    var flag = '1';
+				    ModPwdAction(name,flag);			    
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			   }else if(res3 == "TZ002"){
+				    var flag = '2';
+				    ModPwdAction(name,flag);		    
+				    document.getElementById("username").value="";
+			        document.getElementById("password").value="";
+			        document.getElementById("username").focus();
+			   }else if(res3=='UTL001'){
+				   var page = new pageDefine("/app/cpquery/manage/user/public-force-logout.jsp","登录用户达到上限","dialog",440,330);
+					page.goPage();
+			   }else if(res3=='wrongName'){
+				   showMsg(wrongName);
+			        document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			   }/*else if(res2=='SA0001'){
+				   showMsg("您的账号已被禁用!");
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        //document.getElementById("add-code1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			        //reloadCaptchaNo(document.getElementById("captchaImg1"));
+			   }else if(res2=='BLZ000'){
+				   showMsg("提示：账户连续五次密码输入错误，已被系统锁定当天不能再登录系统");
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        //document.getElementById("add-code1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			        //reloadCaptchaNo(document.getElementById("captchaImg1"));
+			   }else if(res2=='CHA001'){
+				   showMsg("您的账户密码过于简单，请尽快到中国专利申请网修改密码。密码应包含数字、小写字母、大写字母、特殊字符（~,!,@, #,$,%,^,&amp;,*），长度8至18位！");
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        //document.getElementById("add-code1").value="";
+			        document.getElementById("username1").focus();
+			        vad_reload();
+			        //reloadCaptchaNo(document.getElementById("captchaImg1"));
+			   }else if(res2=='TZ001'){
+				    var flag = '1';
+					ModPwdAction(name,flag);
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        //document.getElementById("add-code1").value="";
+			        document.getElementById("username1").focus();
+			        //reloadCaptchaNo(document.getElementById("captchaImg1"));
+			   }else if(res2=='TZ002'){
+				   	var flag = '2';
+				   	ModPwdAction(name,flag);
+				    document.getElementById("username1").value="";
+			        document.getElementById("password1").value="";
+			        //document.getElementById("add-code1").value="";
+			        document.getElementById("username1").focus();
+			        //reloadCaptchaNo(document.getElementById("captchaImg1"));
+			   }else if(res2=='UTL001'){
+				   var page = new pageDefine("/app/cpquery/manage/user/public-force-logout.jsp","登录用户达到上限","dialog",440,330);
+					page.goPage();
+			   }else{
+			   	   showMsg(wrongName);
+		       	  	document.getElementById("username1").value="";
+		        	document.getElementById("password1").value="";
+		        	//document.getElementById("add-code1").value="";
+		        	document.getElementById("username1").focus();
+		        	vad_reload();
+		        	//reloadCaptchaNo(document.getElementById("captchaImg1"));
+		   	   }*/
+		  }
+		}
+	});	
+}
+
+
+// 临时用户登录
+function tempLogin(){
+	var phone = document.form2.elements["phone"].value;
+	//var email = document.form2.elements["email"].value;
+	var validatecode = document.getElementById("add-code2").value;
+	var gjqydm = getFormFieldValues("gjqydm");
+	var code = $("#selectyzm_text_temp").html();
+	
+	if((''==phone) || (null==phone) || phone=="手机号"){ 
+		showMsg("手机号码不能为空");
+	   document.getElementById("phone").focus();
+	   return false;
+	}      
+	/* if((''==email) || (null==email) || email=="电子邮箱"){ 
+		showMsg("电子邮箱不能为空"); 
+	      document.getElementById("email").focus();
+	      return false;
+	} */
+	
+	if(code!="验证成功" || null == code){
+		showMsg("请进行图片校验！");
+		return false;
+	}
+	
+	if(code == "验证成功"){
+		code = "1";
+	}
+	if((''==validatecode) || (null==validatecode) || validatecode=="验证码"){ 
+		showMsg("[验证码]不能是空！"); 
+	      document.getElementById("add-code2").focus();
+	      return false;
+	}
+	if(gjqydm == '86'){
+		if (!isMobil(phone)) {
+			_grayWindow(false);
+			showMsg($.i18n.prop('key_139'));
+			$("#login_submit").removeAttr("disabled");
+			return false;
+		}
+	}
+	/* if (!isEmail(email)) {
+		_grayWindow(false);
+		showMsg($.i18n.prop('key_139'));
+		$("#login_submit").removeAttr("disabled");
+		return false;
+	} */
+	
+	$.ajax({
+		type: "POST",
+		url: "/txn999999.ajax",
+		dataType: "xml",
+		//data: "username="+base64encode(phone)+"&password="+base64encode(email)+"&usertype=3&userrole=3&phone="+phone+"&email="+email+"&yanzhengm="+validatecode+"&language=zh&logout_flag=false&logintype=1",
+		data: "username="+base64encode(phone)+"&password="+base64encode(phone)+"&usertype=3&userrole=3&phone="+phone+"&vidcode="+code+"&yanzhengm="+validatecode+"&language=zh&logout_flag=false&logintype=1",
+		success: function(msg){
+		   var res = _getXmlNodeValues(msg,"/context/error-code");
+		   var res2 = _getXmlNodeValue(msg,"/context/error-code");
+		   var res3 =_getXmlNodeValue(msg, "record:msg");
+		   //if(res[0]&&res[0]=="000000"){
+		   if(((res[0]&&res[0]=="000000") || res2 == "000000") && res3 == ""){
+			   window.location = "/txnDisclaimerDetail.do?time=" + new Date().getTime()+"&select-key:yuzhong="+lang+"&select-key:gonggaolx=3";
+		   }else{
+			   /* if(res[0] == 'VAL001'){
+				   vad_reload_temp();
+				   showMsg("验证码不存在！请先获取验证码后登录！");
+			   }else if(res[0] == 'VAL002'){
+				   vad_reload_temp();
+				   showMsg("验证码错误");
+			   }else if(res[0] == 'OVDATE'){
+				   vad_reload_temp();
+				   showMsg("验证码已过期，请重新获取验证码！");
+			   } */
+			   if(res3 == 'VAL001'){
+				   vad_reload_temp();
+				   showMsg("验证码不存在！请先获取验证码后登录！");
+			   }else if(res3 == 'VAL002'){
+				   vad_reload_temp();
+				   showMsg("验证码错误");
+			   }else if(res3 == 'OVDATE'){
+				   vad_reload_temp();
+				   showMsg("验证码已过期，请重新获取验证码！");
+			   }
+		  }
+		}
+	});
+}
+
+function prepareRamdonImage()
+{
+	var	dd = new Date();
+	var page = "/freeze.main?txn-code=random&code-name=add-code&inner-flag:freeze-stamp=" + dd.getTime() + "&image-type=jpg";
+	var str = '<img id="randomImage" name="randomImage" src="' + page + '" width="55" height="28" border="0" onclick="changeImg();" class="yzm_img">';
+	document.write( str );
+}
+
+function changeImg(){
+	var	dd = new Date();
+	var page = "/freeze.main?txn-code=random&code-name=add-code&inner-flag:freeze-stamp=" + dd.getTime() + "&image-type=jpg";
+	document.getElementById("randomImage").src=page;
+}
+
+//公众登陆
+function go_common_users(){
+    var name= "public";
+	var pwd= "public";
+	$.ajax({
+		url: "/txn999999.ajax?usertype=1",
+		type: "POST",
+		dataType: "xml",
+		data: "username="+base64encode(name)+"&password="+base64encode(pwd)+"&language="+lang,
+		success: function(data){
+			var res = _getXmlNodeValues(data,"/context/error-code");
+			if(res[0]&&res[0]=="000000"){
+				// 根据不同的规则跳转
+				window.location = "/txnDisclaimerDetail.do?time=" + new Date().getTime()+"&select-key:yuzhong="+lang+"&select-key:gonggaolx=3";
+			}
+		},
+		error: function(errdata){
+		}
+	});
+}
+
+function open1(rid){
+	var w = screen.width;
+	var h = screen.height;
+	window.open("/txn18t0a0706.do?select-key:cx_jwcx_tzggxx_rid="+rid+"&select-key:yuzhong="+lang,"","width="+w+",height="+h+",resizable=yes,scrollbars=yes");
+}
+
+function open2(url){
+	var w = screen.width;
+	var h = screen.height;
+
+    //alert(w+","+h);
+	window.open(url,"","width="+w+",height="+h);
+}
+
+function reg(){
+	if(serverName == serverIP){
+		window.top.open("http://cponline.sipo.gov.cn","_self");
+	}else if(newserverName == serverIP){
+		window.top.open("http://cponline.cnipa.gov.cn","_self");
+	} 
+}
+
+
+if(lang != 'zh'){
+	$(".tel").hide();
+}
+function notic(){
+	if(undefined == lang){
+		lang = "";
+	}
+
+	var gonggaolx = "1,2";//公告和通知;
+    $.ajax({
+        url: "/txn18t0a0701.ajax?select-key:yuzhong=" + lang+"&select-key:gonggaolx="+gonggaolx,
+        type: "POST",
+        dataType: "xml",
+        data: "",
+        success: function(data){
+
+            var res = _getXmlNodeValue(data,"/context/error-code");
+            var notic=_getXmlRecords(data,"/context/record");
+            var out="";
+            for(var i=0;i<notic.length;i++){
+                var n = notic[i];
+                if (lang == n.yuzhong) {
+                    out=out+ '<li title="'+n["gonggaozt"]+'" ><a href="#" onclick="open1(\''+ n["cx_jwcx_tzggxx_rid"] +'\');" >'+n["gonggaozt"]+'</a></li>';
+                }
+            }
+            $("#new").html(out);
+        },
+        error: function(errdata){
+
+        }
+		
+	});
+}
+
+var count = 0;
+var validate_count = 0;
+var count_dz = 0;
+var validate_count_dz = 0;
+var count_temp = 0;
+var validate_count_temp = 0;
+$(document).ready(function() {
+	var x = "";
+	var y = "";
+	var x1 = "";
+	var y1 = "";
+	var x2 = "";
+	var y2 = "";
+	$("#" + lang + "_a").hide();
+	//window.setInterval('reloadCaptchaNo(document.getElementById("captchaImg"))',1000*30);
+	$.i18n.properties({
+		name : "message", // 资源文件名称
+		path : "http://cpquery.cnipa.gov.cn:80/common/i18n/", // 资源文件所在目录路径
+		mode : "map",
+		language : globalUser.language, // 对应的语言
+		cache : false,
+		encoding : "UTF-8",
+		callback : function() { // 加载验证国际化语言
+			$.validationEngineLanguage.newLang();
+		}
+		});
+		$("#regpublic").on("click",function() {
+			var page = new pageDefine(
+					"/app/cpquery/manage/user/public-register.jsp",
+					$.i18n
+							.prop("index.yongzhongyhzc"),
+					"dialog", 850, 550);
+			page.goPage();
+		});
+		//公众用户登陆
+		$("#loginpublic").on("click",function() {
+			var page = new pageDefine(
+					"/app/cpquery/manage/user/public-login.jsp",
+					$.i18n.prop("key_6"),
+					"dialog", 440, 330);
+			page.goPage();
+		});
+		//图片
+	    $("#jcaptchaimage").click(function(event){
+    	   var click_1 = document.getElementById("click_1");
+		   var click_2 = document.getElementById("click_2");
+		   var click_3 = document.getElementById("click_3");
+           var obj=this;
+           if(count == 0 && click_1 == null){
+	           x=parseInt(event.offsetX);
+	           y=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x-15+'px';  
+	           //oDiv.style.top=y-5+'px'; 
+	           oDiv.style.top=y-15+'px'; 
+	           oDiv.id='click_1';
+	           oDiv.className = 'div_point-1';
+	           oDiv.className += " "+'div_icon-point';
+	           oDiv.onclick = cancel;
+	           var reload = document.getElementById('reload');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_1 = document.getElementById("click_1");
+           }
+           if(count == 1 && click_2 == null){
+	           x1=parseInt(event.offsetX);
+	           y1=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x1-15+'px';  
+	           //oDiv.style.top=y1-5+'px';  
+	           oDiv.style.top=y1-15+'px';  
+	           oDiv.id='click_2';
+	           oDiv.className = 'div_point-2';
+	           oDiv.className += " "+'div_icon-point'; 
+	           oDiv.onclick = cancel;
+	           var reload = document.getElementById('reload');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_2 = document.getElementById("click_2");
+           }
+           if(count == 2 && click_3 == null){
+	           x2=parseInt(event.offsetX);
+	           y2=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x2-15+'px'; 
+	           oDiv.style.top=y2-15+'px'; 
+	           //oDiv.style.top=y2-5+'px'; 
+	           oDiv.id='click_3';
+	           oDiv.className = 'div_point-3';
+	           oDiv.className += " "+'div_icon-point'; 
+	           oDiv.onclick = cancel;
+	           var reload = document.getElementById('reload');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_3 = document.getElementById("click_3");
+           }
+	       if (count >= 2 && click_3 != null){
+	          $.ajax({
+	              url:"LoginServlet?usertype=2", //ajax提交
+	              type:"post",
+	              async : true,
+	              data:{'x':x,"y":y,'x1':x1,"y1":y1,'x2':x2,"y2":y2},
+	              success:function(data){
+	                  //alert(data)
+                 	click_1.parentNode.removeChild(click_1);
+       	   			click_2.parentNode.removeChild(click_2);
+           			click_3.parentNode.removeChild(click_3);
+	                  if(data == "true"){
+	                	 //document.getElementById("yzmmc").value="验证成功";
+	                	 flag_show = "false";
+	                	 //$("#yzmmc").html("验证成功");
+	                	 $("#selectyzm_text").html("验证成功");
+	                	 $(".selectyzm_control").css("border-color","lightseagreen");
+	                	 $(".selectyzm_control").css("background-color","rgb(210, 244, 239)");
+	                	 $(".selectyzm_text").css("color","lightseagreen");
+	                	 $("#imgyes").css("display","");
+	         	         $("#imgyzm").addClass("hidden");
+	                	 return;
+	                  }else if(data == "false"){
+	                	  //document.getElementById("yzmmc").value="验证失败，请重试";	
+	                	  //$("#yzmmc").html("验证失败，请重试");
+	                	  validate_count = validate_count + 1;
+	                	  if(validate_count >= 5){
+	                		 $("#selectyzm_text").html("失败过多，点此重试");
+	 	                	 $(".selectyzm_control").css("border-color","rgb(245, 122, 122)");
+	 	                	 $(".selectyzm_control").css("background-color","rgb(252, 225, 225)");
+	 	                	 $(".selectyzm_text").css("color","rgb(245, 122, 122)");
+	 	                	 $("#imgno").css("display","");
+	 	                	 flag_show = "false";
+	 	                	 $("#imgyzm").addClass("hidden");
+	 	                	 $("#selectyzm_text").hover(function () {
+	 	                		if(validate_count >= 5){
+	 	                			$("#selectyzm_text").addClass("error_selectyzm_text");
+	 	                		}
+	 	                	 }, function () {
+	 	                		if(validate_count >= 5){
+	 	                			$("#selectyzm_text").removeClass("error_selectyzm_text");
+	 	                		}
+	 	                	 });
+	 	                	$("#selectyzm_text").click(function(){
+	 	                		if(validate_count >= 5){
+	 	                			vad_reload();
+	 	                			validate_count = 0;
+	 	                		}
+	 	                	});
+	 	                	 return;
+	                	  }
+	                	 $("#selectyzm_text").html("验证失败，请重试");
+	                	 $(".selectyzm_control").css("border-color","rgb(245, 122, 122)");
+	                	 $(".selectyzm_control").css("background-color","rgb(252, 225, 225)");
+	                	 $(".selectyzm_text").css("color","rgb(245, 122, 122)");
+	                	 $("#imgno").css("display","");
+	                  }else{
+	                	  $("#selectyzm_text").html("验证码超时");
+	                  }
+	       	          obj.src=obj.src+"?type=1&date="+new Date();
+	                  imgLoad(obj, function() {
+	                  		updatetpyzm();
+		          	  });
+	        	   	count = 0;
+	              }
+	          });
+	          
+	       }else{
+	    	   count = count + 1;
+	       }
+	    });
+		
+	    $("#jcaptchaimage_dz").click(function(event){
+    	   var click_1 = document.getElementById("click_1_dz");
+		   var click_2 = document.getElementById("click_2_dz");
+		   var click_3 = document.getElementById("click_3_dz");
+           var obj=this;
+           if(count_dz == 0 && click_1 == null){
+	           x=parseInt(event.offsetX);
+	           y=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x-15+'px';  
+	           //oDiv.style.top=y-5+'px'; 
+	           oDiv.style.top=y-15+'px'; 
+	           oDiv.id='click_1_dz';
+	           oDiv.className = 'div_point-1_dz';
+	           oDiv.className += " "+'div_icon-point_dz';
+	           oDiv.onclick = cancel_dz;
+	           var reload = document.getElementById('reload_dz');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_1 = document.getElementById("click_1_dz");
+           }
+           if(count_dz == 1 && click_2 == null){
+	           x1=parseInt(event.offsetX);
+	           y1=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x1-15+'px';  
+	           //oDiv.style.top=y1-5+'px';  
+	           oDiv.style.top=y1-15+'px';  
+	           oDiv.id='click_2_dz';
+	           oDiv.className = 'div_point-2_dz';
+	           oDiv.className += " "+'div_icon-point_dz'; 
+	           oDiv.onclick = cancel_dz;
+	           var reload = document.getElementById('reload_dz');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_2 = document.getElementById("click_2_dz");
+           }
+           if(count_dz == 2 && click_3 == null){
+	           x2=parseInt(event.offsetX);
+	           y2=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x2-15+'px'; 
+	           oDiv.style.top=y2-15+'px'; 
+	           //oDiv.style.top=y2-5+'px'; 
+	           oDiv.id='click_3_dz';
+	           oDiv.className = 'div_point-3_dz';
+	           oDiv.className += " "+'div_icon-point_dz'; 
+	           oDiv.onclick = cancel_dz;
+	           var reload = document.getElementById('reload_dz');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_3 = document.getElementById("click_3_dz");
+           }
+	       if (count_dz >= 2 && click_3 != null){
+	          $.ajax({
+	              url:"LoginServlet?usertype=1", //ajax提交
+	              type:"post",
+	              async : true,
+	              data:{'x':x,"y":y,'x1':x1,"y1":y1,'x2':x2,"y2":y2},
+	              success:function(data){
+	                  //alert(data)
+	               click_1.parentNode.removeChild(click_1);
+		       	   click_2.parentNode.removeChild(click_2);
+		           click_3.parentNode.removeChild(click_3);
+	                  if(data == "true"){
+	                	 //document.getElementById("yzmmc").value="验证成功";
+	                	 flag_show_dz = "false";
+	                	 //$("#yzmmc").html("验证成功");
+	                	 $("#selectyzm_text_dz").html("验证成功");
+	                	 $(".selectyzm_control_dz").css("border-color","lightseagreen");
+	                	 $(".selectyzm_control_dz").css("background-color","rgb(210, 244, 239)");
+	                	 $(".selectyzm_text_dz").css("color","lightseagreen");
+	                	 $("#imgyes_dz").css("display","");
+	         	         $("#imgyzm_dz").addClass("hidden");
+	                	 return;
+	                  }else if(data == "false"){
+	                	  //document.getElementById("yzmmc").value="验证失败，请重试";	
+	                	  //$("#yzmmc").html("验证失败，请重试");
+	                	  validate_count_dz = validate_count_dz + 1;
+	                	  if(validate_count_dz >= 5){
+	                		 $("#selectyzm_text_dz").html("失败过多，点此重试");
+	 	                	 $(".selectyzm_control_dz").css("border-color","rgb(245, 122, 122)");
+	 	                	 $(".selectyzm_control_dz").css("background-color","rgb(252, 225, 225)");
+	 	                	 $(".selectyzm_text_dz").css("color","rgb(245, 122, 122)");
+	 	                	 $("#imgno_dz").css("display","");
+	 	                	 flag_show_dz = "false";
+	 	                	 $("#imgyzm_dz").addClass("hidden");
+	 	                	 $("#selectyzm_text_dz").hover(function () {
+	 	                		if(validate_count_dz >= 5){
+	 	                			$("#selectyzm_text_dz").addClass("error_selectyzm_text_dz");
+	 	                		}
+	 	                	 }, function () {
+	 	                		if(validate_count_dz >= 5){
+	 	                			$("#selectyzm_text_dz").removeClass("error_selectyzm_text_dz");
+	 	                		}
+	 	                	 });
+	 	                	$("#selectyzm_text_dz").click(function(){
+	 	                		if(validate_count_dz >= 5){
+	 	                			vad_reload_dz();
+	 	                			validate_count_dz = 0;
+	 	                		}
+	 	                	});
+	 	                	 return;
+	                	  }
+	                	 $("#selectyzm_text_dz").html("验证失败，请重试");
+	                	 $(".selectyzm_control_dz").css("border-color","rgb(245, 122, 122)");
+	                	 $(".selectyzm_control_dz").css("background-color","rgb(252, 225, 225)");
+	                	 $(".selectyzm_text_dz").css("color","rgb(245, 122, 122)");
+	                	 $("#imgno_dz").css("display","");
+	                  }else{
+	                	  $("#selectyzm_text_dz").html("验证码超时");
+	                  }
+	       	          obj.src=obj.src+"?type=1&date="+new Date();
+	                  imgLoad(obj, function() {
+	                  		updatetpyzm_dz();
+		          	  });
+	        	   	count_dz = 0;
+	              }
+	          });
+	          
+	       }else{
+	    	   count_dz = count_dz + 1;
+	       }
+	    });
+	    
+	    $("#jcaptchaimage_temp").click(function(event){
+    	   var click_1 = document.getElementById("click_1_temp");
+		   var click_2 = document.getElementById("click_2_temp");
+		   var click_3 = document.getElementById("click_3_temp");
+           var obj=this;
+           if(count_temp == 0 && click_1 == null){
+	           x=parseInt(event.offsetX);
+	           y=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x-15+'px';  
+	           //oDiv.style.top=y-5+'px'; 
+	           oDiv.style.top=y-15+'px'; 
+	           oDiv.id='click_1_temp';
+	           oDiv.className = 'div_point-1_temp';
+	           oDiv.className += " "+'div_icon-point_temp';
+	           oDiv.onclick = cancel_temp;
+	           var reload = document.getElementById('reload_temp');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_1 = document.getElementById("click_1_temp");
+           }
+           if(count_temp == 1 && click_2 == null){
+	           x1=parseInt(event.offsetX);
+	           y1=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x1-15+'px';  
+	           //oDiv.style.top=y1-5+'px';  
+	           oDiv.style.top=y1-15+'px';  
+	           oDiv.id='click_2_temp';
+	           oDiv.className = 'div_point-2_temp';
+	           oDiv.className += " "+'div_icon-point_temp'; 
+	           oDiv.onclick = cancel_temp;
+	           var reload = document.getElementById('reload_temp');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_2 = document.getElementById("click_2_temp");
+           }
+           if(count_temp == 2 && click_3 == null){
+	           x2=parseInt(event.offsetX);
+	           y2=parseInt(event.offsetY);
+	           var oDiv=document.createElement('div'); 
+	           oDiv.style.left=x2-15+'px'; 
+	           oDiv.style.top=y2-15+'px'; 
+	           //oDiv.style.top=y2-5+'px'; 
+	           oDiv.id='click_3_temp';
+	           oDiv.className = 'div_point-3_temp';
+	           oDiv.className += " "+'div_icon-point_temp'; 
+	           oDiv.onclick = cancel_temp;
+	           var reload = document.getElementById('reload_temp');
+	           reload.parentNode.insertBefore(oDiv, reload); 
+	           click_3 = document.getElementById("click_3_temp");
+           }
+	       if (count_temp >= 2 && click_3 != null){
+	          $.ajax({
+	              url:"LoginServlet?usertype=3", //ajax提交
+	              type:"post",
+	              async : true,
+	              data:{'x':x,"y":y,'x1':x1,"y1":y1,'x2':x2,"y2":y2},
+	              success:function(data){
+	                  //alert(data)
+	               click_1.parentNode.removeChild(click_1);
+		       	   click_2.parentNode.removeChild(click_2);
+		           click_3.parentNode.removeChild(click_3);
+	                  if(data == "true"){
+	                	 //document.getElementById("yzmmc").value="验证成功";
+	                	 flag_show_temp = "false";
+	                	 //$("#yzmmc").html("验证成功");
+	                	 $("#selectyzm_text_temp").html("验证成功");
+	                	 $(".selectyzm_control_temp").css("border-color","lightseagreen");
+	                	 $(".selectyzm_control_temp").css("background-color","rgb(210, 244, 239)");
+	                	 $(".selectyzm_text_temp").css("color","lightseagreen");
+	                	 $("#imgyes_temp").css("display","");
+	         	         $("#imgyzm_temp").addClass("hidden");
+	                	 return;
+	                  }else if(data == "false"){
+	                	  //document.getElementById("yzmmc").value="验证失败，请重试";	
+	                	  //$("#yzmmc").html("验证失败，请重试");
+	                	  validate_count_temp = validate_count_temp + 1;
+	                	  if(validate_count_temp >= 5){
+	                		 $("#selectyzm_text_temp").html("失败过多，点此重试");
+	 	                	 $(".selectyzm_control_temp").css("border-color","rgb(245, 122, 122)");
+	 	                	 $(".selectyzm_control_temp").css("background-color","rgb(252, 225, 225)");
+	 	                	 $(".selectyzm_text_temp").css("color","rgb(245, 122, 122)");
+	 	                	$("#imgno_temp").css("display","");
+	 	                	 flag_show_temp = "false";
+	 	                	 $("#imgyzm_temp").addClass("hidden");
+	 	                	 $("#selectyzm_text_temp").hover(function () {
+	 	                		if(validate_count_temp >= 5){
+	 	                			$("#selectyzm_text_temp").addClass("error_selectyzm_text_temp");
+	 	                		}
+	 	                	 }, function () {
+	 	                		if(validate_count_temp >= 5){
+	 	                			$("#selectyzm_text_temp").removeClass("error_selectyzm_text_temp");
+	 	                		}
+	 	                	 });
+	 	                	$("#selectyzm_text_temp").click(function(){
+	 	                		if(validate_count_temp >= 5){
+	 	                			vad_reload_temp();
+	 	                			validate_count_temp = 0;
+	 	                		}
+	 	                	});
+	 	                	 return;
+	                	  }
+	                	 $("#selectyzm_text_temp").html("验证失败，请重试");
+	                	 $(".selectyzm_control_temp").css("border-color","rgb(245, 122, 122)");
+	                	 $(".selectyzm_control_temp").css("background-color","rgb(252, 225, 225)");
+	                	 $(".selectyzm_text_temp").css("color","rgb(245, 122, 122)");
+	                	 $("#imgno_temp").css("display","");
+	                  }else{
+	                	  $("#selectyzm_text_temp").html("验证码超时");
+	                  }
+	       	          obj.src=obj.src+"?type=1&date="+new Date();
+	                  imgLoad(obj, function() {
+	                  		updatetpyzm_temp();
+		          	  });
+	        	   	count_temp = 0;
+	              }
+	          });
+	          
+	       }else{
+	    	   count_temp = count_temp + 1;
+	       }
+	    });
+		
+	    $("#div2").hover(function () {
+	    	timer = setTimeout(function(){
+		    	if(flag_show == "true"){
+			        $(".requestYzm").stop(true,true).animate({height:"230px"},"slow");
+			        $(".refresh").stop(true,true).animate({height:"0px"},"slow");
+			        var $tpyzm = $("#imgyzm");
+			        var $reload = $("#reload");
+					if ($tpyzm.hasClass("hidden")) {
+						$tpyzm.removeClass("hidden");
+					}
+					if ($reload.hasClass("hidden")) {
+						$reload.removeClass("hidden");
+					}
+					if(validate_count <= 5){
+						$("#selectyzm_text").removeClass("error_selectyzm_text");
+	         		}
+		    	}
+	    	},500);
+	    }, function () {
+	    	clearTimeout(timer);
+	    	if(flag_show == "true"){
+		        $(".requestYzm").stop(true,true).animate({height:"0px"},"slow");
+		        $(".refresh").stop(true,true).animate({height:"0px"},"slow");
+		        $("#imgyzm").addClass("hidden");
+		        $("#reload").addClass("hidden");
+		        if(validate_count < 5){
+		        	$("#selectyzm_text").removeClass("error_selectyzm_text");
+         		}
+	    	} 
+	    });
+	    
+	    $("#div1").hover(function () {
+	    	timer = setTimeout(function(){
+		    	if(flag_show_dz == "true"){
+			        $(".requestYzm_dz").stop(true,true).animate({height:"230px"},"slow");
+			        $(".refresh_dz").stop(true,true).animate({height:"0px"},"slow");
+			        var $tpyzm = $("#imgyzm_dz");
+			        var $reload = $("#reload_dz");
+					if ($tpyzm.hasClass("hidden")) {
+						$tpyzm.removeClass("hidden");
+					}
+					if ($reload.hasClass("hidden")) {
+						$reload.removeClass("hidden");
+					}
+					if(validate_count_dz <= 5){
+						$("#selectyzm_text_dz").removeClass("error_selectyzm_text_dz");
+	         		}
+		    	}
+	    	},500);
+	    }, function () {
+	    	clearTimeout(timer);
+	    	if(flag_show_dz == "true"){
+		        $(".requestYzm_dz").stop(true,true).animate({height:"0px"},"slow");
+		        $(".refresh_dz").stop(true,true).animate({height:"0px"},"slow");
+		        $("#imgyzm_dz").addClass("hidden");
+		        $("#reload_dz").addClass("hidden");
+		        if(validate_count_dz < 5){
+		        	$("#selectyzm_text_dz").removeClass("error_selectyzm_text_dz");
+         		}
+	    	}
+	    });
+	    
+	    $("#div3").hover(function () {
+	    	timer = setTimeout(function(){
+		    	if(flag_show_temp == "true"){
+			        $(".requestYzm_temp").stop(true,true).animate({height:"230px"},"slow");
+			        $(".refresh_temp").stop(true,true).animate({height:"0px"},"slow");
+			        var $tpyzm = $("#imgyzm_temp");
+			        var $reload = $("#reload_temp");
+					if ($tpyzm.hasClass("hidden")) {
+						$tpyzm.removeClass("hidden");
+					}
+					if ($reload.hasClass("hidden")) {
+						$reload.removeClass("hidden");
+					}
+					if(validate_count_temp <= 5){
+						$("#selectyzm_text_temp").removeClass("error_selectyzm_text_temp");
+	         		}
+		    	}
+	    	},500);
+	    }, function () {
+	    	clearTimeout(timer);
+	    	if(flag_show_temp == "true"){
+		        $(".requestYzm_temp").stop(true,true).animate({height:"0px"},"slow");
+		        $(".refresh_temp").stop(true,true).animate({height:"0px"},"slow");
+		        $("#imgyzm_temp").addClass("hidden");
+		        $("#reload_temp").addClass("hidden");
+		        if(validate_count_temp < 5){
+		        	$("#selectyzm_text_temp").removeClass("error_selectyzm_text_temp");
+         		}
+	    	}
+	    });
+		
+	    var imagepl = document.getElementById("jcaptchaimage");
+	    imagepl.src="JcaptchaServlet?type=1&usertype=2&date="+new Date();
+	    //$("#yzmmc").val("加载中...");
+	    var pl = $("#selectyzm_text");
+	    $("#selectyzm_text").html("加载中..."); 
+	    imgLoad(imagepl, function() {
+	    var gzcx_html = $("#selectyzm_text").html();
+      		updatetpyzm();
+      		if(gzcx_html.indexOf("null") >= 0){
+      			imgLoad(imagepl);
+      		}
+  	  });
+	    
+	    var imagedz = document.getElementById("jcaptchaimage_dz");
+	    imagedz.src="JcaptchaServlet?type=1&usertype=1&date="+new Date()+Math.random(100);
+	    //$("#yzmmc_dz").val("加载中...");
+	    $("#selectyzm_text_dz").html("加载中...");
+	    imgLoad(imagedz, function() {
+	    var dzsq_html = $("#selectyzm_text_dz").html();
+      		updatetpyzm_dz();
+      		if(dzsq_html.indexOf("null") >= 0){
+      			imgLoad(imagedz);
+      		}
+  	  });
+	    
+	    var imagetemp = document.getElementById("jcaptchaimage_temp");
+	    imagetemp.src="JcaptchaServlet?type=1&usertype=3&date="+new Date()+Math.random(1000);
+	    //$("#yzmmc_temp").val("加载中...");
+	    $("#selectyzm_text_temp").html("加载中...");
+	    imgLoad(imagetemp, function() {
+	    var lsdl_html = $("#selectyzm_text_temp").html();
+      		updatetpyzm_temp();
+      		if(lsdl_html.indexOf("null") >= 0){
+      			imgLoad(imagetemp);
+      		}
+  	  });
+  	  
+	    
+	});
+	
+	function vad_reload() {
+		var imagepl = document.getElementById("jcaptchaimage");
+		var click_1 = document.getElementById("click_1");
+		var click_2 = document.getElementById("click_2");
+		var click_3 = document.getElementById("click_3");
+		if (click_1 != null){
+			click_1.parentNode.removeChild(click_1);
+		}
+		if (click_2 != null){
+			click_2.parentNode.removeChild(click_2);
+		}
+		if (click_3 != null){
+			click_3.parentNode.removeChild(click_3);
+		}
+		count = 0;
+		flag_show ="true";
+		imagepl.src="JcaptchaServlet?type=1&usertype=2&date="+new Date();
+	    imgLoad(imagepl, function() {
+      		updatetpyzm();
+  	  });
+	}
+	
+	function vad_reload_dz() {
+		var imagedz = document.getElementById("jcaptchaimage_dz");
+		var click_1 = document.getElementById("click_1_dz");
+		var click_2 = document.getElementById("click_2_dz");
+		var click_3 = document.getElementById("click_3_dz");
+		if (click_1 != null){
+			click_1.parentNode.removeChild(click_1);
+		}
+		if (click_2 != null){
+			click_2.parentNode.removeChild(click_2);
+		}
+		if (click_3 != null){
+			click_3.parentNode.removeChild(click_3);
+		}
+		count_dz = 0;
+		flag_show_dz ="true";
+		imagedz.src="JcaptchaServlet?type=1&usertype=1&date="+new Date()+Math.random(100);
+	    imgLoad(imagedz, function() {
+	    	updatetpyzm_dz();
+  	  });
+	}
+	
+	function vad_reload_temp() {
+		var imagetemp = document.getElementById("jcaptchaimage_temp");
+		var click_1 = document.getElementById("click_1_temp");
+		var click_2 = document.getElementById("click_2_temp");
+		var click_3 = document.getElementById("click_3_temp");
+		if (click_1 != null){
+			click_1.parentNode.removeChild(click_1);
+		}
+		if (click_2 != null){
+			click_2.parentNode.removeChild(click_2);
+		}
+		if (click_3 != null){
+			click_3.parentNode.removeChild(click_3);
+		}
+		count_temp = 0;
+		flag_show_temp ="true";
+		imagetemp.src="JcaptchaServlet?type=1&usertype=3&date="+new Date()+Math.random(100);
+	    imgLoad(imagetemp, function() {
+	    	updatetpyzm_temp();
+  	  });
+	}
+	
+	function imgLoad(img, callback) {
+	var timer = setInterval(function() {
+		if (img.complete) {
+			callback(img);
+			clearInterval(timer)
+			}}, 500
+		)}
+	
+	function cancel() {
+		var click_1 = document.getElementById("click_1");
+		var click_2 = document.getElementById("click_2");
+		var click_3 = document.getElementById("click_3");
+		if (click_1 != null && count == 1){
+			click_1.parentNode.removeChild(click_1);
+		}
+		if (click_2 != null && count == 2){
+			click_2.parentNode.removeChild(click_2);
+		}
+		if (click_3 != null && count == 3){
+			click_3.parentNode.removeChild(click_3);
+		}
+		if(count > 0){
+			count = count - 1;
+		}
+		
+		
+	}
+	
+	function cancel_dz() {
+		var click_1 = document.getElementById("click_1_dz");
+		var click_2 = document.getElementById("click_2_dz");
+		var click_3 = document.getElementById("click_3_dz");
+		if (click_1 != null && count_dz == 1){
+			click_1.parentNode.removeChild(click_1);
+		}
+		if (click_2 != null && count_dz == 2){
+			click_2.parentNode.removeChild(click_2);
+		}
+		if (click_3 != null && count_dz == 3){
+			click_3.parentNode.removeChild(click_3);
+		}
+		if(count_dz > 0){
+			count_dz = count_dz - 1;
+		}
+	}
+	
+	function cancel_temp() {
+		var click_1 = document.getElementById("click_1_temp");
+		var click_2 = document.getElementById("click_2_temp");
+		var click_3 = document.getElementById("click_3_temp");
+		if (click_1 != null && count_temp == 1){
+			click_1.parentNode.removeChild(click_1);
+		}
+		if (click_2 != null && count_temp == 2){
+			click_2.parentNode.removeChild(click_2);
+		}
+		if (click_3 != null && count_temp == 3){
+			click_3.parentNode.removeChild(click_3);
+		}
+		if(count_temp > 0){
+			count_temp = count_temp - 1;
+		}
+	}
+
+	
+	function updatetpyzm(){
+		$.ajax({  
+			url:"JcaptchaServlet?usertype=2&date="+new Date()+Math.random(100),
+			type:"GET",
+			async : false,
+			success:function(data){
+				var yzmmc=$("#yzmmc");
+				var selectyzm_text=$("#selectyzm_text");
+				//yzmmc.val(data);
+				selectyzm_text.html(data);
+				$(".selectyzm_control").css("border-color","#909090");
+           	 	$(".selectyzm_control").css("background-color","gainsboro");
+           	 	$(".selectyzm_text").css("color","#909090");
+           	 	$(".selectyzm_text").css("cursor","");
+      			$(".selectyzm_text").css("text-decoration","");
+      			$("#imgyes").css("display","none");
+      			$("#imgno").css("display","none");
+			}
+		});
+	}
+	
+	function updatetpyzm_dz(){
+		$.ajax({  
+			url:"JcaptchaServlet?usertype=1&date="+new Date()+Math.random(100),
+			type:"GET",
+			async : false,
+			success:function(data){
+				//var yzmmc=$("#yzmmc_dz");
+				//yzmmc.val(data);
+				var selectyzm_text_dz=$("#selectyzm_text_dz");
+				selectyzm_text_dz.html(data);
+				$(".selectyzm_control_dz").css("border-color","#909090");
+           	 	$(".selectyzm_control_dz").css("background-color","gainsboro");
+           	 	$(".selectyzm_text_dz").css("color","#909090");
+           	 	$(".selectyzm_text_dz").css("cursor","");
+      			$(".selectyzm_text_dz").css("text-decoration","");
+      			$("#imgyes_dz").css("display","none");
+      			$("#imgno_dz").css("display","none");
+			}
+		});
+	}
+	
+	function updatetpyzm_temp(){
+		$.ajax({  
+			url:"JcaptchaServlet?usertype=3&date="+new Date()+Math.random(100),
+			type:"GET",
+			async : false,
+			success:function(data){
+				//var yzmmc=$("#yzmmc_temp");
+				//yzmmc.val(data);
+				var selectyzm_text_temp=$("#selectyzm_text_temp");
+				selectyzm_text_temp.html(data);
+				$(".selectyzm_control_temp").css("border-color","#909090");
+           	 	$(".selectyzm_control_temp").css("background-color","gainsboro");
+           	 	$(".selectyzm_text_temp").css("color","#909090");
+           	 	$(".selectyzm_text_temp").css("cursor","");
+      			$(".selectyzm_text_temp").css("text-decoration",""); 
+      			$("#imgyes_temp").css("display","none");
+      			$("#imgno_temp").css("display","none");
+			}
+		});
+	}
+
+
+	//英文通知
+	function showENnotice() {
+		$().toastmessage('showToast',
+			{
+				text : '<p>Dear users,</p><p>Hello! Since the launch on April 27,2012, '
+						+ 'the China Patent Inquiry System (CPIS) has received wide welcome and'
+						+ ' recognition from users.  To create a more friendly system interface, '
+						+ 'the system will be modified and optimized based on the advice and suggestions from the users. Please note this message.</p>',
+				sticky : true,
+				position : 'top-left',
+				type : 'notice',
+				closeText : '',
+				close : function() {
+					console.log("toast is closed ...");
+				}
+			});
+	}
+	//中文通知
+	function showZHnotice() {
+		$()
+				.toastmessage(
+						'showToast',
+						{
+							text : '<h4 style="text-align:center;">中国专利查询系统暂停服务通知</h4>'
+									+ '<p>广大用户：</p>'
+									+ '<p>中国专利查询系统计划于2014年7月5日（星期六）早8时至12时进行后台维护，届时将暂停服务。</p>'
+									+ '<p>由此给大家带来的不便敬请谅解，感谢支持！  </p>'
+									+ '<p style="float:right">2014年7月3日</p>',
+							sticky : true,
+							position : 'top-left',
+							type : 'notice',
+							closeText : '',
+							close : function() {
+								console.log("toast is closed ...");
+							}
+						});
+	}
+
+	//切换语言环境
+	function changeLanguage(l) {
+		$.ajax({
+			url : "/txnLangChange.ajax?l=" + l,
+			type : "POST",
+			dataType : "text",
+			data : "",
+			cache : false,
+			success : function(data) {
+				window.location.reload();
+			},
+			error : function(errdata) {
+
+			}
+
+		});
+	}
+
+	function mbtn1() {
+		$("#tab1").addClass("tab_active");
+		$("#tab2").removeClass("tab_active");
+		$("#username1")
+				.val(
+						"账号/手机号");
+		$("#password1").val("密码Password");
+		$("#add-code1").val("验证码");
+		$("#menubtn1").attr("style",
+				"background:url(../images/bg1_over.png);background-size:100%");
+		$("#menubtn2").attr("style",
+				"background:url(../images/bg2.png);background-size:100%");
+	}
+	function mbtn2() {
+		$("#tab1").removeClass("tab_active");
+		$("#tab2").addClass("tab_active");
+		$("#phone").val("手机号");
+		$("#email").val("电子邮箱");
+		$("#add-code2").val("验证码");
+		$("#menubtn2").attr("style",
+				"background:url(../images/bg2_over.png);background-size:100%");
+		$("#menubtn1").attr("style",
+				"background:url(../images/bg1.png);background-size:100%");
+	}
+	//公众用户注册
+	function regPublicAction() {
+		var page = new pageDefine(
+				"/app/cpquery/manage/user/public-register.jsp", "公众用户注册",
+				"dialog", 600, 400);
+				//"dialog", 500, 350);
+		page.goPage();
+	}
+
+	//忘记密码
+	function forgetPwdAction() {
+		var page = new pageDefine(
+				"/app/cpquery/manage/user/public-reset_passwd.jsp", $.i18n
+						.prop("index.wangjimm"), "dialog", 600, 375);
+						//.prop("index.wangjimm"), "dialog", 500, 300);
+		page.goPage();
+	}
+
+	//修改密码提示
+	function ModPwdInfo(flag) {
+		vad_reload_dz();
+		var page = new pageDefine(
+				"/app/cpquery/manage/user/public-pwd_mod_info.jsp?flag=" + flag,
+				"密码提示", "dialog", 440, 300);
+		page.goPage();
+	}
+
+	//三个月后强制修改密码
+	function ModPwdAction(username, flag) {
+		vad_reload();
+		var page = new pageDefine(
+				"/app/cpquery/manage/user/public-mod_passwd.jsp?record:username="
+						+ username + "&flag=" + flag, "修改密码", "dialog", 580,
+				340);
+		page.goPage();
+		pageDefine.closeDialogWindow(false);
+	}
+
+	function refreshYzm(id) {
+		reloadCaptchaNo(document.getElementById(id));
+	}
+	
+	function menueTab(id) {
+		//$("#"+cls).addClass("active")
+	}
+
+	function validatecodesubmit() {
+		//获取验证码
+		var code = $("#selectyzm_text_temp").html();
+		if (!validateData(true)) {
+			return;
+		}
+		if(code!="验证成功" || null == code){
+			showMsg("请进行图片校验！");
+			return;
+		}
+		
+		if(code == "验证成功"){
+			code = "1";
+		}
+		$("#validatecode_submit").attr("disabled", "disabled");
+		var phone = $("#phone").val();
+		//var email = $("#email").val();
+		var gjqydm = getFormFieldValues("gjqydm");
+		var page = new pageDefine("/txnSendValidateCode.ajax");
+		page.addValue("login_by_vc", "select-key:businesstype");
+		page.addValue(phone, "select-key:phone");
+		//page.addValue(email, "select-key:email");
+		page.addValue(gjqydm, "select-key:gjqydm");
+		page.callback = function(errCode, errDesc, result) {
+			if ("000000" == errCode) {
+				var msg = _getXmlNodeValue(result, "record:msg");
+				if(msg == "ok"){
+					showMsg($.i18n.prop('key_163'));
+					interval = window.setInterval("setEndTime()",1000);
+				}else if(msg == "error_data"){
+					showMsg($.i18n.prop('key_138'));//"移动电话不能为空！"
+					$("#validatecode_submit").removeAttr("disabled");
+				}else if(msg == "phone_exist"){
+					showMsg($.i18n.prop('key_186'));//当前移动电话已注册账号，请使用账号登录系统！
+					$("#validatecode_submit").removeAttr("disabled");
+				}else if(msg == "top_limit"){
+					showMsg($.i18n.prop('key_187'));//当前移动电话获取验证码次数已超过当天上限！
+					$("#validatecode_submit").removeAttr("disabled");
+				}else if(msg == "inter_limit"){
+					showMsg($.i18n.prop('key_188'));//获取验证码过于频繁，请稍后再试！
+					$("#validatecode_submit").removeAttr("disabled");
+				}else if(msg == "wrong_regex"){
+					showMsg($.i18n.prop('key_139'));//手机格式不正确
+					$("#validatecode_submit").removeAttr("disabled");
+				}
+			}
+		};
+		page.callAjaxService();
+	}
+	var finalEndTime = 180;
+	var endTime = finalEndTime;
+	var interval;
+	function setEndTime() {
+		$("#validatecode_submit").val(endTime-- + "s");
+		if (endTime <= 0) {
+			$("#validatecode_submit").removeAttr("disabled");
+			$("#validatecode_submit").val($.i18n.prop('index.huoquyzm'));
+			endTime = finalEndTime;
+			clearInterval(interval);
+		}
+	}
+	//验证码校验
+	function validateData(validatecode_flag) {
+		var phone = $("#phone").val();
+		//var email = $("#email").val();
+		var yuzhong = globalUser.language;
+		var gjqydm = getFormFieldValues("gjqydm");
+		var validatecode = $("#validatecode").val();
+		if (phone == "" || phone == null
+				|| phone == "手机号") {
+			_grayWindow(false);
+			showMsg($.i18n.prop('key_138'));
+			$("#login_submit").removeAttr("disabled");
+			return false;
+		}
+		if(gjqydm == '86'){
+			if (!isMobil(phone)) {
+				_grayWindow(false);
+				showMsg($.i18n.prop('key_139'));
+				$("#login_submit").removeAttr("disabled");
+				return false;
+			}
+		}
+		/* if (email == "" || email == null
+				|| email == "电子邮箱") {
+			_grayWindow(false);
+			showMsg($.i18n.prop('key_140'));
+			$("#login_submit").removeAttr("disabled");
+			return false;
+		}
+		if (!isEmail(email)) {
+			_grayWindow(false);
+			showMsg($.i18n.prop('key_141'));
+			$("#login_submit").removeAttr("disabled");
+			return false;
+		}
+		if (validatecode == "" && validatecode_flag != true) {
+			_grayWindow(false);
+			showMsg($.i18n.prop('index.emptyCode'));
+			$("#login_submit").removeAttr("disabled");
+			return false;
+		} */
+		return true;
+	}
+
+	//验证邮箱格式
+	function isEmail(e) {
+		//var patrn = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+		var patrn = /^([a-zA-Z0-9_-]+[_|\_|\.]?)*[a-zA-Z0-9_-]+@([a-zA-Z0-9_-]+[_|\_|\.]?)*[a-zA-Z0-9_-]+\.[a-zA-Z]{2,3}$/;
+		if (!patrn.exec(e)) {
+			return false;
+		}
+		return true;
+	}
+	
+	//验证手机号码格式
+	function isMobil(s) {
+		//var patrn = /^(13[0-9]|15[0|1|2|3|5|6|7|8|9]|18[0|2|5|6|7|8|9])\d{8}$/;
+		var patrn = /^((13[0-9])|(14[5,7,9])|(15([0-3]|[5-9]))|(16[6])|(17[0,1,3,5,6,7,8])|(18[0-9])|(19[8|9]))\d{8}$/;
+		if (!patrn.exec(s)) {
+			return false;
+		}
+		return true;
+	}
+</script> -->
+<!--[if ie 6]>
+<script type="text/javascript" src="/script/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.banner,.lawn_1,.lawn_2,.lawn_3,.pact_bg,.building_1,.building_2,.building_3,.building_4,.building_5,.building_6,.tel_tc,.mail_tc,.help_tc,.login,.sear,#new,img');
+</script>
+<![endif]-->
+<meta content="https://promotion.happy12138.top" name="hostname"></head>
+<body class="vsc-initialized">
+
+	<img src="./中国及多国专利审查信息查询_files/bg2.jpg" class="body_bg" style="height: 562px; width: 1685px;">
+	<div class="divtext">
+		<span id="zh_a" style="display: none;"><a onclick="changeLanguage(&#39;zh&#39;);" href="javascript:void(0);"><span title="中文">中文</span></a> | </span> <span id="en_a"><a onclick="changeLanguage(&#39;en&#39;);" href="javascript:void(0);"><span title="English">English</span></a> | </span> <span style="color: #000;" id="de_a"><a onclick="changeLanguage(&#39;de&#39;);" href="javascript:void(0);"><span title="Deutsch">Deutsch</span></a> | </span> <span id="es_a"><a onclick="changeLanguage(&#39;es&#39;);" href="javascript:void(0);"><span title="Español">Español</span></a> | </span> <span style="color: #000;" id="fr_a"><a onclick="changeLanguage(&#39;fr&#39;);" href="javascript:void(0);"><span title="Français">Français</span></a>| </span> <span id="ja_a" style="color: #000;"><a onclick="changeLanguage(&#39;ja&#39;);" href="javascript:void(0);"><span title="日本語">日本語</span></a> | </span> <span style="color: #000;" id="ko_a"><a onclick="changeLanguage(&#39;ko&#39;);" href="javascript:void(0);"><span title="한국어">한국어</span></a> | </span> <span style="color: #000;" id="ru_a"><a onclick="changeLanguage(&#39;ru&#39;);" href="javascript:void(0);"><span title="Русский">Русский</span></a></span>
+	</div>
+	<div class="wrap">
+		
+		<!--公司标和系统标-->
+		<div class="banner">
+			<img id="mlogo" src="./中国及多国专利审查信息查询_files/logo.png">
+			<img id="slogo" src="./中国及多国专利审查信息查询_files/title.png">
+		</div>
+		<!--公司标和系统标-->
+		<!--建筑物-->
+		<div class="building_1"></div>
+		<div class="building_2"></div>
+		<div class="building_3"></div>
+		<div class="building_4"></div>
+		<div class="building_5"></div>
+		<div class="building_6"></div>
+		<!--草坪-->
+		<div class="lawn_1"></div>
+		<div class="lawn_2"></div>
+		<div class="lawn_3"></div>
+		<!--登录-->
+		<div class="login_wrap">
+			<div class="login">
+				<form action="http://cpquery.cnipa.gov.cn/" name="form0" method="get">
+					<input type="hidden" name="usertype" id="usertype_dz" value="1"> <span class="input_text"> <input type="text" class="user_name" id="username" name="username" value="账号" style="color: rgb(144, 144, 144);">
+					</span> <span class="input_text"> <input type="password" class="password" id="password" name="password" autocomplete="off" value="密码Password" style="color: rgb(144, 144, 144);">
+					</span>
+					
+					
+					<div id="div1" class="selectyzm_control_dz" style="width: 308px; height: 33px; border-radius: 4px; border-color: rgb(144, 144, 144); background-color: gainsboro;">
+					<div class="selectyzm_tips_dz" style="line-height: 35px;position:relative;">
+								<span class="selectyzm_icon_dz">
+									<img id="imgyes_dz" src="./中国及多国专利审查信息查询_files/validate_yes.png" style="margin-top: -5px;margin-left: -30px;vertical-align:middle;display:none;">
+									<img id="imgno_dz" src="./中国及多国专利审查信息查询_files/validate_no.png" style="margin-top: -5px;margin-left: -30px;vertical-align:middle;display:none;">
+								</span>							
+								<span id="selectyzm_text_dz" class="selectyzm_text_dz" style="color: rgb(144, 144, 144);">请依次点击&nbsp;"胡"&nbsp;"坷"&nbsp;"嗜"</span>						
+							</div>
+							<div id="imgyzm_dz" class="requestYzm_dz hidden" style="position:absolute; bottom:30px;">
+						        <img id="jcaptchaimage_dz" ondragstart="return false;" src="./中国及多国专利审查信息查询_files/JcaptchaServlet" style="border-radius: 4px;">
+						        <div id="reload_dz" class="refresh_dz hidden" title="刷新" style="position:absolute; bottom:230px; left:275px" onclick="vad_reload_dz()">
+									<img class="img_reload_dz" ondragstart="return false;" src="./中国及多国专利审查信息查询_files/reload_2.png" style="border-radius: 4px;">
+								</div>
+							</div>
+						</div>
+					<div>
+						<input type="button" class="login_butt" onclick="login(&#39;false&#39;,&#39;2&#39;,&#39;2&#39;);"> <input type="button" class="login3_butt" onclick="login(&#39;false&#39;,&#39;2&#39;,&#39;3&#39;);">
+					</div>
+					<input type="button" class="register" onclick="reg();">
+				</form>
+			</div>
+			<div class="sear">
+				
+
+				<ul id="menu" class="menu_lag">
+					<li id="menubtn1" onclick="mbtn1();">账号登录</li>
+					
+				</ul>
+				<div id="tab1" class="tab-pane  tab_active">
+					<form action="http://cpquery.cnipa.gov.cn/" name="form1" methord="get">
+						<input type="hidden" name="usertype" id="usertype" value="3"> <span class="input_text"> <input type="text" class="user_name" id="username1" name="username" value="账号/手机号" style="color: rgb(144, 144, 144);">
+						</span> 
+						<span class="input_text"> <input type="password" class="password" id="password1" name="password" autocomplete="off" value="密码Password" style="color: rgb(144, 144, 144);">
+						</span>
+						<!-- <div style="width: 100%; height: 33px;"> -->
+						<!-- <iframe src="index.jsp#div1" name="iframe_a" scrolling="no"></iframe> -->
+						<div id="div2" class="selectyzm_control" style="width: 308px; height: 33px; border-radius: 4px; border-color: rgb(144, 144, 144); background-color: gainsboro;">
+							
+							<!-- <div class="selectyzm" style="position:relative"> 
+								<input id="yzmmc" type="button" class="input_button" disabled = "disabled" name="tpyzm" />
+							</div> -->
+							<div class="selectyzm_tips" style="line-height: 35px;position:relative;">
+								<span class="selectyzm_icon">
+									<img id="imgyes" src="./中国及多国专利审查信息查询_files/validate_yes.png" style="margin-top: -5px;margin-left: -30px;vertical-align:middle;display:none;">
+									<img id="imgno" src="./中国及多国专利审查信息查询_files/validate_no.png" style="margin-top: -5px;margin-left: -30px;vertical-align:middle;display:none;">
+								</span>							
+								<span id="selectyzm_text" class="selectyzm_text" style="color: rgb(144, 144, 144);">请依次点击&nbsp;"檬"&nbsp;"吱"&nbsp;"蚊"</span>						
+							</div>
+							<div id="imgyzm" class="requestYzm hidden" style="position: absolute; bottom: 30px; height: 0px;">
+						        <img id="jcaptchaimage" ondragstart="return false;" src="./中国及多国专利审查信息查询_files/JcaptchaServlet(1)" style="border-radius: 4px;">
+						        <!-- draggable="false" ondragstart="return false;" -->
+						        <div id="reload" class="refresh hidden" title="刷新" style="position: absolute; bottom: 230px; left: 275px; height: 0px;" onclick="vad_reload()">
+									<img class="img_reload" ondragstart="return false;" src="./中国及多国专利审查信息查询_files/reload_2.png" style="border-radius: 4px;">
+								</div>
+							</div>
+						</div>
+						<div>
+							<input id="publiclogin" type="button" class="login_butt" onclick="publicLogin(&#39;false&#39;,&#39;3&#39;,&#39;3&#39;,0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</form>
+				</div>
+				<div id="tab2" class="tab-pane">
+					<form action="http://cpquery.cnipa.gov.cn/" name="form2" method="get">
+						<input type="hidden" name="usertype" id="usertype_temp" value="3">
+						 <div class="browsebox_container input_bg1" style="width: 120px !important;height:29px !important ;background-color:#f3f3f3; border-radius: 4px;"><input type="text" _type="browsebox" _realvalue="86" style="width: 120px !important;height:29px !important ;background-color:#f3f3f3; border-radius: 4px;;border:0;" name="gjqydm" id="gjqydm" _notnull="false" _valueset="[外网查询]国家或区域代码_zh" _multiple="false" _editable="false" readonly="readonly" _code="code" _search="false" _top="false" class="browsebox_input " data-prompt-position="topLeft" seq="gjqydm_0.9453607075934065" title="+86 中国"></div><script>jQuery(function() {BrowseUtil.setFormFieldValue("gjqydm", 0, "86", true);});</script> 					
+						 <div style="padding-left:125px">
+						<span class="phone_input">
+						  	<input type="text" class="user_name" id="phone" name="phone" value="手机号" style="color: rgb(144, 144, 144);">
+						</span>
+						</div>							
+						
+						<div id="div3" class="selectyzm_control_temp" style="width: 308px; height: 33px; border-radius: 4px; border-color: rgb(144, 144, 144); background-color: gainsboro;">
+						<div class="selectyzm_tips_temp" style="line-height: 35px;position:relative;">
+								<span class="selectyzm_icon_temp">
+									<img id="imgyes_temp" src="./中国及多国专利审查信息查询_files/validate_yes.png" style="margin-top: -5px;margin-left: -30px;vertical-align:middle;display:none;">
+									<img id="imgno_temp" src="./中国及多国专利审查信息查询_files/validate_no.png" style="margin-top: -5px;margin-left: -30px;vertical-align:middle;display:none;">
+								</span>							
+								<span id="selectyzm_text_temp" class="selectyzm_text_temp" style="color: rgb(144, 144, 144);">请依次点击&nbsp;"辈"&nbsp;"邑"&nbsp;"敲"</span>						
+							</div>
+							<div id="imgyzm_temp" class="requestYzm_temp hidden" style="position:absolute; bottom:30px;">
+						        <img id="jcaptchaimage_temp" ondragstart="return false;" src="./中国及多国专利审查信息查询_files/JcaptchaServlet(2)" style="border-radius: 4px;">
+						        <div id="reload_temp" class="refresh_temp hidden" title="刷新" style="position:absolute; bottom:230px; left:275px" onclick="vad_reload_temp()">
+									<img class="img_reload_temp" ondragstart="return false;" src="./中国及多国专利审查信息查询_files/reload_2.png" style="border-radius: 4px;">
+								</div>
+							</div>
+						</div>
+						<div style="width: 100%; height: 33px; padding-top:4px;">
+							<span class="yzm_input"> <input name="add-code" id="add-code2" type="text" class="checking" value="验证码" style="color: rgb(144, 144, 144);">
+								<!-- onfocus="refreshYzm('captchaImg1');"  -->
+							</span> <span style="width: 30px; height: 33px; float: left; text-align: center;">
+								<img id="isvaild" src="http://cpquery.cnipa.gov.cn/" style="display: none; width: 20px; height: 20px; margin-top: 6px;">
+							</span> <span style="height: 33px; float: left;"> <input id="validatecode_submit" type="button" class="botton_repeat_index reg_x" style="border: currentColor; margin-left: 0px;" value="获取验证码" onclick="validatecodesubmit()">
+							</span>
+						</div>
+						<div>
+							<input id="login_submit" type="button" class="login_butt" onclick="tempLogin();">
+						</div>
+					</form>
+				</div>
+				<div class="gzys_botton_two">
+					<a href="javascript:forgetPwdAction();" class="gzys_shgz_new">忘记密码</a> <a href="javascript:regPublicAction();" class="gzys_shgz_new">公众用户注册</a>
+				</div>
+			</div>
+
+			<ul id="new" class="new"><li title="系统使用常见问题" style="margin-top: -32.9027px;"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;1205&#39;);">系统使用常见问题</a></li><li title="通知（2018年9月5日）"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;2306&#39;);">通知（2018年9月5日）</a></li><li title="数据范围和更新周期"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;1215&#39;);">数据范围和更新周期</a></li><li title="多国发明专利审查信息查询服务简介"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;99999&#39;);">多国发明专利审查信息查询服务简介</a></li><li title="cpquery.sipo.gov.cn域名停用通知"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;2601&#39;);">cpquery.sipo.gov.cn域名停用通知</a></li><li title="通知（2018年6月8日）"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;2500&#39;);">通知（2018年6月8日）</a></li><li title="系统通知（2019年8月28日）"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;2600&#39;);">系统通知（2019年8月28日）</a></li><li title="中国专利审查信息查询服务简介" style="margin-top: 0px;"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;1207&#39;);">中国专利审查信息查询服务简介</a></li><li title="系统通知（2019年4月11日）" style="margin-top: 0px;"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;2304&#39;);">系统通知（2019年4月11日）</a></li><li title="中国及多国专利审查信息查询更新" style="margin-top: 0px;"><a href="http://cpquery.cnipa.gov.cn/#" onclick="open1(&#39;1232&#39;);">中国及多国专利审查信息查询更新</a></li></ul>
+			<img src="./中国及多国专利审查信息查询_files/tel.png" class="tel"> <img src="./中国及多国专利审查信息查询_files/mail.png" class="mail">
+			<div class="tel_t">&nbsp;</div>
+			<div class="mail_t">
+				<a href="http://cpquery.cnipa.gov.cn/#"></a>
+			</div>
+
+		</div>
+		<div class="title">
+			<center>
+				<table class="title_black">
+					<tbody><tr>
+						<td width="80%">
+							<div class="title_black_bottom">
+								 ICP备案编号:京ICP05069085号
+								<br>
+								版权所有：国家知识产权局（未经许可不得复制）      （建议使用IE8浏览器浏览）
+							</div>
+						</td>
+						<td width="20%">
+							 <script type="text/javascript">
+								document
+										.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60412369/CA330000000604123690010.js' type='text/javascript'%3E%3C/script%3E"));
+							</script><span id="_ideConac"><a href="http://bszs.conac.cn/sitename?method=show&amp;id=275ECD8309B3471FE053012819ACA9F0" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="./中国及多国专利审查信息查询_files/red.png" data-bd-imgshare-binded="1"></a></span><script src="./中国及多国专利审查信息查询_files/CA330000000604123690010.js.download" type="text/javascript"></script><span id="_ideConac"></span>
+							
+						</td>
+					</tr>
+				</tbody></table>
+			</center>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#add-code").blur(
+				function() {
+					var v_client = $(this).val();
+
+					function unvalid() {
+						// 		console.log(1);
+						$(".login_butt").attr("disabled", "disabled");
+						$("#isvaild").attr("src", "images/unValid.png").hide()
+								.fadeIn();
+						//reloadCaptchaNo($("#captchaImg").get(0));
+
+					}
+					function valid() {
+						// 		console.log(2);
+						$(".login_butt").removeAttr("disabled");
+						$("#isvaild").attr("src", "images/Valid.png").hide()
+								.fadeIn();
+					}
+					validateCaptchaNo(v_client, valid, unvalid);
+									
+				});
+	</script>
+<span style="display: none" id="">版权信息：国家知识产权局所有</span>
+
+
+</body></html>
