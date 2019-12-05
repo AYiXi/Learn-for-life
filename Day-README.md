@@ -584,3 +584,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2019-12-04 *
 >- [LEARN] 对国资局网站加密方式的研究
 >- [LEARN] 大致了解 cookie 的生成方式, 有道翻译, 某个ip网址参数加密的破解方法, 还得动手实现才行.
+
+### *2019-12-05 *
+>- [LEARN] 学习 `fiddler`
+>- [LEARN] 研究国资局加密的 js 文件
