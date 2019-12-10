@@ -588,3 +588,19 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2019-12-05 *
 >- [LEARN] 学习 `fiddler`
 >- [LEARN] 研究国资局加密的 js 文件
+
+### *2019-12-06 *
+>- [FIXED] 修复两个bug, 1. 数据更新字段错误, 2. 数据更新年度冲突
+>- [LEARN] 配置 `debugger for chrome` 插件
+>- [REALI] 调试国资局的js, 并取得一定的进展
+
+### *2019-12-09 *
+>- [FIXED] 修复一个bug
+>- [REALI] 对烯牛数据的加密代码的调试
+>- [REALI] 对国资局加密算法的调试, 初步了解流程
+
+### *2019-12-10 *
+>- [REALI] 继续了解瑞数的加密逻辑
+>- [REALI] 破解中利汇网站的加密数据和专利查询, 可以留作备用
+>- [REALI] 破解佰腾网的专利查询
+>- [REALI] 对加密算法的调试和对js的深入学习
