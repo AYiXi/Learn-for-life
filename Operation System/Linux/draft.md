@@ -126,7 +126,16 @@ find
     - root
     - general user
   - mysql
-
-- user --> /etc/passwd
-- password --> /etc/shadow
-- Add "!" Before the password to temporarily prohibit user login
+  - user --> /etc/passwd
+  - password --> /etc/shadow
+  - Add "!" Before the password to temporarily prohibit user login
+  - original group, additional group
+  - mail: /var/spool/mail
+  - template: /etc/skel/
+  - add user operation dirs or files:
+    - /etc/passwd
+    - /etc/shadow
+    - /etc/group
+    - /etc/gshadow
+    - /home/user
+    - /var/spool/mail/user

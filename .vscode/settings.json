@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "D:\\Soft\\Anaconda3\\python.exe",
+    "code-runner.executorMap": {
+        "python": "utf8 && D:\\Soft\\Anaconda3\\python.exe",
+    }
+}
