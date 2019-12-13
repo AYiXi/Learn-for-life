@@ -9,3 +9,27 @@ DELETE FROM t_ip_fee WHERE id IN (SELECT t.id FROM (SELECT id FROM t_ip_fee WHER
 DELETE FROM t_ip_info WHERE id IN (SELECT t.id FROM (SELECT MAX(id) AS id FROM t_ip_info GROUP BY apply_id HAVING count(*) > 1) AS t)
 ```
 
+
+3. 找出相同年份标记 tag 的费用
+```sql
+SELECT is_paid, apply_id, cost_type, money, x_date, zhinajin_date, create_time, update_time, tag, is_monitor FROM t_ip_fee WHERE apply_id IN (SELECT apply_id FROM `t_ip_fee` WHERE  tag=1 and is_paid=0 and is_monitor=1 and cost_type LIKE '%年年费%' GROUP BY apply_id HAVING COUNT(*) > 1) ORDER BY apply_id, cost_type
+```
+
+4. 更新同一专利号代缴费专利里有标记的年费信息其中比较小的年份的 is_paid=1 (重复tag年费表示国资局是已缴费状态)
+```sql
+UPDATE t_ip_fee SET is_paid=1 WHERE id IN (SELECT id FROM (SELECT id, apply_id, min(x_date), cost_type FROM (SELECT id, is_paid, apply_id, cost_type, money, x_date, zhinajin_date, create_time, update_time, tag, is_monitor FROM t_ip_fee WHERE apply_id IN (SELECT apply_id FROM `t_ip_fee` WHERE  tag=1 and is_paid=0 and is_monitor=1 and cost_type LIKE '%年年费%' GROUP BY apply_id HAVING COUNT(*) > 1) ORDER BY apply_id, cost_type) as t GROUP BY apply_id) as t2)
+```
+
+5. 找出所有有效的有滞纳金的专利信息
+```sql
+SELECT
+    info.apply_id,
+    fee.cost_type,
+    fee.money,
+    fee.x_date,
+    fee.zhinajin_date,
+    info.proposer
+FROM t_ip_fee as fee INNER JOIN t_ip_info as info ON fee.apply_id=info.apply_id
+WHERE fee.cost_type LIKE '%滞纳金%' AND fee.is_paid=0 AND fee.is_monitor=1 AND info.is_del=0
+ORDER BY fee.zhinajin_date DESC
+```
