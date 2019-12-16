@@ -1,0 +1,15 @@
+Host myali
+  HostName 39.105.37.123
+  User root
+
+Host xiqing
+  HostName 39.105.72.96
+  User root
+
+Host xiqing_ayixi
+  HostName 39.105.72.96
+  User ayixi
+
+Host AYiXi_Centos8
+  HostName 192.168.31.200
+  User root
