@@ -9,13 +9,16 @@ apt-get install mysql-client
 # 登录mysql    
 mysql -u root -p 或 mysql
 
-use mysql;
 update user set authentication_string=PASSWORD("密码") where user='root';
 update user set plugin="mysql_native_password";
 flush privileges;
 quit;
 /etc/init.d/mysql restart;
 mysql -u root -p 密码;
+
+# let root login on any ip address
+- grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+- flush privileges;
 
 # 开放外网
 1.https://blog.csdn.net/bird3014/article/details/78481104
