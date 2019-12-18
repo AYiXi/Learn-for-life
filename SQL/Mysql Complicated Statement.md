@@ -141,3 +141,15 @@ FROM t_ip_fee as fee INNER JOIN t_ip_info as info ON fee.apply_id=info.apply_id
 WHERE fee.cost_type NOT LIKE '%年年费%' AND fee.is_paid=0 AND fee.is_monitor=1 AND info.is_del=0 AND fee.x_date>'20191210' AND fee.x_date<'20191223'
 ORDER BY fee.x_date 
 ```
+
+```sql
+CREATE TABLE `kfq_qys` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(200)	COMMENT '企业名称',
+    `test` VARCHAR(45) COMMENT '测试无用',
+    `ok` int(11) COMMENT '是否更新完成',
+    `result_code` VARCHAR(45) COMMENT '测试无用',
+    `total_count` int(11) COMMENT '专利数',
+    PRIMARY KEY (`id`) USING BTREE
+);
+```

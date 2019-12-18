@@ -1,6 +1,9 @@
 {
-    "python.pythonPath": "D:\\Soft\\Anaconda3\\python.exe",
+    "python.pythonPath": "D:\\Soft\\Anaconda\\python.exe",
     "code-runner.executorMap": {
         "python": "utf8 && D:\\Soft\\Anaconda3\\python.exe",
-    }
+    },
+    "cSpell.words": [
+        "BTREE"
+    ]
 }
