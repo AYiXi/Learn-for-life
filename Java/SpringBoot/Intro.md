@@ -22,4 +22,4 @@
 
 # Microservices
 - architectural style
-- a suite of small services, 
+- a suite of small services
