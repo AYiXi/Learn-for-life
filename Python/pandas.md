@@ -1,0 +1,2 @@
+- isna(), notna()
+- x.groupby('sex').size()
