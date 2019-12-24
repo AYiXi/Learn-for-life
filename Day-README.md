@@ -659,3 +659,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [LEARN] 对 sql 中日期转换表达的学习和使用
 >- [REALI] 解决 navicat 查询数据慢的问题
 >- [REALI] 对缴费数据更新项目的一部分重构
+
+### *2019-12-24 *
+>- [LEARN] 学习 pandas 的一些操作, 稍微熟练点了
+>- [LEARN] 确认发文信息更新的代码
