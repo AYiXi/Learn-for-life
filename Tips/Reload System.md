@@ -26,7 +26,9 @@
 添加环境变量: 
 - F:\Anaconda
 - F:\Anaconda\Scripts
+- F:\Anaconda\Library\mingw-w64\bin
 - F:\Anaconda\python.exe
+- F:\Anaconda\Library\usr\bin
 - F:\Anaconda\Library\bin
 
 安装 C++ 运行库: [http://www.carrotchou.blog/118.html]
