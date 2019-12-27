@@ -674,3 +674,11 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [LEARN] 学习到了 `Path` 模块的使用, `Path(p).glob('*.xlsx')`, `Path.joinpath(a, b, c)` 等
 >- [LEARN] 阅读 `retrying` 的源码, 对装饰器用法的深入理解
 >- [LEARN] 对 yield 的使用
+
+### *2019-12-27*
+>- [REALI] 把政务平台的爬虫项目迁移到西青区的服务器上面
+>- [REALI] 优化政务平台的爬虫代码
+>- [REALI] 配置服务器上django的开发环境, 包括环境变量
+>- [REALI] 配置 vscode 上面的 django 项目开发环境 
+>- [REALI] 修复一下迁移平台出现的错误
+>- [REALI] 完成用户模型的创建, 各种表的创建
