@@ -38,7 +38,7 @@
 
  - Jupyter Notebook Theme
     pip install jupyterthemes
-    jt -t grade3 -fs 14 -ofs 16 -tfs 14 -nfs 14 -dfs 14
+    jt -t grade3 -fs 14 -ofs 14 -tfs 12 -nfs 12 -dfs 10 -cellw 1480
 
 
 [LINUX]

@@ -138,8 +138,7 @@ SELECT
     fee.zhinajin_date as 最终缴费日期,
     info.proposer as 申请人
 FROM t_ip_fee as fee INNER JOIN t_ip_info as info ON fee.apply_id=info.apply_id
-WHERE fee.cost_type NOT LIKE '%年年费%' AND fee.is_paid=0 AND fee.is_monitor=1 AND info.is_del=0 AND fee.x_date>'20191210' AND fee.x_date<'20191223'
-ORDER BY fee.x_date 
+WHERE fee.is_paid=0 AND fee.is_monitor=1 AND info.is_del=0 AND fee.x_date BETWEEN (CURRENT_DATE - INTERVAL 3 DAY) AND (CURRENT_DATE + INTERVAL 7 DAY) ORDER BY fee.x_date;
 ```
 
 ```sql
