@@ -59,8 +59,10 @@
 - docker rmi -f python
 - docker rmi -f $(docker images -aq) == docker ps -aq | xargs docker rm  `delete image`
 - docker rm -f $(docker ps -q) `delete all running containers`
+- docker ps -a|grep Exited|awk '{print $1}'|xargs docker rm `delete not runnings containers` 
 - docker stop/restart/kill
 - docker rmi $(docker images | grep "none" | awk '{print $3}')  `delete "none" image`
+- docker images|grep ayixi/ubuntu|awk '{print $3}'|xargs docker rmi
 
 ## Docker container
 - docker container ls 
@@ -68,7 +70,7 @@
 - docker [container] restart <id>
 - docker [container] start -i <id>
 - docker [container] stop <id>
-- docker container prune `delete all stop containers`
+- docker container prune == docker ps -a|grep Exited|awk '{print $1}'|xargs docker rm `delete all stop containers`
 
 - docker top <id>
 - docker inspect <id>

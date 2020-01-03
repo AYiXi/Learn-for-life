@@ -682,3 +682,16 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [REALI] 配置 vscode 上面的 django 项目开发环境 
 >- [REALI] 修复一下迁移平台出现的错误
 >- [REALI] 完成用户模型的创建, 各种表的创建
+
+### *2019-12-30*
+>- [LEARN] 对 `django` 用户系统的开发和学习
+>- [LEARN] 对 python 接入阿里云短信服务文档的学习和查阅
+>- [REALI] 对新增的政务平台的爬虫网站的查看, 并新完成 2 个网站的爬取
+
+### *2020-01-02*
+>- [REALI] 检查专利的更新情况
+>- [REALI] 完成部分网站的政务平台公告的爬虫 (36 / 37)
+
+### *2020-01-03*
+>- [REALI] 基本完成政务平台公告爬虫的架构和设计, 可能还有需要修改的细节
+>- [REALI] 修改一些源码的默认参数, json 和 logging 的编码都默认设置为 utf8
