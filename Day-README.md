@@ -717,4 +717,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [REALI] 使用 selenium 配合 firefox 对国资局进行爬取, 已初步见到成效
 
 ### *2020-01-10*
->- [REALI] 
+>- [REALI] `dict.setdefault(key, value)` 如果 key 存在, 则 value 不变
+>- [LEARN] 学习 django 部分源码
+>- [LEARN] 学习 pyppeteer
+>- [REALI] 开发用户注册模块
