@@ -2,6 +2,7 @@
 - 获得版本库
     - git init
     - git clone
+        - git clone --depth=1 https://github.com/AYiXi/flask-reptiles.git
     - git tag
         - git tag -l 'v1.8.5*' [查看特点标签]
         - git tag -a v1.4 -m "my version 1.4" [添加标签]
