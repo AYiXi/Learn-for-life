@@ -152,3 +152,25 @@ CREATE TABLE `kfq_qys` (
     PRIMARY KEY (`id`) USING BTREE
 );
 ```
+
+```sql
+SELECT
+	concat( 'kill ', id, ';' ) 
+FROM
+	information_schema.PROCESSLIST 
+WHERE
+	Command = 'Sleep' 
+	AND Time > 300 
+ORDER BY
+	Time DESC;
+```
+
+
+```sql
+SELECT
+	* 
+FROM
+	`zhengwu_crawl` 
+WHERE
+	`name` REGEXP '招聘|地块|价格|道德模范|规划|电价|展位|消防|民心工程|报告|事故|安全|治理|隐患|竣工|同志|放假|街道|执法|免费|住房|环保招聘|地块|价格|道德模范|规划|电价|展位|消防|民心工程|报告|事故|安全|治理|隐患|竣工|同志|放假|街道|执法|免费|住房|环保';
+```

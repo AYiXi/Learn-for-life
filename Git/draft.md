@@ -15,3 +15,6 @@
  - git push origin xiqing:xiqing
  - git branch -a 
  - git push origin :xiqing == git push origin --delete xiqing
+
+> pull remote branch
+ - git fetch origin xiqing:xiqing
