@@ -13,7 +13,7 @@ b = a.copy()
 def A():
     "comment"
 
-class A:
+class B:
     "comment"
 
 
