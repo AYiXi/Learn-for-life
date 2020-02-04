@@ -129,6 +129,7 @@ WHERE fee.cost_type NOT LIKE '%年年费%' AND fee.is_paid=0 AND fee.is_monitor=
 ORDER BY fee.x_date 
 ```
 
+6. 近几天未缴费的数据
 ```sql
 SELECT
     info.apply_id as 专利号,
@@ -141,6 +142,7 @@ FROM t_ip_fee as fee INNER JOIN t_ip_info as info ON fee.apply_id=info.apply_id
 WHERE fee.is_paid=0 AND fee.is_monitor=1 AND info.is_del=0 AND fee.x_date BETWEEN (CURRENT_DATE - INTERVAL 3 DAY) AND (CURRENT_DATE + INTERVAL 7 DAY) ORDER BY fee.x_date;
 ```
 
+7. 创建表
 ```sql
 CREATE TABLE `kfq_qys` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -153,6 +155,7 @@ CREATE TABLE `kfq_qys` (
 );
 ```
 
+8. 组成 300s 未响应的 kill 语句
 ```sql
 SELECT
 	concat( 'kill ', id, ';' ) 
@@ -165,7 +168,7 @@ ORDER BY
 	Time DESC;
 ```
 
-
+9. 通过正则表达式搜索到某些字段
 ```sql
 SELECT
 	* 
@@ -173,4 +176,25 @@ FROM
 	`zhengwu_crawl` 
 WHERE
 	`name` REGEXP '招聘|地块|价格|道德模范|规划|电价|展位|消防|民心工程|报告|事故|安全|治理|隐患|竣工|同志|放假|街道|执法|免费|住房|环保招聘|地块|价格|道德模范|规划|电价|展位|消防|民心工程|报告|事故|安全|治理|隐患|竣工|同志|放假|街道|执法|免费|住房|环保';
+```
+
+10. 发文状态与对应的通知书名称查询
+```sql
+SELECT
+	info.apply_id,
+	info.`name`,
+	info.state,
+	dis.tongzhismc,
+	dis.create_date,
+	info.update_time
+FROM
+	`t_ip_info` AS info
+	INNER JOIN t_ip_dispatch_info AS dis ON info.apply_id = dis.apply_id 
+WHERE
+	info.is_del = 0 
+	AND info.is_sell = 0 
+GROUP BY
+	dis.apply_id 
+ORDER BY
+	info.update_time DESC
 ```

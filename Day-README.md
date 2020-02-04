@@ -778,3 +778,14 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 
 [LEARN]
 - 学习 Hadoop 的安装与一些流程
+
+
+### *2020-02-03*
+[REALI]
+- 编写下载 excel 的代码
+
+[LEARN]
+- 学习 Hadoop 相关知识
+
+[FIXED]
+- 修复政务平台爬虫的错误
