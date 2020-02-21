@@ -4,6 +4,8 @@
 - on client: `ssh-keygen`
 - paste windows public key to `~/.ssh/authorized_keys`
 - client config file
+- ssh-copy-id 
+
 ```
 Host myali
   HostName 39.105.37.123
