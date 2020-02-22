@@ -820,6 +820,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2020-02-20*
 [REALI]
 - 基本完成商标网爬虫
+- 完成此阶段的简历
 
 ### *2020-02-21*
 [REALI]
