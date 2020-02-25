@@ -58,8 +58,7 @@ source /etc/profile
 - ln -s /usr/local/python3.8/bin/python3.8 /usr/bin/py
 - ln -s /usr/local/python3.8/bin/pip3.8 /usr/bin/pip
 - ln -s /usr/local/python3.8/bin/python3.8-config /usr/bin/python-config
-- ln -s /usr/local/python3.8/bin/python3.8 /usr/bin/py
-  
+
 
 [settings](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 - timedatectl set-timezone Asia/Shanghai

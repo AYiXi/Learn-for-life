@@ -825,3 +825,16 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 ### *2020-02-21*
 [REALI]
 - 重装系统, 啥都没做
+
+### *2020-02-24*
+[REALI]
+- CentOs 上面安装 tesseract 验证码识别软件
+- 对通过企业名称查询企业专利信息的爬虫的实现
+[LEARN]
+- `from urllib import parse`, 用这个方法合并 url 可以保证 url 的正确性
+- 
+
+### *2020-02-25*
+[FIXED]
+- 对数据库中英文括号问题的解决, `UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'（','(');`
+- 对发文信息证书图片爬取可行性的研究

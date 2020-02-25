@@ -48,6 +48,7 @@
 - docker run -it -P tomcat
 - docker run -v /my_volume:/container_volume <id>
 - docker run -v /my_volume:/container_volume:ro <id>
+- docker run -it -v /root/dockerfiles/:/root/docker/ e349b6067f0e /bin/zsh
 
 - docker run -it --name dc01 b003a5dbf649 
 - docker run -it --name dc02 --volumes-from dc01 b003a5dbf649   `data volume would delete when no container reference it`

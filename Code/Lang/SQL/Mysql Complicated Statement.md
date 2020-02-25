@@ -198,3 +198,9 @@ GROUP BY
 ORDER BY
 	info.update_time DESC
 ```
+
+11. 替换括号
+```sql
+UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'（','(');
+UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'）',')');
+```
