@@ -162,3 +162,8 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 1. chown ayixi .*
 2. chgrp [-R] ayixi .*
 
+## kill 
+1. 杀死多个进程: ps -aux | grep ep_info/crawl.py | awk '{print $2}' | xargs kill
+
+## grep
+- -v:反向选择: ps -aux | grep python | grep -v main.js 

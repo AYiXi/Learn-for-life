@@ -2,6 +2,18 @@
 ```sql
 DELETE FROM t_ip_fee WHERE id IN (SELECT t.id FROM (SELECT id FROM t_ip_fee WHERE apply_id in('2017210778511', '2018213841691', '2018304723884', '2017210723453', '2017210725980', '2018213840538', '2018304733551', '2017210778460', '201830471993X', 
 '2018213846727') GROUP BY apply_id, cost_type HAVING count(*) >1) as t)
+
+DELETE FROM ep_info 
+WHERE id IN
+	(SELECT id FROM
+		(SELECT
+			id 
+		FROM
+			ep_info 
+		WHERE
+			`code` IN (SELECT `code` FROM ep_info GROUP BY `code` HAVING count(`code`)>1) 
+			AND id NOT IN (SELECT min(id) FROM ep_info GROUP BY `code` HAVING count(`code`)>1))
+	AS f)
 ```
 
 2. 
@@ -16,7 +28,7 @@ SELECT
 	is_paid,
 	apply_id,
 	cost_type,
-	money,
+	`money`,
 	x_date,
 	zhinajin_date,
 	create_time,

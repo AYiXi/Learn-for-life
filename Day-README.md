@@ -838,3 +838,68 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 [FIXED]
 - 对数据库中英文括号问题的解决, `UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'（','(');`
 - 对发文信息证书图片爬取可行性的研究
+
+### *2020-02-26*
+[REALI]
+- 修复政务平台爬虫的错误, 新增邮件提醒功能
+[LEARN]
+- 对日志文件的编码方式做了更改 `handler = logging.FileHandler(filename=f, encoding='utf8')`
+- Linux kill 多个进程 `ps -aux | grep ep_info/crawl.py | awk '{print $2}' | xargs kill`
+
+### *2020-03-02*
+[REALI]
+- 添加`中新天津生态城管理委员会`到政务平台
+- 基本完成发文通知书的下载测试, 对 `retry` 的使用使程序更加简洁高效
+- 更新 11622 账户的专利数据到数据库
+[FIXED]
+- 修复一个政务平台的索引错误
+
+### *2020-03-03*
+[REALI]
+- 服务器重启之后的各个项目的启动与总结
+- 整理最近好几个项目的代码
+[LEARN]
+- redis 的启动与停止
+- selenium "--disable-gpu" 参数可以提高性能
+- 京东爬虫通过 js 返回 json 文件
+
+### *2020-03-04*
+[REALI]
+- 与后端沟通下载发文通知书到 fastdfs
+- 通过 python 实现文件上传到 fastdfs
+[LEARN]
+- 爬虫 Ip 代理的使用
+- selenium 登录B站的图片截取与坐标识别
+
+### *2020-03-05*
+[REALI]
+- 重构专利查询的代码, 优化逻辑与查询时间
+- 对每个专利号费用查询设置过期时间
+- 对万象云的接口重新优化逻辑
+[LEARN]
+- JS 的 $ 四种方法
+  - 选择器
+  - 添加元素
+  - window.onload
+  - DOM 转换为 jQuery 对象
+[FIXED]
+- 修复费用信息有时候查询为空的BUG
+
+### *2020-03-06*
+[REALI]
+- 使用 redis 不同的数据库来做缓存, 而不是只使用 DB0, 这样有利于区别哪个程序有什么问题
+- 修改关于 redis 数据库的代码结构, 对必要的地方都加以更详细的注释, 扩展了不同功能的代码使用不同的数据库的能力
+- 编写下载通知书与 fastdfs 的逻辑, 设计动态可变的代码结构, 以后只要数据库里面更改即可, 不需要更改代码
+- 对通过企业名称统计企业的商标信息爬虫做规划, 下周开始正式开始该项目
+[LEARN]
+- 进一步了解 scrapy 的代码结构和运行逻辑
+- 对通过代理的 app 爬虫做了解
+
+### *2020-03-09*
+[REALI]
+- 下载通知书到 Fastdfs, 修复一些问题
+- 研究通过企业名称查询商标的爬虫, 但是 IP 封的很频繁, 或许要考虑其他方法了
+- 对接口返回状态的重新完成与后端对接
+[LEARN]
+- Appium 和 Xposed 爬取抖音信息爬虫的了解
+- 对 Kafka 官方文档的阅读和了解

@@ -26,6 +26,7 @@
 - vim /etc/docker/daemon.json
 - add `{"registry-mirrors": ["https://o01kk3qg.mirror.aliyuncs.com"]}`
 - restart
+- [delete containers](https://colobu.com/2018/05/15/Stop-and-remove-all-docker-containers-and-images/)
 
 ## Check Commands
 - docker info / --help / version
