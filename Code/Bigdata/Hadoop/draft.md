@@ -27,3 +27,6 @@ cluster-id
 before format nn, delete dn
 
 function test; performance test
+
+
+本地副本为1, java api 传上去的默认副本依旧为3

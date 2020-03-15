@@ -942,3 +942,12 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 ### *2020-03-13*
 [REALI]
 - 使用服务器在国资局登录成功, 之前不行是因为加载时间有点久导致报错
+
+
+### *2020-03-15*
+[LEARN]
+- 实现 Hadoop 的安装启动运行, 并配置端口给外部访问
+- 第一次安装和使用 Gradle 和 Maven, Gradle Build 速度非常的慢, 我怀疑是我设置的问题
+- 明白 @Override 是为了修饰实现 interface 中的方法
+- `firewall` 端口的开放 `firewall-cmd --zone=public --add-port=50070/tcp --permanent`, `firewall-cmd --reload`
+- 查看开放的网络端口 `netstat -tpnl`

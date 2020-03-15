@@ -175,3 +175,7 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 ## top detail command
 1. top
 2. c
+
+## net
+- `firewall` 端口的开放 `firewall-cmd --zone=public --add-port=50070/tcp --permanent`, `firewall-cmd --reload`
+- 查看开放的网络端口 `netstat -tpnl`
