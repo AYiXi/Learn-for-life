@@ -846,6 +846,8 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 - 对日志文件的编码方式做了更改 `handler = logging.FileHandler(filename=f, encoding='utf8')`
 - Linux kill 多个进程 `ps -aux | grep ep_info/crawl.py | awk '{print $2}' | xargs kill`
 
+ps -aux | grep jjs | awk '{print $2}' | xargs kill
+
 ### *2020-03-02*
 [REALI]
 - 添加`中新天津生态城管理委员会`到政务平台
@@ -913,6 +915,30 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 [LEARN]
 - Tomcat 的 bin, conf, lib, webapps等目录结构的了解, 对 Tomcat 的了解更加清晰
 - 对使用 Docker, Appium 部署多个手机端的爬虫项目的了解
+- 对 Java Servlet 的学习
 [FIXED]
 - 修复另一个 BUG(网页返回不完全), 曾导致专利接口的费用信息返回为空
 - 发现一个 BUG, 导致在请求一段时间后返回的页面为同一个, 准备明天多测试并修复
+
+### *2020-03-11*
+[REALI]
+- 寻找并排查服务器的 CPU 占用过高的问题, 暂时修复 linux 的 jjs 病毒错误, 但是还没找到源代码, 目前已正常, 但是仍然有可能复发
+- 与张超沟通商标爬虫目前暂时爬取不到的原因, 考虑第三方平台的数据, 但是因为第三方的都不准确, 所以还在等张超回复
+- 连续爬取上千个专利号调试费用信息接口爬虫的稳定性, 找到多出隐藏的小问题, 目前还有一个问题没有修复, 全部修复后, 再修改用户随机访问逻辑, 目标是做到不需要关闭的本地浏览器爬虫, 但是模拟浏览器请求确实稳定性很差, 很多小问题不断, 而且不一定会复发, 所以还需要进一步优化和调试
+[LEARN]
+- 对 Java Hashmap 的学习了解, Map<String, String> map = new HashMap<String, String>();
+- 对 Linux `xargs`, `find`, `crontab`, `ps`, `top` 命令的进一步使用和了解
+[FIXED]
+- 专利爬虫图片返回今日爬取量已失效的 BUG
+ 
+### *2020-03-12*
+[REALI]
+- 整理代码结构
+[LEARN]
+- 进一步了解 python *args 的传参方式
+[FIXED]
+- 修复专利查询数据重复的 BUG
+
+### *2020-03-13*
+[REALI]
+- 使用服务器在国资局登录成功, 之前不行是因为加载时间有点久导致报错
