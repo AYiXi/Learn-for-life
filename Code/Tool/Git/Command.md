@@ -58,4 +58,23 @@
 4. git config --global core.editor vim
 5. git config credential.helper store
 6. git config --global http.proxy socks5://127.0.0.1:1080
-6. git config --global http.proxy http://127.0.0.1:1080
+7. git config --global http.proxy http://127.0.0.1:1081
+8. git config --global --unset https.proxy
+
+## Remote
+- git remote add Sw http://libowang@139.199.23.176:10101/r/~libowang/ShangIp.git
+- git remote rename old new
+- git remote remove Sw
+- git checkout -b local_dev remote_name/remote_dev
+- git remote set-head Github -d [delete head branch on remote]
+
+## New repository
+1. 在公司服务器上新建一个项目
+2. git remote add Sw http://libowang@139.199.23.176:10101/r/~libowang/ShangIp.git
+3. git push -u Sw master
+
+
+## Tag
+- git tag -m "v1.0" 20200316 master
+- git push Github tag_v1.0
+- git push Github --tags 
