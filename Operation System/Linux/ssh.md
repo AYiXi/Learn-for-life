@@ -5,6 +5,13 @@
   - on client: `ssh-keygen`
   - paste windows public key to `~/.ssh/authorized_keys`
   - client config file
+- on server: `ssh-keygen`
+- `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
+- on client: `ssh-keygen`
+- paste windows public key to `~/.ssh/authorized_keys`
+- client config file
+- ssh-copy-id 
+
 ```
 Host myali
   HostName 39.105.37.123

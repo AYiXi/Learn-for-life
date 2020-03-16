@@ -161,4 +161,21 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 ## change permission
 1. chown ayixi .*
 2. chgrp [-R] ayixi .*
+3. chown root:root /tmp/
 
+## kill 
+1. 杀死多个进程: ps -aux | grep ep_info/crawl.py | awk '{print $2}' | xargs kill
+
+## grep
+- -v:反向选择: ps -aux | grep python | grep -v main.js 
+
+## find and remove
+- find /tmp/ -name 'exechs*.js' | xargs rm
+
+## top detail command
+1. top
+2. c
+
+## net
+- `firewall` 端口的开放 `firewall-cmd --zone=public --add-port=50070/tcp --permanent`, `firewall-cmd --reload`
+- 查看开放的网络端口 `netstat -tpnl`
