@@ -171,6 +171,7 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 
 ## find and remove
 - find /tmp/ -name 'exechs*.js' | xargs rm
+- find ./ -name "*.xls" -print | wc -l
 
 ## top detail command
 1. top
@@ -179,3 +180,6 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 ## net
 - `firewall` 端口的开放 `firewall-cmd --zone=public --add-port=50070/tcp --permanent`, `firewall-cmd --reload`
 - 查看开放的网络端口 `netstat -tpnl`
+
+## tail
+- `tail -f 2020_03_17.log` 动态查看文本文件 `-f == --follow`
