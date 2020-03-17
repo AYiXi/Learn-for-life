@@ -20,6 +20,7 @@
 - 查看信息
     - git help
     - git log
+        - git reflog [查看最近操作]
         - git log -p [查看所有更新日志]
         - git log -p -2 [查看最近两次详细日志]
         - git log --stat [简略的统计信息]
@@ -58,4 +59,57 @@
 4. git config --global core.editor vim
 5. git config credential.helper store
 6. git config --global http.proxy socks5://127.0.0.1:1080
-6. git config --global http.proxy http://127.0.0.1:1080
+7. git config --global http.proxy http://127.0.0.1:1081
+8. git config --global --unset https.proxy
+
+## Remote
+- git remote add Sw http://libowang@139.199.23.176:10101/r/~libowang/ShangIp.git
+- git remote rename old new
+- git remote remove Sw
+- git checkout -b local_dev remote_name/remote_dev
+- git remote set-head Github -d [delete head branch on remote]
+
+## New repository
+1. 在公司服务器上新建一个项目
+2. git remote add Sw http://libowang@139.199.23.176:10101/r/~libowang/ShangIp.git
+3. git push -u Sw master
+
+- git pull Gitee master --allow-unrelated-histories
+- git remote show Github
+
+## Tag
+- git tag -m "v1.0" 20200316 master
+- git push Github v1.0
+- git push Github --tags 
+- git show v1.0
+
+- git tag [-l]
+- git ls-remote --tags
+- git tag v1.0.0 [039bf8b] [-m "comment"] 
+- git tag -d list
+- git push remote :v1.0.0 == git push origin --delete v1.0.0
+
+## Largefiles
+- git lfs install
+- git lfs track "Soft/Dragon_Center.zip"
+
+## Reset
+- git reset
+  - --soft: 回退, 已 stage, 未 commit
+  - --mixed: 回退, 未 stage, 未 commit
+  - --hard: 回退到完全一样
+
+## Stash
+- git stash
+- git stash list
+- git stash apply [–index] [stash_id]
+- git stash pop [–index] [stash_id]
+- git stash drop [–index] [stash_id]
+
+## Branch
+- git checkout -b my-test  [在当前分支下创建my-test的本地分支分支]
+- git push Github my-test  []将my-test分支推送到远程]
+- git branch --set-upstream-to=origin/my-test [将本地分支my-test关联到远程分支my-test上]
+- git branch -a [查看远程分支]
+- git push Github :my-test [删除远程分支]
+- git branch -r -d Github/my-test [删除远程分支]

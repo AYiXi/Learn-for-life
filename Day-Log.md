@@ -943,7 +943,6 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [REALI]
 - 使用服务器在国资局登录成功, 之前不行是因为加载时间有点久导致报错
 
-
 ### *2020-03-15*
 [LEARN]
 - 实现 Hadoop 的安装启动运行, 并配置端口给外部访问
@@ -952,7 +951,19 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - `firewall` 端口的开放 `firewall-cmd --zone=public --add-port=50070/tcp --permanent`, `firewall-cmd --reload`
 - 查看开放的网络端口 `netstat -tpnl`
 
-### *2020-03-17*
+### *2020-03-16*
+[REALI]
+- 服务器上登录国资局的验证码部分代码重写
+- 服务器上成功登录国资局
 [LEARN]
+- 添加多个远程 Git 库并同时更新, 对 Git 操作的更加深入的认识
+- Yarn 架构和 Map-Reduce 的认识, 以及如何提交 Task 到 Hadoop 的分布式计算
+  
+### *2020-03-17*
+[REALI]
+- 公司电脑上实现自动化的 Excel 下载以及数据更新
+[LEARN]
+- Github 的大文件上传 `git lfs track "xx.zip"`
+- 明白 git reset --soft|--hard|--mixed 的区别
 - 第一次尝试 `assert` 配合 `retry` 的使用
 - `tail -f 2020_03_17.log` 动态查看文本文件 `-f == --follow`

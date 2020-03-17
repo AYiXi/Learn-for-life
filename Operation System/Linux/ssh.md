@@ -1,4 +1,10 @@
 ## SSH Settings[The following operations are in sequence]
+- on server: `ssh-keygen [-t rsa]` 
+- [ssh-copy-id]
+  - `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
+  - on client: `ssh-keygen`
+  - paste windows public key to `~/.ssh/authorized_keys`
+  - client config file
 - on server: `ssh-keygen`
 - `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
 - on client: `ssh-keygen`
