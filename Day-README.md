@@ -951,3 +951,8 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 明白 @Override 是为了修饰实现 interface 中的方法
 - `firewall` 端口的开放 `firewall-cmd --zone=public --add-port=50070/tcp --permanent`, `firewall-cmd --reload`
 - 查看开放的网络端口 `netstat -tpnl`
+
+### *2020-03-17*
+[LEARN]
+- 第一次尝试 `assert` 配合 `retry` 的使用
+- `tail -f 2020_03_17.log` 动态查看文本文件 `-f == --follow`
