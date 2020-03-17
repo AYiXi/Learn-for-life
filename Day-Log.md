@@ -964,3 +964,4 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 公司电脑上实现自动化的 Excel 下载以及数据更新
 [LEARN]
 - Github 的大文件上传 `git lfs track "xx.zip"`
+- 明白 git reset --soft|--hard|--mixed 的区别
