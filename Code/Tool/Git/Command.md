@@ -75,7 +75,7 @@
 3. git push -u Sw master
 
 - git pull Gitee master --allow-unrelated-histories
-
+- git remote show Github
 
 ## Tag
 - git tag -m "v1.0" 20200316 master
@@ -93,7 +93,7 @@
 - git lfs install
 - git lfs track "Soft/Dragon_Center.zip"
 
-## 区别
+## Reset
 - git reset
   - --soft: 回退, 已 stage, 未 commit
   - --mixed: 回退, 未 stage, 未 commit
