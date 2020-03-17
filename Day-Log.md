@@ -953,4 +953,14 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 
 ### *2020-03-16*
 [REALI]
-- 
+- 服务器上登录国资局的验证码部分代码重写
+- 服务器上成功登录国资局
+[LEARN]
+- 添加多个远程 Git 库并同时更新, 对 Git 操作的更加深入的认识
+- Yarn 架构和 Map-Reduce 的认识, 以及如何提交 Task 到 Hadoop 的分布式计算
+  
+### *2020-03-17*
+[REALI]
+- 公司电脑上实现自动化的 Excel 下载以及数据更新
+[LEARN]
+- Github 的大文件上传 `git lfs track "xx.zip"`

@@ -73,8 +73,14 @@
 2. git remote add Sw http://libowang@139.199.23.176:10101/r/~libowang/ShangIp.git
 3. git push -u Sw master
 
+- git pull Gitee master --allow-unrelated-histories
+
 
 ## Tag
 - git tag -m "v1.0" 20200316 master
 - git push Github tag_v1.0
 - git push Github --tags 
+
+## Largefiles
+- git lfs install
+- git lfs track "Soft/Dragon_Center.zip"
