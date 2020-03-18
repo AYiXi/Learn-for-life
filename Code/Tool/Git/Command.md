@@ -68,14 +68,8 @@
 - git remote remove Sw
 - git checkout -b local_dev remote_name/remote_dev
 - git remote set-head Github -d [delete head branch on remote]
-
-## New repository
-1. 在公司服务器上新建一个项目
-2. git remote add Sw http://libowang@139.199.23.176:10101/r/~libowang/ShangIp.git
-3. git push -u Sw master
-
-- git pull Gitee master --allow-unrelated-histories
-- git remote show Github
+- git remote set-url --add Sw https://github.com/AYiXi/Patent.git [添加url,同时更新]
+- git remote -v [detail of remote]
 
 ## Tag
 - git tag -m "v1.0" 20200316 master
@@ -108,8 +102,17 @@
 
 ## Branch
 - git checkout -b my-test  [在当前分支下创建my-test的本地分支分支]
-- git push Github my-test  []将my-test分支推送到远程]
+- git push Github my-test  [将my-test分支推送到远程]
 - git branch --set-upstream-to=origin/my-test [将本地分支my-test关联到远程分支my-test上]
 - git branch -a [查看远程分支]
 - git push Github :my-test [删除远程分支]
 - git branch -r -d Github/my-test [删除远程分支]
+- git branch --set-upstream-to=Github/master master[设置默认远程分支]
+
+## New repository
+- 在公司服务器上新建一个项目
+- git remote add Sw http://libowang@139.199.23.176:10101/r/~libowang/ShangIp.git
+- git remote set-url --add Sw https://github.com/AYiXi/ShangIp.git
+- git push --set-upstream Sw master
+- git pull Sw master --allow-unrelated-histories
+- git remote show Sw

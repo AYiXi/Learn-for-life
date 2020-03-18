@@ -52,7 +52,7 @@
 >- [FIXED] 修复了 `re` 模块验证 sqh 错误的 BUG
 >- [FIXED] 从 EXCEL 入库效率提升 80%, 由近 700s 提升到 120s
 >- [LEARN] 明白 `re` 匹配非的逻辑
->- [FIXED] 实现了验证专利号的纯 `python` 逻辑  `js--> python`
+>- [FIXED] 实现了验证专利号的纯 `python` 逻辑  `js --> python`
            将 4000 多个专利号的验证时间由 `900s` 缩短到 `0.16s`
 >- [LEARN] 进一步了解 DEBUG 的逻辑和流程
 >- [LEARN] 了解 `mysql` 中 `group by` 的逻辑
@@ -73,7 +73,7 @@
 >- [LEARN] 了解 `redis` 主从(复制)、哨兵(唤醒)、集群(高并发)及其对应的优势
 >- [LEARN] 明白 `cookie` 池的实现原理, 准备实现获取发文信息的 `cookie` 池
 >- [LEARN] 自己配置腾讯云安全组
->- [REALI] 完成测试网爬虫 1
+>- [REALI] 完成测试网爬虫
 
 ### *2019-07-22*
 >- [LEARN] 进一步熟悉 `selenium` 的操作, 如元素节点有 text、location 等属性, 打开新窗口用 `JS`
@@ -972,3 +972,11 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 第一次尝试 `assert` 配合 `retry` 的使用
 - 使用 `tail -f 2020_03_17.log` 动态查看文本文件 `-f == --follow`
 - 使用 `find ./ -name "*.xls" -print | wc -l`
+
+### *2020-03-18*
+[REALI]
+- 完成专利查询接口需要添加标记的逻辑
+[LEARN]
+- xpath `//tbody/tr[position()<last()]/td[1]`, `tr[position()=1 or position()=2]`
+- Git 关联远程仓库并同时 push
+  
