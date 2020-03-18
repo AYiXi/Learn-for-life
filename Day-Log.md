@@ -962,6 +962,10 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 ### *2020-03-17*
 [REALI]
 - 公司电脑上实现自动化的 Excel 下载以及数据更新
+- 在服务器实现专利 API 代码的运行
+- 对公众用户登录的功能开发, 部分代码重构优化逻辑, 以后就可以不使用机构账号了
 [LEARN]
 - Github 的大文件上传 `git lfs track "xx.zip"`
 - 明白 git reset --soft|--hard|--mixed 的区别
+- 学习 Github tag, stash 命令
+- 第一次新建分支操作
