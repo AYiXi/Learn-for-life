@@ -969,3 +969,6 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 明白 git reset --soft|--hard|--mixed 的区别
 - 学习 Github tag, stash 命令
 - 第一次新建分支操作
+- 第一次尝试 `assert` 配合 `retry` 的使用
+- 使用 `tail -f 2020_03_17.log` 动态查看文本文件 `-f == --follow`
+- 使用 `find ./ -name "*.xls" -print | wc -l`
