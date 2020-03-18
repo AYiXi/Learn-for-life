@@ -513,7 +513,6 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 >- [LEARN] 学习 `js` 的类型检测, 操作 DOM, 验证数字, `console.dir()`, `box.style.backgroundColor` 的探索
 >- [LEARN] 对 `Mysql` 的继续了解
 
-
 ### *2019-11-06*
 >- [REALI] 开需求讨论会
 >- [REALI] 重构 + 完善通过专利号查询专利信息的代码
@@ -975,8 +974,12 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 
 ### *2020-03-18*
 [REALI]
+- 成功通过服务器下载和更新专利数据
 - 完成专利查询接口需要添加标记的逻辑
+- 完成专利法律状态接口解析
+- 完成公众登录专利查询接口
+- 增加自动下载 Excel 的代码的稳定性和合理性
 [LEARN]
 - xpath `//tbody/tr[position()<last()]/td[1]`, `tr[position()=1 or position()=2]`
 - Git 关联远程仓库并同时 push
-  
+- 进一步熟悉 Git 操作
