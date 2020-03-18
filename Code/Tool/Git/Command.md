@@ -116,3 +116,18 @@
 - git push --set-upstream Sw master
 - git pull Sw master --allow-unrelated-histories
 - git remote show Sw
+
+## Alias
+- ```sh
+    git config --global alias.cm commit & 
+    git config --global alias.s status &
+    git config --global alias.ph push &
+    git config --global alias.pl pull &
+    git config --global alias.ck checkout &
+    git config --global alias.cf "config --list" &
+    git config --global alias.cfg "config --global --list" &
+    git config --global alias.a "add ." &
+    git config --global alias.c "commit -a -m" &
+    git config --global alias.pu push &
+    git config --global alias.rt remote &
+    ```
