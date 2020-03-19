@@ -30,3 +30,4 @@
 - Todo Tree
 - vscode-pdf
 - Live Share
+- LeetCode
