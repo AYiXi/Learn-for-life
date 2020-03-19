@@ -982,6 +982,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [LEARN]
 - xpath `//tbody/tr[position()<last()]/td[1]`, `tr[position()=1 or position()=2]`
 - Git 关联远程仓库并同时 push
+- 设置并备份 git config --global alias.xx "xx"
 - 进一步熟悉 Git 操作
 
 ### *2020-03-19*
