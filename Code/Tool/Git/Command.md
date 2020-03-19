@@ -121,7 +121,7 @@
 - ```sh
     git config --global alias.cm commit & 
     git config --global alias.s status &
-    git config --global alias.ph push &
+    git config --global alias.ps push &
     git config --global alias.pl pull &
     git config --global alias.ck checkout &
     git config --global alias.cf "config --list" &

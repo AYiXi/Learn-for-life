@@ -983,3 +983,17 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - xpath `//tbody/tr[position()<last()]/td[1]`, `tr[position()=1 or position()=2]`
 - Git 关联远程仓库并同时 push
 - 进一步熟悉 Git 操作
+
+### *2020-03-19*
+[REALI]
+- 返回后端法律状态查询的接口
+- 完成对专利费用接口添加标记
+- 修改 Redis 插入和删除专利号逻辑
+- 部署更新数据爬虫到服务器定时任务中
+- 完成 twitter 爬虫的数据获取功能, 不会这么简单吧? 前几天还乱码, 今天就好了, 就很奇怪
+[LEARN]
+- Scrapy 插入自定义 headers
+- Scrapy 插入自定义 proxies
+- Scrapy 插入自定义 get params
+- .gitignore 不起作用: git rm -rf xxx, 然后再添加到 .gitignore 里面
+- 了解 spark, scala, flink 等大数据框架
