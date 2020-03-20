@@ -32,3 +32,4 @@
 - Live Share
 - CodeSnap
 - Color Manager
+- LeetCode
