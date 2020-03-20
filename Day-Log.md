@@ -1005,11 +1005,14 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 完成中利汇重新更新 js 代码
 - 对 redis 连接错误的重试
 - 添加 fdfs_client 到公司, 并备份安装包
+- 发现万象云同时多人登录出现挤掉的情况, 应该考虑 cookie 通过 redis 保存, 然后共同调用
 [LEARN]
 - a 调用 b, b import c, 得出结论: a 每次调用 b 的时候 import c 的结果不会变, 在 c 中定义的全局变量只会执行一次
 - Linux Htop 的使用, 进程的父进程的查看
 - 对 Flask 的 render_template 的简单使用
+- Flask 在 js 文件改变之后, 不管是不是 DEBUG 模式, 都会加载新的 js 文件
 - 对 gist 的了解
 - 找到新插件 CodeSnap
+- 找到永久设置 windows 环境变量的方法, 以后不用打开图形界面设置了
 [FIXED]
-- 修复服务器 CPU 占用率过高的问题, 原来是中利汇加密算法失效导致的
+- 修复服务器 CPU 占用率过高的问题, 原来是中利汇加密算法失效导致 js 测试无限重试

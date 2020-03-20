@@ -15,8 +15,7 @@
 - [RESTART] Windows Explorer
 
 ### 设置永久环境变量(windows)
-
-```sh
-setx mypc "ssh root@39.105.37.123"
-远程登录： %mypc%
-```
+- administrator run `cmd` not powershell
+- setx /m "PYTHONPATH" "%PYTHONPATH%;D:\Files\Code\SourceCode" (永久添加环境变量, 结尾不能是 `SourceCode\`, `\` 会被转义)
+  - setx [forever]
+  - /m [system]
