@@ -30,3 +30,5 @@
 - Todo Tree
 - vscode-pdf
 - Live Share
+- CodeSnap
+- Color Manager

@@ -998,3 +998,18 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Scrapy 插入自定义 get params
 - .gitignore 不起作用: git rm -rf xxx, 然后再添加到 .gitignore 里面
 - 了解 spark, scala, flink 等大数据框架
+
+### *2020-03-20*
+[REALI]
+- 中利汇加密算法失效也会重新请求并返回
+- 完成中利汇重新更新 js 代码
+- 对 redis 连接错误的重试
+- 添加 fdfs_client 到公司, 并备份安装包
+[LEARN]
+- a 调用 b, b import c, 得出结论: a 每次调用 b 的时候 import c 的结果不会变, 在 c 中定义的全局变量只会执行一次
+- Linux Htop 的使用, 进程的父进程的查看
+- 对 Flask 的 render_template 的简单使用
+- 对 gist 的了解
+- 找到新插件 CodeSnap
+[FIXED]
+- 修复服务器 CPU 占用率过高的问题, 原来是中利汇加密算法失效导致的
