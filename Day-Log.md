@@ -1016,3 +1016,11 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 找到永久设置 windows 环境变量的方法, 以后不用打开图形界面设置了
 [FIXED]
 - 修复服务器 CPU 占用率过高的问题, 原来是中利汇加密算法失效导致 js 测试无限重试
+
+### *2020-03-21*
+[REALI]
+- 通过 [RePKG.exe](https://github.com/notscuffed/repkg) 完成 wallpaper engine 图片提取的功能
+
+### *2020-03-22*
+[LEARN]
+- 学习了解一些 python 内置库的大致功能和用法
