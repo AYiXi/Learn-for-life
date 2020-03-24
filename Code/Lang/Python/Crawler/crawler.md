@@ -77,3 +77,77 @@
 
 1. 应用程序  --> socket --> TCP 协议 (功能类似于插座)
 2. <img src="images/image-20200213110438387.png" alt="socket编程" style="zoom: 50%;" />
+
+### Scrapy / Scrapy-Redis
+- settings
+  - LOG_LEVEL = 'warning'
+  - LOG_FILE = 'this.log'
+  - scrapy crawl xxxSpider -s CLOSESPIDER_ITEMCOUNT=10
+  - scrapy crawl xxxSpider -s CLOSESPIDER_TIMEOUT=10
+- 五大核心组件两个中间件
+  - Engine
+  - Scheduler
+  - Spider
+  - Downloader
+  - Itempipeline
+  - Spidermiddlerware
+    - process_spider_input(self, response, spider)
+    - process_spider_output(self, response, results, spider)
+    - process_spider_exception(self, response, exct, spider)
+    - process_start_requests(self, start_requests, spider)
+  - DownloaderMiddleware
+    - process_request(self, request, spider)
+    - process_response(self, request, response, spider)
+    - process_exception(self, request, exct, spider)
+  - 两个中间件都存在方法
+    - from_crawler(cls, crawler)
+- Important Class
+  - scrapy.Request
+    - url
+    - callback
+    - meta
+    - headers
+    - cookies
+    - priority
+    - dont_filter
+  - scrapy.Response
+    - status
+    - encoding
+    - headers
+    - cookies
+    - text
+    - body[content]
+  - scrapy.Spider
+    - parse()
+    - start_urls -> []
+  - scrapy.spider.CrawlSpider
+    - start_urls -> [] and rules -> ()
+    - scrapy.spider.Rule
+      - link_extractor
+        - scrapy.linkextractors.LinkExtractor
+          - allow
+          - deny
+          - restrict_xpaths
+          - restrict_css
+      - callback: str
+      - follow: bool
+
+### Mongodb
+- Common commands
+  - show dbs
+  - show collections
+  - use database
+  - db.createCollection('sw')
+  - db.sw.drop()
+  - db.dropDatabase()
+  - db.sw.insert()|save()
+  - db.sw.update(condition{}, data{$set: {}}, upsert, multi)
+    - upsert: insert when condition not match data if True, do nothing if False
+    - multi: when condition match many data, update all if True else update only one table if False
+  - db.remove(condition {})
+    - db.user.remove({name: {$regex: 'include'}})
+  - db.find(condition {}, keep attr {}).pretty()
+    - logical relationship
+      - $or, $not, $ne, $lt, $lt[e], $gt[e]
+    - regular
+      - $regex
