@@ -1031,4 +1031,14 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 对每日自动更新数据任务不执行问题的排查, 重启试验
 - 对招标平台的政务爬虫做分析, 发现每个平台都返回当天上千条的数据, 考虑会不会多个平台重复, 并在验证
 [LEARN]
-- 
+- Scrapy 的结构的熟悉, Shell 的编写, 基本语法的熟悉
+
+### *2020-03-24*
+[REALI]
+- 对服务器自动下载更新 Excel 失效问题的排查, 对之前不返回无限重试的程序添加重试次数限制
+- 调整 settings_patent 文件中的目录结构, 优化代码逻辑
+- 对 BigData 的启动错误排查, 发现全局 ~/.zshrc -> DJANGO_SETTINGS_MODULE 设置会影响其他 Django 项目的启动
+- 完成 cookies 池并经过测试稳定后部署到服务器上
+- 攥写国资局注册文档, 然后配合张晗把新注册的号存入数据库中
+[LEARN]
+- In SQL, NULL is [unknown], 5 NOT IN (1, 2, NULL) != true, but is NULL, because SQL not know where NULL compare with 5

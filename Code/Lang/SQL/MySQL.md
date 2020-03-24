@@ -82,3 +82,7 @@ mysql -u root -p 密码;
 > 2. 经常增删改的表
 > 3. 数据重复且平均的字段
 
+##### [NULL](https://blog.csdn.net/lnotime/article/details/104847946)
+- NULL is unknown
+- `is null` is faster than `= null`
+- 5 not in (1,2,3,null) -> null (not true)
