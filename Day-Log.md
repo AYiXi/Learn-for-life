@@ -1045,8 +1045,9 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 
 ### *2020-03-25*
 [REALI]
-- Refactor sele/base.py to compatible with the situation of wrong gzj password
-- Almost finish the online training courses crawler
+- Refactored sele/base.py to compatible with the situation of wrong gzj password
+- Almost finished the online training courses crawler
+- Detected account whose password need to be changed and leave it to LiYuanYuan
 [LEARN]
 - Python `hasattr()`, `delattr()`, `__setattr__()`, `__getattribute__()` function
 - 
