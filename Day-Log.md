@@ -1042,3 +1042,11 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 攥写国资局注册文档, 然后配合张晗把新注册的号存入数据库中
 [LEARN]
 - In SQL, NULL is [unknown], 5 NOT IN (1, 2, NULL) != true, but is NULL, because SQL not know where NULL compare with 5
+
+### *2020-03-25*
+[REALI]
+- Refactor sele/base.py to compatible with the situation of wrong gzj password
+- Almost finish the online training courses crawler
+[LEARN]
+- Python `hasattr()`, `delattr()`, `__setattr__()`, `__getattribute__()` function
+- 
