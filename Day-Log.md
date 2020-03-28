@@ -1049,5 +1049,13 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Almost finished the online training courses crawler
 - Detected account whose password need to be changed and leave it to LiYuanYuan
 [LEARN]
-- Python `hasattr()`, `delattr()`, `__setattr__()`, `__getattribute__()` function
-- 
+- Python `hasattr()`, `delattr()`, `__setattr__()`, `setattr()`, `__getattribute__()` function
+
+### *2020-03-25*
+[REALI]
+- Rebuild the log system of Patent by `loguru`, it can classified logs by `year/month/date.log`
+- Finish '天津市政府采购网' Notice crawler
+[LEARN]
+- Read official document to learn the `loguru` module, and use it to Patent
+- If need real-time variable in python, it should be calculate again
+- Learn deeply about the dynamic language of python, it can change the value of variable when DEBUGGING
