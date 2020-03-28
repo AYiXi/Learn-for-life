@@ -8,7 +8,6 @@
 ## Linux subsystem default root
 - ubuntu1804.exe config --default-user root
 
-
 ## Display windows tile
 - [WIN+R] %localappdata%
 - [DELETE] Iconcache.db
@@ -19,3 +18,7 @@
 - setx /m "PYTHONPATH" "%PYTHONPATH%;D:\Files\Code\SourceCode" (永久添加环境变量, 结尾不能是 `SourceCode\`, `\` 会被转义)
   - setx [forever]
   - /m [system]
+
+
+### Windows download system soft
+- [Download](https://docs.microsoft.com/zh-cn/sysinternals/downloads/)
