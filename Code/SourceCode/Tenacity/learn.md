@@ -26,4 +26,5 @@ def foo(a):
 
 
 __slots__  : protect class attribute from modification 
+__annotations__ : {'a': <class 'int'>}
 ```
