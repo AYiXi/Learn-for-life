@@ -1061,3 +1061,9 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Learn deeply about the dynamic language of python, it can change the value of variable when DEBUGGING
 
 ### *2020-03-30*
+[REALI]
+- Finish '天津市虹桥区人民政府' crawl
+- 
+[LEARN]
+- retry: usage of `retry_error_callback` and `before_sleep`
+- A glance of pyppeteer API, learn a little of the structure of pyppeteer
