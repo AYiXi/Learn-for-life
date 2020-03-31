@@ -1063,7 +1063,8 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 ### *2020-03-30*
 [REALI]
 - Finish '天津市虹桥区人民政府' crawl
-- 
+- Change `Gzjdriver` return a gzj_driver, do not launch browser immediately
+- Optimize the process of download excel crawler
 [LEARN]
 - retry: usage of `retry_error_callback` and `before_sleep`
 - A glance of pyppeteer API, learn a little of the structure of pyppeteer
@@ -1073,3 +1074,6 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Interview
 [FIXED]
 - Tag error, add `__tag_correction_check()` to check whether tag is correct, if error, mail to admin
+- Retry: usage of `retry_error_callback` and `before_sleep`
+- A glance of pyppeteer API, learn a little of the structure of pyppeteer
+- Review interview related knowledge
