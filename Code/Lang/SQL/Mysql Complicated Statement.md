@@ -216,3 +216,10 @@ ORDER BY
 UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'（','(');
 UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'）',')');
 ```
+
+12. TAG
+```sql
+SELECT id, apply_id, cost_type, x_date FROM t_ip_fee WHERE apply_id IN (SELECT apply_id FROM `t_ip_fee` WHERE is_paid=0 AND is_monitor=1 AND cost_type LIKE "%年年费%" GROUP BY apply_id HAVING COUNT(tag)>1) AND is_paid=0 AND tag=1 AND cost_type LIKE "%年年费%" ORDER BY apply_id, update_time DESC
+
+UPDATE t_ip_fee SET tag=NULL WHERE id IN (SELECT id FROM (SELECT max(id) as id, apply_id, x_date FROM t_ip_fee WHERE apply_id IN (SELECT apply_id FROM `t_ip_fee` WHERE is_paid=0 AND is_monitor=1 AND cost_type LIKE "%年年费%" GROUP BY apply_id HAVING COUNT(tag)>1) AND is_paid=0 AND tag=1 AND cost_type LIKE "%年年费%"  GROUP BY apply_id ORDER BY apply_id DESC) as t)
+```

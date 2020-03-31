@@ -1067,3 +1067,9 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [LEARN]
 - retry: usage of `retry_error_callback` and `before_sleep`
 - A glance of pyppeteer API, learn a little of the structure of pyppeteer
+
+### *2020-03-31*
+[REALI]
+- Interview
+[FIXED]
+- Tag error, add `__tag_correction_check()` to check whether tag is correct, if error, mail to admin
