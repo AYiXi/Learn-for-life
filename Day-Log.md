@@ -1077,3 +1077,15 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Retry: usage of `retry_error_callback` and `before_sleep`
 - A glance of pyppeteer API, learn a little of the structure of pyppeteer
 - Review interview related knowledge
+
+### *2020-04-01*
+[LEARN]
+- Read kafka official document
+- Some interview questions
+  - js hook
+  - fiddler principle
+  - appium principle
+  - closure usage and principle
+  - process/thread/coroutine usage and difference
+  - redis score command (zadd zscore zrange)
+  - GIL
