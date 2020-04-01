@@ -132,3 +132,8 @@
     git config --global alias.rt remote &
     git config --global alias.lg "log --pretty=oneline" &
     ```
+
+
+## Push
+- git push --all origin 
+  - 当遇到这种情况就是不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机，这时需要 -all 选项
