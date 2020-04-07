@@ -1089,3 +1089,8 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
   - process/thread/coroutine usage and difference
   - redis score command (zadd zscore zrange)
   - GIL
+
+### *2020-04-02*
+[REALI]
+- Reinstall python3.8 to fix selenium unicode error
+- 

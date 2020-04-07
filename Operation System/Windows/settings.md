@@ -26,5 +26,6 @@
 ### Network checking
 - netstat -aon | findstr "1080"
   -  TCP  127.0.0.1:1081  0.0.0.0:0 LISTENING  20336
-- tasklist|findstr "20336"
+- tasklist | findstr "20336"
 - taskkill /F /PID 20336
+- taskkill /F /im firefox.exe  [kill all firefox process]
