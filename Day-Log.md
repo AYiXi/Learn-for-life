@@ -1093,4 +1093,11 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 ### *2020-04-02*
 [REALI]
 - Reinstall python3.8 to fix selenium unicode error
-- 
+
+### *2020-04-07*
+[REALI]
+- Interview
+- Finish Online course
+[LEARN]
+- Kafka usage of python
+- base.py Driver.quit() AttributeError

@@ -9,3 +9,8 @@
 
 消费者拉取
 缺点: 消费者一直询问, 浪费资源
+kafka cluster broker1 broker2 broker3
+
+producer 1 producer 2
+
+topic A partition 0
