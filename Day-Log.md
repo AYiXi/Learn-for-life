@@ -1089,3 +1089,11 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
   - process/thread/coroutine usage and difference
   - redis score command (zadd zscore zrange)
   - GIL
+
+### *2020-04-07*
+[REALI]
+- Interview
+- Finish Online course
+[LEARN]
+- Kafka usage of python
+- base.py Driver.quit() AttributeError

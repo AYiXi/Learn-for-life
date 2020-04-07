@@ -19,3 +19,5 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 [install]
 trusted-host=mirrors.aliyun.com
 ```
+
+5. pip install .\Twisted-20.3.0-cp38-cp38-win_amd64.whl
