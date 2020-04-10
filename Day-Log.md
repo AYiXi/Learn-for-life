@@ -1101,3 +1101,10 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [LEARN]
 - Kafka usage of python
 - base.py Driver.quit() AttributeError
+
+### *2020-04-10*
+[REALI]
+- Deploy gzj crawler to server
+- Fill in the employee entry application
+- Query excel of agent information on gzj website
+- Check zlh crawler error information: need to login to query patent info
