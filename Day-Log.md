@@ -1108,3 +1108,19 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Fill in the employee entry application
 - Query excel of agent information on gzj website
 - Check zlh crawler error information: need to login to query patent info
+
+### *2020-04-13*
+- Handover work
+- Write weibo crawler
+- Read others resume
+
+### *2020-04-14*
+[REALI]
+- Handover work
+- Interview other people
+
+### *2020-04-15*
+[REALI]
+- Handover work
+[FIXED]
+- Fix some bugs
