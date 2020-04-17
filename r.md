@@ -78,3 +78,33 @@
 ## `settings_patent.py` (通用设置)
 
 ## `task.py` (Linux 定时任务)
+
+## 其他注意的点
+
+- 打码平台网址 (http://www.chaorendama.com/UserCenter/index.aspx)
+
+- taskkill /F /im firefox.exe  (关闭所有的windows firefox 程序)
+- git 账号密码: libowang libowang
+- Linux 关闭僵尸进程
+    - ps -aux | grep firefox| awk '{print$2}' | xargs kill
+    - ps -aux | grep geckdriver | awk '{print$2}' | xargs kill
+
+- 重启服务器之后
+
+    - [Redis] `redis-server /etc/redis.conf` 
+        - 启动 redis
+
+    - [ZhengwuWeb] `nohup /home/ayixi/.virtualenvs/ShangIp/bin/python /home/ayixi/RunningProjects/ShangIp/manage.py runserver --insecure 0.0.0.0:9100 >> /home/ayixi/Logs/zhengwu_web.log &`
+        - 政务公告的数据库: 39.105.72.96  shangip  zhengwu_crawl
+        - 启动政务平台网站
+
+    - [GzjAPI] `nohup /home/ayixi/.virtualenvs/Patent/bin/python /home/ayixi/Patent/Apis/api.py >> /home/ayixi/Logs/guoziju_sqh_api.log &`
+        - 启动提供给后端的接口
+
+    - [ZhengwuCrawl] `nohup /home/ayixi/.virtualenvs/Patent/bin/python /home/ayixi/Patent/Crawler/zhengwu_crawler/update.py >> /home/ayixi/Logs/update_zhengwu.log &`
+        - 启动国资局爬虫每日更新任务
+
+## 后续需要做的事情
+
+- 破解中利汇的登录爬虫
+- 专利费用查询 API 的稳定性
