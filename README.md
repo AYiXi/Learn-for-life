@@ -1124,3 +1124,11 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Handover work
 [FIXED]
 - Fix some bugs
+
+### *2020-04-27*
+[REALI]
+- 完成入职手续
+- 配置各种工作需求的软件
+[LEARN]
+- 学习, 配置 Mac os
+- 学习 Charles 的配置并实践
