@@ -144,7 +144,7 @@
 >- [LEARN] 从 `Scrapy` 的源代码中学习到了 `__init__`, `hasattr(self, 'start_urls')`, `getattr(self, 'name', None)`
            以及 `callable` 函数的使用, 可以先 import 到 `__init__` 文件里面, 然后就可以直接从外部导入,
            明白 `six` 模块是兼容 py2 和 py3 的, 因为类型有些不一样
->- [LEARN] _xx: 不能 import, 只允许本身和之类访问(保护)  __xx: 只允许本身访问(私有) 
+'>- [LEARN] _xx: 不能 import, 只允许本身和之类访问(保护)  __xx': '只允许本身访问(私有) ',
 >- [LEARN] 阅读 `Scrapy` 文档, 今天阅读了 `Spider`, `Command line`, `Item`, `Selector` 等模块, 安装 `chromedriver`
 >- [LEARN] 尝试 `ajax` 成功, 但是 `django` 里面还是不行, 好像是和 `csrf_token` 有关系
 
@@ -501,9 +501,9 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 '', 0, NaN, undefined, null  == false
 !1, !!11 == Boolean(11)
 除了 + 可能是字符串拼接, 其余运算符都是数学运算 
-删除属性: delete person['name'], person['name'] = null
+'删除属性': 'delete person['name'], person['name'] = null',
 数组和object是一样的; var a = [1,3,4]; a.length == a['length'];
-基本类型: 按值操作; 引用类型: 操作堆heap的内存地址
+'基本类型: 按值操作; 引用类型': '操作堆heap的内存地址',
 ```
 >- [REALI] 对 `Debugger for Chrome` 插件的调试, 能用 `vscode` 调试 `chrome` 代码
  
@@ -764,7 +764,7 @@ document.querySelectorAll()[0].classList.add('activate') (.remove)
 - 对数据存储到 redis 中进行压缩研究, 使用 pickle 压缩数据比之前节约了近一倍的容量, 这样网络传输时间更少, 返回更快
 - 对国资局爬虫的各项参数的调整和验证, 发现每个账号每天能查询 165 个专利, 并且不受时间限制
 - 完成对多个网页同时提取的代码, 现在基本上一个请求可以在 2-3s 返回数据
-- 有个问导致返回时不时为空, 进行调试后发现主要是等待时间不够 js 执行完成, 但是直接加长等待时间会使得每个请求等待时间都长, 降低了效率, 对此针对性优化的思考是: 重写提取数据的代码, 明天将会做这部分的工作
+'- 有个问导致返回时不时为空, 进行调试后发现主要是等待时间不够 js 执行完成, 但是直接加长等待时间会使得每个请求等待时间都长, 降低了效率, 对此针对性优化的思考是': '重写提取数据的代码, 明天将会做这部分的工作',
 [LEARN]
 - 学习 Hadoop 的概念和基本结构
 
@@ -996,7 +996,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Scrapy 插入自定义 headers
 - Scrapy 插入自定义 proxies
 - Scrapy 插入自定义 get params
-- .gitignore 不起作用: git rm -rf xxx, 然后再添加到 .gitignore 里面
+'- .gitignore 不起作用': 'git rm -rf xxx, 然后再添加到 .gitignore 里面',
 - 了解 spark, scala, flink 等大数据框架
 
 ### *2020-03-20*
@@ -1007,7 +1007,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 添加 fdfs_client 到公司, 并备份安装包
 - 发现万象云同时多人登录出现挤掉的情况, 应该考虑 cookie 通过 redis 保存, 然后共同调用
 [LEARN]
-- a 调用 b, b import c, 得出结论: a 每次调用 b 的时候 import c 的结果不会变, 在 c 中定义的全局变量只会执行一次
+'- a 调用 b, b import c, 得出结论': 'a 每次调用 b 的时候 import c 的结果不会变, 在 c 中定义的全局变量只会执行一次',
 - Linux Htop 的使用, 进程的父进程的查看
 - 对 Flask 的 render_template 的简单使用
 - Flask 在 js 文件改变之后, 不管是不是 DEBUG 模式, 都会加载新的 js 文件
@@ -1066,7 +1066,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Change `Gzjdriver` return a gzj_driver, do not launch browser immediately
 - Optimize the process of download excel crawler
 [LEARN]
-- retry: usage of `retry_error_callback` and `before_sleep`
+'- retry': 'usage of `retry_error_callback` and `before_sleep`',
 - A glance of pyppeteer API, learn a little of the structure of pyppeteer
 
 ### *2020-03-31*
@@ -1074,7 +1074,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Interview
 [FIXED]
 - Tag error, add `__tag_correction_check()` to check whether tag is correct, if error, mail to admin
-- Retry: usage of `retry_error_callback` and `before_sleep`
+'- Retry': 'usage of `retry_error_callback` and `before_sleep`',
 - A glance of pyppeteer API, learn a little of the structure of pyppeteer
 - Review interview related knowledge
 
@@ -1107,7 +1107,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Deploy gzj crawler to server
 - Fill in the employee entry application
 - Query excel of agent information on gzj website
-- Check zlh crawler error information: need to login to query patent info
+'- Check zlh crawler error information': 'need to login to query patent info'
 
 ### *2020-04-13*
 - Handover work
@@ -1130,5 +1130,26 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 完成入职手续
 - 配置各种工作需求的软件
 [LEARN]
-- 学习, 配置 Mac os
+- 学习 配置 Mac os
 - 学习 Charles 的配置并实践
+
+### *2020-04-28*
+[REALI]
+- 配置环境和安装依赖库, 对 gcc 的安装
+- 阅读部分 `新东方` 项目的源码
+- 阅读部分 `bo_lib` 项目的源码
+- 对 Charles 的配置与使用
+- 对 mac 上一些必要软件的安装与学习使用
+- 对公司分配服务器的连接配置
+
+### *2020-04-29*
+[REALI]
+- 基本完成 `新东方` 项目的逻辑
+- 对 mac 上一些必要软件的安装与学习使用
+- 查看学习 `bo_lib` 项目的源码
+- 对公司 mongodb 对操作与查看
+[LEARN]
+- 对 Charles 的断点调试和重发请求
+- 了解安卓的逆向流程
+
+
