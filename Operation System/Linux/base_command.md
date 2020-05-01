@@ -24,10 +24,7 @@ https://sspai.com/post/45332
 
 ### 重新连接
 
-```sh
-# 删除之前的信息 
-ssh-keygen -R 39.105.37.123
-```
+
 
 
 ### 上传文件/下载文件
@@ -183,3 +180,7 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 
 ## tail
 - `tail -f 2020_03_17.log` 动态查看文本文件 `-f == --follow`
+
+# install htop 
+- yum install epel-release
+- yum install htop

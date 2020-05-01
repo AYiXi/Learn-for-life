@@ -15,6 +15,8 @@ USE:
     workon
     deactivate
 ```
+[MAC install virtualenvwrapper](https://www.jianshu.com/p/dc7ec6a303e3)
+
 
 ### python 找不到 moudle
 

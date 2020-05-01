@@ -217,8 +217,8 @@
 >- [REALI] 部署好政务爬虫到 linux
 >- [LEARN] django 静态文件部署要分开发环境和生产环境, 学会配置安全组, 配置 mysql 
 
-### *2019-08-19*
 >- [REALI] 实现政务爬虫网页的分页机制, `{% if forloop.counter|divisibleby:2 %}` 中 `|` 左右不能加空格
+### *2019-08-19*
 >- [LEARN] 明白 `executor.map` 和 `executor.submit` 的区别, 明白 `ProcessPoolExecutor` 和 `ThreadPoolExecutor` 的区别
 >- [LEARN] 明白 `__repr__` 和 `__str__` 的区别, `__str__` 打印有效, `__repr__` 直接有效, 如果 `__str__` 没有被定义,那么就会使用 `__repr__`来代替输出
 >- [LEARN] 学习 `collections.namedtuple` 用法, namedtuple('Name', ['attr', 'attr'])
@@ -1152,4 +1152,8 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 对 Charles 的断点调试和重发请求
 - 了解安卓的逆向流程
 
+### *2020-04-30*
+[REALI]
+- 同步文件到服务器, 安装相关环境
+- 完成并运行好 `新东方课程详情` 爬虫
 

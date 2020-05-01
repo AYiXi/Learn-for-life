@@ -10,8 +10,7 @@
 - on client: `ssh-keygen`
 - paste windows public key to `~/.ssh/authorized_keys`
 - client config file
-- ssh-copy-id 
-
+- ssh-copy-id bowang@117.50.135.51
 ```
 Host myali
   HostName 39.105.37.123
@@ -26,3 +25,8 @@ Host xiqing
 
 ## restart
 - systemctl restart sshd
+
+```sh
+# 删除之前的信息 
+ssh-keygen -R 39.105.37.123
+```

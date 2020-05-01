@@ -3,24 +3,24 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ayixi/.oh-my-zsh"
-alias alias z="zsh"
+alias z="zsh"
 alias c="clear"
-alias redis="redis-cli -p 9379"
 alias dk="docker"
+alias pag="ps -aux | grep"
+alias pa="ps -aux"
 
+# linux virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
-export MSYS_HOME=/c/msys/1.0
 source /usr/local/python3/bin/virtualenvwrapper.sh
-
-
-# shangip project variable [python]
-export SHANGIP_IP="39.105.72.96"
-export SHANGIP_DBNAME="shangip"
-export SHANGIP_PORT="3306"
-export SHANGIP_PASSWD="SHANGip123456!@#$%^."
-export SAHNGIP_USER="root"
-export DJANGO_SETTINGS_MODULE=ShangIp.settings
 alias pm="python manage.py"
+
+#mac virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_SCRIPT=/Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenv
+source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

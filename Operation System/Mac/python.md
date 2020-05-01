@@ -1,1 +1,3 @@
-- install gcc: `xcode-select --install`
+### install gcc
+- `xcode-select --install`
+
