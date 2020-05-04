@@ -1,5 +1,5 @@
 # 参考
-- [视频](https://www.bilibili.com/video/BV1E7411q7rU)
+- [饥人谷简历视频](https://www.bilibili.com/video/BV1E7411q7rU)
 - [2020 程序员找工作指南](https://www.yuque.com/u29422/dg5uy8/fyqwl9)
 
 
