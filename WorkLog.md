@@ -1157,3 +1157,37 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 同步文件到服务器, 安装相关环境
 - 完成并运行好 `新东方课程详情` 爬虫
 
+### *2020-05-06*
+[LEARN]
+- 学习 scrapy 下载中间件, 重试次数, 自定义插件, 之间的关系以及错误处理
+- 公司培训, 学习了解公司的业务逻辑
+
+### *2020-05-07*
+[REALI]
+- 解析粉笔课堂的接口
+- 完成通过 ip 查询地址的爬虫, 从 hive 查询, 入库到 mongodb, 大概 40k 数据量
+[LEARN]
+- 逐渐了解 scrapy 的日志信息
+- 知道 scrapy 的 meta 里面带有包含 代理, 下载时间等参数
+- 在使用列表一查询某个字段在列表二中是否存在时候, 如果先把列表二转换为字典, 耗时几乎缩短 99.9%
+```py
+@time_use
+def get_list_item(items, mongo_ips):
+    d = [item for item in items if item['_ip'] not in mongo_ips]
+    return d
+
+@time_use
+def get_dict_item(items, mongo_ips):
+    mongo_ips = {mongo_ip: True for mongo_ip in mongo_ips}
+    d = [item for item in items if not mongo_ips.get(item['_ip'], None)]
+    return d
+
+# len(items) = 44100, len(mongo_ips) = 40016
+
+# [FUNCTION] get_list_item USE TIME: 29.350s
+# len(d) = 94
+
+# [FUNCTION] get_dict_item USE TIME: 0.000s
+# len(d) = 94
+```
+- 
