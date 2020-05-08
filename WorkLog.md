@@ -1007,7 +1007,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 添加 fdfs_client 到公司, 并备份安装包
 - 发现万象云同时多人登录出现挤掉的情况, 应该考虑 cookie 通过 redis 保存, 然后共同调用
 [LEARN]
-'- a 调用 b, b import c, 得出结论': 'a 每次调用 b 的时候 import c 的结果不会变, 在 c 中定义的全局变量只会执行一次',
+- a 调用 b, b import c, 得出结论': 'a 每次调用 b 的时候 import c 的结果不会变, 在 c 中定义的全局变量只会执行一次'
 - Linux Htop 的使用, 进程的父进程的查看
 - 对 Flask 的 render_template 的简单使用
 - Flask 在 js 文件改变之后, 不管是不是 DEBUG 模式, 都会加载新的 js 文件
@@ -1166,6 +1166,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [REALI]
 - 解析粉笔课堂的接口
 - 完成通过 ip 查询地址的爬虫, 从 hive 查询, 入库到 mongodb, 大概 40k 数据量
+- 开公司介绍会, 更加了解公司的业务逻辑和发展方向
 [LEARN]
 - 逐渐了解 scrapy 的日志信息
 - 知道 scrapy 的 meta 里面带有包含 代理, 下载时间等参数
@@ -1190,4 +1191,41 @@ def get_dict_item(items, mongo_ips):
 # [FUNCTION] get_dict_item USE TIME: 0.000s
 # len(d) = 94
 ```
+- 对 pipelines 里面判断对优化化简, 并且再同时执行百万次对情况下节约了 30-50% 的时间
+```python
+# 以下两个函数等价
+def item_name(item):
+    name = {
+        ElePoiidItem        : 'all_poiid',
+        EleRestaurantItem   : 'restaurant_new',
+        ElePoiLatLogItem    : 'restaurant_lat_log',
+        ElePoiLatLogItemTest: 'restaurant_test',
+        EleCityItem         : 'city',
+        EleCityTestItem     : 'city_test',
+        EleStoredMenuItem   : 'menu'
+    }
+
+    collection_name = name[item.__class__]
+
+def item_name(item):
+    if isinstance(item, ElePoiidItem):
+        collection_name = 'all_poiid'
+    elif isinstance(item, EleRestaurantItem):
+        collection_name = 'restaurant_new'
+    elif isinstance(item, ElePoiLatLogItem):
+        collection_name = 'restaurant_lat_log'
+    elif isinstance(item, ElePoiLatLogItemTest):
+        collection_name = 'restaurant_test'
+    elif isinstance(item, EleCityItem):
+        collection_name = 'city'
+    elif isinstance(item, EleCityTestItem):
+        collection_name = 'city_test'
+    else:
+        collection_name = 'menu'
+```
+
+### *2020-05-08*
+[REALI]
 - 
+[LEARN]
+- 学会建立, 查询 mongodb 的索引

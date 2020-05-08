@@ -7,3 +7,4 @@
 # List commands
 - lrange key 0 -1
 - llen key
+- del key
