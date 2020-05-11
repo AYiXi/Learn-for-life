@@ -1226,6 +1226,35 @@ def item_name(item):
 
 ### *2020-05-08*
 [REALI]
-- 1
+- 参加公司开会, 了解公司业务流程和业务逻辑
+- 查看 ele_new 的项目代码
 [LEARN]
 - 学会建立, 查询 mongodb 的索引
+- 学会 mongodb 的 CRUD 操作
+
+### *2020-05-09*
+[REALI]
+- 参加公司开会, 了解公司业务流程和业务逻辑
+- 查看调试 redis 数据重复的问题
+- 熟悉 mongodb 对查询方式
+
+### *2020-05-11*
+[REALI]
+- 阅读 scrapy [源码](http://kaito-kidd.com/2016/11/01/scrapy-code-analyze-architecture/), 详细了解了各个部件的相互调用逻辑, 但是源码很多地方还看不懂
+- 阅读小红书项目源码
+  - 安装 Crypto 模块
+    - pip install pycrypto
+    - crypto --> Crypto
+[LEARN]
+- 在 for 循环中有函数时不会重复调用
+- scrapy 获取设置的方法
+```py
+from scrapy.utils.project import get_project_settings
+settings = get_project_settings()
+
+or 
+
+settings = spider.settings
+```
+[FIXED]
+- 修复 redis 入库重复的 bug

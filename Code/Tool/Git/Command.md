@@ -99,6 +99,7 @@
 - git stash apply [–index] [stash_id]
 - git stash pop [–index] [stash_id]
 - git stash drop [–index] [stash_id]
+- git stash save "NAME"
 
 ## Branch
 - git checkout -b my-test  [在当前分支下创建my-test的本地分支分支]

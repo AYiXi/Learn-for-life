@@ -111,4 +111,33 @@ def errback_httpbin(self, failure):
             dont_filter=True,
             meta=failure.request.meta
     )
+
+
+
+# spider.py
+def parse(self, response):
+    poi = json.loads(response.text)
+    if response.status == 401:
+        yield scrapy.Request(response.url,
+                                method="GET",
+                                callback=self.parse,
+                                errback=self.errback_httpbin,
+                                dont_filter=True,
+                                )
+        return
+
+
+
+
+today = str(datetime.date.today())
+s = "scrapy crawl ele_lat_log  -s LOG_LEVEL=DEBUG -s LOG_FILE=ele_ele_lat_log_%s.txt" % today
+
+
+def foo(i):
+    cmdline.execute(s.split())
+
+
+for i in range(2):
+    p = Process(target=foo, args=(i,))
+    p.start()
 ```

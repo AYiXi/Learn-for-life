@@ -24,6 +24,18 @@ db.inventory.find( { 'instock.qty': 15, 'instock.warehouse': 'C' } )
 db.inventory.find( { "instock.qty": 5, "instock.warehouse": "A" } )  // no need one doc
 db.inventory.find({instock: {$elemMatch: {qty: 5, warehouse: "A"}}}) // must be one doc
 
+db.inventory.find( { status: "A" }, { item: 1, status: 1, instock: { $slice: [2, 5] } } )  // Here, the query will only return 5 items, after skipping the first 2 items of that array
+
+db.inventory.find({_id: {$type: 7} }, {_id: 1})
+db.inventory.find({item: {$exists: false}}) // 1
+db.inventory.find({item: {$type: 10}})      // 2
+db.inventory.find({item: null})             // 3   // 1 + 2 == 3
+db.serverStatus( { repl: 0,  metrics: 0, locks: 0 } )
+
+db.collection.deleteMany()
+db.collection.deleteOne()
+
+
 // Delete
 db.inventory.remove({}) == mysql.truncate
 
