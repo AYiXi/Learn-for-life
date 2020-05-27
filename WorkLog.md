@@ -954,6 +954,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [REALI]
 - 服务器上登录国资局的验证码部分代码重写
 - 服务器上成功登录国资局
+
 [LEARN]
 - 添加多个远程 Git 库并同时更新, 对 Git 操作的更加深入的认识
 - Yarn 架构和 Map-Reduce 的认识, 以及如何提交 Task 到 Hadoop 的分布式计算
@@ -963,6 +964,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 公司电脑上实现自动化的 Excel 下载以及数据更新
 - 在服务器实现专利 API 代码的运行
 - 对公众用户登录的功能开发, 部分代码重构优化逻辑, 以后就可以不使用机构账号了
+
 [LEARN]
 - Github 的大文件上传 `git lfs track "xx.zip"`
 - 明白 git reset --soft|--hard|--mixed 的区别
@@ -979,6 +981,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 完成专利法律状态接口解析
 - 完成公众登录专利查询接口
 - 增加自动下载 Excel 的代码的稳定性和合理性
+  
 [LEARN]
 - xpath `//tbody/tr[position()<last()]/td[1]`, `tr[position()=1 or position()=2]`
 - Git 关联远程仓库并同时 push
@@ -992,6 +995,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 修改 Redis 插入和删除专利号逻辑
 - 部署更新数据爬虫到服务器定时任务中
 - 完成 twitter 爬虫的数据获取功能, 不会这么简单吧? 前几天还乱码, 今天就好了, 就很奇怪
+  
 [LEARN]
 - Scrapy 插入自定义 headers
 - Scrapy 插入自定义 proxies
@@ -1006,6 +1010,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 对 redis 连接错误的重试
 - 添加 fdfs_client 到公司, 并备份安装包
 - 发现万象云同时多人登录出现挤掉的情况, 应该考虑 cookie 通过 redis 保存, 然后共同调用
+  
 [LEARN]
 - a 调用 b, b import c, 得出结论': 'a 每次调用 b 的时候 import c 的结果不会变, 在 c 中定义的全局变量只会执行一次'
 - Linux Htop 的使用, 进程的父进程的查看
@@ -1014,6 +1019,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 对 gist 的了解
 - 找到新插件 CodeSnap
 - 找到永久设置 windows 环境变量的方法, 以后不用打开图形界面设置了
+  
 [FIXED]
 - 修复服务器 CPU 占用率过高的问题, 原来是中利汇加密算法失效导致 js 测试无限重试
 
@@ -1030,6 +1036,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 基本实现 `CookiePoolRedis`, 并支持多个网站的复用, 目前还存在有时候 redis 连接报错的问题, 尚不清楚是什么原因
 - 对每日自动更新数据任务不执行问题的排查, 重启试验
 - 对招标平台的政务爬虫做分析, 发现每个平台都返回当天上千条的数据, 考虑会不会多个平台重复, 并在验证
+  
 [LEARN]
 - Scrapy 的结构的熟悉, Shell 的编写, 基本语法的熟悉
 
@@ -1040,6 +1047,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 对 BigData 的启动错误排查, 发现全局 ~/.zshrc -> DJANGO_SETTINGS_MODULE 设置会影响其他 Django 项目的启动
 - 完成 cookies 池并经过测试稳定后部署到服务器上
 - 攥写国资局注册文档, 然后配合张晗把新注册的号存入数据库中
+  
 [LEARN]
 - In SQL, NULL is [unknown], 5 NOT IN (1, 2, NULL) != true, but is NULL, because SQL not know where NULL compare with 5
 
@@ -1048,6 +1056,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Refactored sele/base.py to compatible with the situation of wrong gzj password
 - Almost finished the online training courses crawler
 - Detected account whose password need to be changed and leave it to LiYuanYuan
+  
 [LEARN]
 - Python `hasattr()`, `delattr()`, `__setattr__()`, `setattr()`, `__getattribute__()` function
 
@@ -1055,6 +1064,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [REALI]
 - Rebuild the log system of Patent by `loguru`, it can classified logs by `year/month/date.log`
 - Finish '天津市政府采购网' Notice crawler
+  
 [LEARN]
 - Read official document to learn the `loguru` module, and use it to Patent
 - If need real-time variable in python, it should be calculate again
@@ -1065,6 +1075,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - Finish '天津市虹桥区人民政府' crawl
 - Change `Gzjdriver` return a gzj_driver, do not launch browser immediately
 - Optimize the process of download excel crawler
+  
 [LEARN]
 '- retry': 'usage of `retry_error_callback` and `before_sleep`',
 - A glance of pyppeteer API, learn a little of the structure of pyppeteer
@@ -1072,6 +1083,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 ### *2020-03-31*
 [REALI]
 - Interview
+  
 [FIXED]
 - Tag error, add `__tag_correction_check()` to check whether tag is correct, if error, mail to admin
 '- Retry': 'usage of `retry_error_callback` and `before_sleep`',
@@ -1098,6 +1110,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [REALI]
 - Interview
 - Finish Online course
+  
 [LEARN]
 - Kafka usage of python
 - base.py Driver.quit() AttributeError
@@ -1122,6 +1135,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 ### *2020-04-15*
 [REALI]
 - Handover work
+  
 [FIXED]
 - Fix some bugs
 
@@ -1129,6 +1143,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 [REALI]
 - 完成入职手续
 - 配置各种工作需求的软件
+  
 [LEARN]
 - 学习 配置 Mac os
 - 学习 Charles 的配置并实践
@@ -1148,6 +1163,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 对 mac 上一些必要软件的安装与学习使用
 - 查看学习 `bo_lib` 项目的源码
 - 对公司 mongodb 对操作与查看
+  
 [LEARN]
 - 对 Charles 的断点调试和重发请求
 - 了解安卓的逆向流程
@@ -1167,6 +1183,7 @@ ps -aux | grep jjs | awk '{print $2}' | xargs kill
 - 解析粉笔课堂的接口
 - 完成通过 ip 查询地址的爬虫, 从 hive 查询, 入库到 mongodb, 大概 40k 数据量
 - 开公司介绍会, 更加了解公司的业务逻辑和发展方向
+  
 [LEARN]
 - 逐渐了解 scrapy 的日志信息
 - 知道 scrapy 的 meta 里面带有包含 代理, 下载时间等参数
@@ -1228,6 +1245,7 @@ def item_name(item):
 [REALI]
 - 参加公司开会, 了解公司业务流程和业务逻辑
 - 查看 ele_new 的项目代码
+
 [LEARN]
 - 学会建立, 查询 mongodb 的索引
 - 学会 mongodb 的 CRUD 操作
@@ -1239,23 +1257,25 @@ def item_name(item):
 - 熟悉 mongodb 对查询方式
 
 ### *2020-05-11*
-[REALI]
-- 阅读 scrapy [源码](http://kaito-kidd.com/2016/11/01/scrapy-code-analyze-architecture/), 详细了解了各个部件的相互调用逻辑, 但是源码很多地方还看不懂
-- 阅读小红书项目源码
-  - 安装 Crypto 模块
-    - pip install pycrypto
-    - crypto --> Crypto
-- 从百观科技离职
-[LEARN]
-- 在 for 循环中有函数时不会重复调用
-- scrapy 获取设置的方法
-```py
-from scrapy.utils.project import get_project_settings
-settings = get_project_settings()
+- [REALI]
+  - 阅读 scrapy [源码](http://kaito-kidd.com/2016/11/01/scrapy-code-analyze-architecture/), 详细了解了各个部件的相互调用逻辑, 但是源码很多地方还看不懂
+  - 阅读小红书项目源码
+    - 安装 Crypto 模块
+      - pip install pycrypto
+      - crypto --> Crypto
+  - 从百观科技离职
 
-or 
+- [LEARN]
+  - 在 for 循环中有函数时不会重复调用
+  - scrapy 获取设置的方法
+  ```py
+  from scrapy.utils.project import get_project_settings
+  settings = get_project_settings()
 
-settings = spider.settings
-```
-[FIXED]
-- 修复 redis 入库重复的 bug
+  or 
+
+  settings = spider.settings
+  ```
+
+- [FIXED]
+  - 修复 redis 入库重复的 bug
