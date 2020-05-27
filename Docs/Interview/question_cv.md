@@ -80,4 +80,18 @@
   - selenium 将浏览器原生的 API 封装成 WebDriver API, webdriver 是基于 http协议的, appium 是基于 webdriver 协议添加对移动设备自动化api扩展而成的，基于tcp/ip协议(使用 socket 接口)
   - appium 接收 python, java 等测试脚本, 然后通过 appium client 转换为 json 格式传递给 appium server, 其监听一个端口如 8000, 同时向手机端 adb(android debug bridge) push 一个 bootstrap.jar/bootstrap.js 的脚本, 手机端通过该脚本同时监听端口 8000, 此时 PC 和手机端就通过这个端口实现了通信和交互，基于 socket 通信(一个封装了 TCP/IP 协议的接口), 然后手机端通过该端口传输的命令执行 APP，bootstrap里面封装了安卓和苹果的自动化测试框架 UIautomator(低版本的安卓是instrumentation) 执行的相应命令, 执行完操作后通过端口返回给 PC 端，PC 端根据返回结果 json 做校验，同时也知道了操作是否执行成功, 由此一次交互就算完成
   - <img src="images/image-20200401215201941.png" alt="image-20200401215201941" style="zoom:50%;" />
+- 浅拷贝与深拷贝的区别
+  - 深拷贝对于引用元素, 如列表, id 是不一样的, 而浅拷贝 id 则是一样的
+    - a = [1, [1, 2], 3]
+    - b = copy(a) / deepcopy(a)
+    - [id(i) for i in a]
+    - [id(i) for i in b]
+  - 会导致比如列表嵌套列表时, 改变最里面一层列表的元素, 浅拷贝会发生改变
+- 可变数据类型：list、dict、set
+- 不可变数据类型：int/float、str、tuple
 
+- http / https 区别, 过程
+- scrapy 流程
+- scrapy-redis 优缺点
+- websocket
+- 

@@ -1245,6 +1245,7 @@ def item_name(item):
   - 安装 Crypto 模块
     - pip install pycrypto
     - crypto --> Crypto
+- 从百观科技离职
 [LEARN]
 - 在 for 循环中有函数时不会重复调用
 - scrapy 获取设置的方法
