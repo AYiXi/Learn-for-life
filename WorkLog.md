@@ -1291,3 +1291,31 @@ def item_name(item):
 ### *2020-06-02*
 - [REALI]
   - 安装一些软件
+  - 完成三篇博客的迁移
+  - 对 `move_blog_spider` 项目对熟悉和改进
+
+### *2020-06-03*
+- [REALI]
+  - 安装配置 Redis
+  - CSDN 价值观
+    - 成为技术人交流和成长的家园
+    - 成就一亿技术人
+    - 用户为本, 求真求是, 协作共赢, 极客精神, 结果导向
+  - 对5篇个人博客对评估
+  - 完成3篇个人博客的抓取
+  - 对国外论坛网站 `devto` 的调试与抓取
+  - 对 `move_blog_spider` 项目的改进被驳回, 先熟悉项目, 不要改配置文件
+-[LEARN]
+  - sudo -i 之后会执行 .bashrc, 里面可以放一些进入虚拟环境的逻辑
+
+### *2020-06-04*
+- [REALI]
+  - 完成 `qq_35834501` 的个人博客搬家
+  - 完成 `BossDarcy` 的个人博客搬家
+  - 完成 `qq_41714908` 的个人博客搬家
+  - 完成 `diaozhengxin` 的个人博客搬家
+  - 熟悉 `CsdnBlogApiPipeline`
+- [LEARN]
+  - python 获取毫秒 `datetime.utcnow().isoformat(timespec='milliseconds')[-3:]`
+  - JS 可以随便传入参数而不处理
+  - 了解无限 debugger 的解决方案
