@@ -1319,3 +1319,16 @@ def item_name(item):
   - python 获取毫秒 `datetime.utcnow().isoformat(timespec='milliseconds')[-3:]`
   - JS 可以随便传入参数而不处理
   - 了解无限 debugger 的解决方案
+
+### *2020-06-05*
+- [REALI]
+  - 完成个人博客和 Github 博客的可搬家性评估
+  - 对 CrawlSpider 对学习和初步使用
+  - 实现 `fuwei2020` 的博客搬家代码书写, 但是页面有问题和图片转存失败
+  - 完成 `yilan1993` 的个人博客搬家, 但是图片转存失败, 经查看图片没问题, 应该是服务器有问题
+  - 基本完成对 `http://gooa.las.ac.cn` 对整站资源抓取
+- [LEARN]
+  - 知道了 python 内存管理, pdb, profile 等都是有特定模块可以实现的
+  - 对 python 单元测试 unittest 有了更深入对认识, 会减少代码测试量
+  - 知道了对于下载文件而言如果支持断点续传功能则响应的请求头应该有 Content-Range 或者 Accept-Ranges 等参数
+  - 使用 BeautifulSoup 库对 Html 的标签进行移除, 准备学习使用 Xpath 进行移除
