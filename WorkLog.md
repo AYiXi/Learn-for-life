@@ -1332,3 +1332,16 @@ def item_name(item):
   - 对 python 单元测试 unittest 有了更深入对认识, 会减少代码测试量
   - 知道了对于下载文件而言如果支持断点续传功能则响应的请求头应该有 Content-Range 或者 Accept-Ranges 等参数
   - 使用 BeautifulSoup 库对 Html 的标签进行移除, 准备学习使用 Xpath 进行移除
+
+### *2020-06-06*
+- [LEARN]
+  - vim
+    - [Vim](Code/Tool/Vim/base.md)
+  - base64 编码解码 'TG92ZSUyMHlvdQ=='
+    - js
+      - js atob('\u0054') == str 
+      - js btoa(str) == encode
+    - python
+      - import base64
+      - base64.bs64decode('\u0054') -> str
+  - 

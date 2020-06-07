@@ -1,0 +1,37 @@
+- i a o
+- I A O
+- v V ctrl+v -> select
+- :% s/java/python/g -> replace java to python
+- :set nu
+- ctrl+n -> auto complete
+- ctrl+h -> delete a char
+- ctrl+w -> delete a word
+- ctrl+[ == ctrl+c == Esc
+- gi -> last edited position
+- w/b -> skip word
+- f/F g ; , -> f{char}
+- t/T g ; , -> t{char}
+- 0/^ -> head
+- g_/$ -> end
+- ^ -> first word
+- dw/dt)/dd/d0/d$/x/2dd/4x -> delete
+- r/s/c/R/S/cw/2s/0s -> change
+- n/N -> next/last
+- */#
+- noh
+- search
+  - :% s/\<java\>/python/g
+  - :1,10 s/java//n
+
+- set
+  - nt
+  - hls
+  - syntax on
+  - incsearch
+
+- In Terminal
+  - a -> head
+  - e -> end
+  - u -> clear
+  - f -> forward
+  - b -> back

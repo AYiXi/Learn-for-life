@@ -5,3 +5,5 @@
 4. 如果 with 代码块引发异常,__exit__(type, value, trackback)方法会被调用（带有异常细节）。如果此方法返回值为    False,则异常会重新引发。否则,异常会终止。
 6. 如果 with 代码块没有引发异常,__exit__ 方法依然会被调用, 其 type, value 以及 trackback 参数都会以 None 传递。
 ```
+
+python -m http.server

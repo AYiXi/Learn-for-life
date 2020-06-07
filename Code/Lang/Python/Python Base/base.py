@@ -11,6 +11,7 @@ f(1, b=2, c=3)
 def f2(n, *names):
     print(*names)
 
-f2(1,2,3)
 
-print(d3)
+
+
+
