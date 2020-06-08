@@ -33,3 +33,4 @@
 - CodeSnap
 - Color Manager
 - LeetCode
+- Draw.io Integration
