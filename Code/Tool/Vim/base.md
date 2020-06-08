@@ -7,6 +7,8 @@
 - ctrl+h -> delete a char
 - ctrl+w -> delete a word
 - ctrl+[ == ctrl+c == Esc
+- ctrl+f -> page down
+- ctrl+b -> page up
 - gi -> last edited position
 - w/b -> skip word
 - f/F g ; , -> f{char}
