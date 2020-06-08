@@ -11,7 +11,7 @@
 - [Algorithms and Data structures](Code/Algorithms%20and%20Data%20structures)
   - [principle](Code/Algorithms%20and%20Data%20structures/draft.md)
   - [sort](Code/Algorithms%20and%20Data%20structures/sort.md)
-- [BigData]
+- BigData
   - [Hadoop](Code/BigData/Hadoop)
 - [Design Patterns](Code/Design%20Patterns)
   - [Singleton](Code/Design%20Patterns/单例模式.md)
@@ -32,7 +32,7 @@
 - [Tool](Code/Tool)
   - [Docker](Code/Tool/Docker/docker.md)
   - [Git](Code/Tool/Git/Command.md)
-  - [IDE]
+  - IDE
     - [Vscode](Code/Tool/IDE/vscode.md)
   - [Kafka](Code/Tool/Kafka/draft.md)
   - [Kubernetes](Code/Tool/Kubernetes/commands.md)
