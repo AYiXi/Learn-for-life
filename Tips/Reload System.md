@@ -3,7 +3,6 @@
 . Typeora
 . Bandzip
 . Termius
-- 火柴
 - 百度网盘
 - Mysql
 - [redis](https://github.com/microsoftarchive/redis/releases)
