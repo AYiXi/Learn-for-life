@@ -34,3 +34,4 @@
 - Color Manager
 - LeetCode
 - Draw.io Integration
+- Better Align
