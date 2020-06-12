@@ -163,8 +163,9 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 ## kill 
 1. 杀死多个进程: ps -aux | grep ep_info/crawl.py | awk '{print $2}' | xargs kill
 
-## grep
+## [grep](https://www.dutycode.com/linux_chazhaowenjian_chazhaozifuchuan_suozaiwenjian.html)
 - -v:反向选择: ps -aux | grep python | grep -v main.js 
+- grep "python" crawl.log
 
 ## find and remove
 - find /tmp/ -name 'exechs*.js' | xargs rm
