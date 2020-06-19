@@ -131,7 +131,7 @@
     git config --global alias.c "commit -a -m" &
     git config --global alias.pu push &
     git config --global alias.rt remote &
-    git config --global alias.lg "log --pretty=oneline" &
+    git config --global alias.lg "log --pretty=format:'%h - %an, %ar : %s'" &
     ```
 
 
