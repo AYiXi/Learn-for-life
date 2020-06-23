@@ -21,3 +21,6 @@
 ### [Charles](https://juejin.im/post/5c0a430f51882516207d205d)
 - https://zhile.io
 - 48891cf209c6d32bf4
+
+### [JAVA_HOME](https://blog.csdn.net/caoxiaohong1005/article/details/73611424)
+- /usr/libexec/java_home -V

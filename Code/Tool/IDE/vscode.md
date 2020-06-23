@@ -14,4 +14,8 @@ javascript.json:
 settings.json:
    "editor.snippetSuggestions":"top"
 
+
+- 同时选择多行
+  - alt + shift + click
+  - shift + cmd + l
 ```
