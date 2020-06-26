@@ -24,3 +24,9 @@
 
 ### [JAVA_HOME](https://blog.csdn.net/caoxiaohong1005/article/details/73611424)
 - /usr/libexec/java_home -V
+
+### [Termius 中文乱码](https://www.jianshu.com/p/48228ee59c46)
+- export LANG=en_US.UTF-8
+
+### Mac ShortKeys
+- ⇧ ⌘ .            -> 显示隐藏文件夹
