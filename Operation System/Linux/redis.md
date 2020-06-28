@@ -18,3 +18,8 @@
 - redis-cli -h 39.105.72.96 -p xxxx
 
 
+### [Command](https://www.runoob.com/redis/redis-tutorial.html)
+- Set
+  - sadd key value
+  - smembers key
+  - scard key
