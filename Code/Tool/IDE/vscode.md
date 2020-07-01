@@ -17,7 +17,6 @@ settings.json:
 
 - 同时选择多行
   - alt + shift + click
-  - shift + cmd + l
 
 - Shortcuts
   - run                     -> ⌥ r
@@ -26,7 +25,7 @@ settings.json:
   - reveal in sidebar       -> ⌥ v
   - fold                    -> ⌘ .
   - unfold                  -> ⌘ ,
-  - show all commands       -> ⌥ 1
+  - show all commands       -> ⌥ p
   - go to line              -> ⌘ g
   - open previous editor    -> ⌥ j
   - open next editor        -> ⌥ k
@@ -36,3 +35,4 @@ settings.json:
   - expand selection        -> ⌘ w
   - scroll/page up          -> ⌥ -
   - scroll/page down        -> ⌥ =
+  - select all of match     -> ⇧ ⌘ l

@@ -1,6 +1,0 @@
--   目录结构: 
-    -   src/main/java放置正式代码自录
-    -   src/main/resouces放置正式配置文件目录
-    -   src/test/java放置单元测试代码目录
-    -   src/test/resources放置测试配置文件目录
-    -   src/main/webapp放置页面元素，比如：js,css,img,jsp,htm等等
