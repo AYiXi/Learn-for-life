@@ -41,7 +41,6 @@ source /etc/profile
 
 - yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel  git vim wget zsh curl net-tools tree epel-release 
 
-
 - apt-get install libpcre3 libpcre3-dev zlib1g-dev openssl libssl-dev  libffi-dev  dist-upgrade  build-essential python-dev python-setuptools python-pip python-smbus build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev 
 
 - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
