@@ -30,3 +30,6 @@
 
 ### Mac ShortKeys
 - ⇧ ⌘ .            -> 显示隐藏文件夹
+
+### ADB
+- brew cask install android-platform-tools

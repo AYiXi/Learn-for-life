@@ -20,10 +20,13 @@
 - r/s/c/R/S/cw/2s/0s -> change
 - n/N -> next/last
 - */#
-- noh
+- noh -> cancel highlight
+- ngg(30gg) -> jump to specified line
+
 - search
   - :% s/\<java\>/python/g
   - :1,10 s/java//n
+- [page move](./images/1591450596(1).jpg)
 
 - set
   - nt

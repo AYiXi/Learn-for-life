@@ -382,11 +382,11 @@ function transfer(data) {
 // console.log(results)
 
 $.ajax({
-    url:'http://192.168.3.21:9001/?shouquanhao=CN209384670U',
-    type:'GET',
+    url: 'http://192.168.3.21:9001/?shouquanhao=CN209384670U',
+    type: 'GET',
     // jsonpCallback:'test',
-    dataType:'jsonp',
-    success:function(data){
+    dataType: 'jsonp',
+    success: function (data) {
         console.log(data)
     }
 });

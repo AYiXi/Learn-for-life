@@ -25,6 +25,6 @@ def foo(a):
     return a
 
 
-__slots__  : protect class attribute from modification 
+__slots__       : protect class attribute from modification 
 __annotations__ : {'a': <class 'int'>}
 ```

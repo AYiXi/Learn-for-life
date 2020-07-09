@@ -36,3 +36,5 @@ settings.json:
   - scroll/page up          -> ⌥ -
   - scroll/page down        -> ⌥ =
   - select all of match     -> ⇧ ⌘ l
+  - move selected right     -> ⌘ k
+  - move selected left      -> ⌘ j

@@ -1,5 +1,5 @@
 # include <stdio.h>
 
 int main(){
-    printf("%d %s", 1, "ok");
+    printf("%d %s", 2, "ok");
 }

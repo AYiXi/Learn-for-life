@@ -22,3 +22,6 @@ pycharm64.exe.vmoptions
 
 - CTRL+SHIFT+P [POWER SAVE MODE][FLUENT]
 - `hard wrap at` --> 80->10000, Format 时不会自动截断 
+
+### Goland
+- 折叠 #gosetup -> Registry : go.run.processes.with.pty
