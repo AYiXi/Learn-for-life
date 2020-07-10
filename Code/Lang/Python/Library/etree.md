@@ -8,7 +8,7 @@ div.getprevious() -> etree.Element
 div.getnext() -> etree.Element
 div.getiterator(tag, *tags) -> depth first pre-order
 div.find()
-div.findall()
+div.findall('br'|'*/br'|'*/*/br'|'*//br') # 子节点的 br, 子子节点的 br, 子子子节点的 br, 子子节点之下的所有 br
 div.iter()
 
 div.insert(0, etree.Element('p'))

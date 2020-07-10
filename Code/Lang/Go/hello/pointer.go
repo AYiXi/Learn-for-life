@@ -48,5 +48,11 @@ func main() {
 	fmt.Println(arr2)
 	fmt.Println(arr3)
 
-	*[5]float64
+	/*
+		*[5]float64    pointer	 pointer of float's array
+		[3]*int		  array      array of int's pointer
+		*[5]*int	  pointer	 pointer of int's pointer
+		**[6]string	  pointer	 pointer of pointer of string's array
+		**[3]*string  pointer	 pointer of pointer of string's pointer
+	*/
 }
