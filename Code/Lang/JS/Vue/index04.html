@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="myApp">
+        <p>Your favorite Game:
+            <span>{{ mygame }}</span>
+        </p>
+        <button v-on:click="btnClick('My World')">My World</button>
+        <button v-on:click="btnClick('My World1')">My World1</button>
+        <button v-on:click="btnClick('My World2')">My World2</button>
+        <button @click="btnClick('My World3')">My World3</button>
+    </div>
+    <script>
+        var myApp = new Vue({
+            el: '#myApp',
+            data: {
+                mygame: 'Marry'
+            },
+            methods: {
+                btnClick: function(pname) {
+                    this.mygame = pname
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

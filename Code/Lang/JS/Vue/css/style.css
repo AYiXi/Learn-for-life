@@ -1,0 +1,22 @@
+body {
+    font-size: 24px;
+}
+
+button {
+    width: 80px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.active {
+    color: red;
+}
+
+.big {
+    font-weight: bolder;
+    font-size: 64px;
+}
+
+.border1 {
+    border: 1px solid gray;
+}
