@@ -105,7 +105,7 @@ type C interface {
 
 type Mao struct {
 
-}
+}jjj
 
 func (m Mao) testa() {
 	fmt.Println("testa")

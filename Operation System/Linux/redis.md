@@ -23,3 +23,6 @@
   - sadd key value
   - smembers key
   - scard key
+
+- List
+  - lpush key value
