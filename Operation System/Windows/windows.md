@@ -4,6 +4,13 @@
 ## Block networking
 ![Block networking](./images/block_networking.png)
 
+## Soft
+- 微PE
+- 傲梅分区助手(不需要格式化无损修改分区容量)
+- Ocam(录屏, 简洁)
+- JJDown(下载B站视频)
+- 百分浏览器
+- 
 
 ## Linux subsystem default root
 - ubuntu1804.exe config --default-user root
