@@ -31,19 +31,5 @@ for span in dom.xpath('//h1/span | //h2/span | //h3/span'):
     span_parent.remove(span)
 
 # 删除属性
-for img in dom.xpath('//img'):
-    try:
-        del img.attrib['srcset']
-    except KeyError:
-        continue
-
-# 标点错误, ul>li>ul --> ul>ul
-for out_ul in dom.xpath('//div/ul'):
-    children = out_ul.getchildren()
-    if children and all([i.tag == 'li' for i in children]):
-        for inner_ul in out_ul.xpath('./li/ul'):
-            li = inner_ul.xpath('./li')[0]
-            ul = deepcopy(li.getchildren()[0])
-            inner_ul.clear()
-            inner_ul.append(ul)
+img.attrib.pop('secret', None)
 ```
