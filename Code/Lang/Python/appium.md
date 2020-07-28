@@ -20,3 +20,24 @@ export CLASS_PATH=$JAVA_HOME/lib
 export ANDROID_HOME=/usr/local/share/android-sdkb
 export PATH=$ANDROID_HOME:$PATH
 ```
+
+
+### adb Command
+- adb connect 127.0.0.1:5555
+- adb kill-server
+- adb start-server   
+
+- adb devices [-l]
+- adb install com.douguo....apk
+
+### [Charles Settings](https://www.jianshu.com/p/73b134559c76)
+
+### Mitmproxy
+- pip install mitmproxy
+- SwitchyOmega:http 192.168.80.156[127.0.0.1] 8080
+- mitm.it -> install certificate
+- z: clear flows
+- f: 
+  - !(~c 200) -> not 200 request
+  - ~d baidu.com
+  - ~m post & ~u baidu.com
