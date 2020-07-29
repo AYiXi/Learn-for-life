@@ -1,4 +1,4 @@
-1. 删除 apply_id, cost_type 字段相同的 id 小的信息
+### 删除 apply_id, cost_type 字段相同的 id 小的信息
 ```sql
 DELETE FROM t_ip_fee WHERE id IN (SELECT t.id FROM (SELECT id FROM t_ip_fee WHERE apply_id in('2017210778511', '2018213841691', '2018304723884', '2017210723453', '2017210725980', '2018213840538', '2018304733551', '2017210778460', '201830471993X', 
 '2018213846727') GROUP BY apply_id, cost_type HAVING count(*) >1) as t)
@@ -16,13 +16,13 @@ WHERE id IN
 	AS f)
 ```
 
-2. 
+### 删除重复的最大的 apply_id
 ```sql
 DELETE FROM t_ip_info WHERE id IN (SELECT t.id FROM (SELECT MAX(id) AS id FROM t_ip_info GROUP BY apply_id HAVING count(*) > 1) AS t)
 ```
 
 
-3. 找出相同年份标记 tag 的费用
+### 找出相同年份标记 tag 的费用
 ```sql
 SELECT
 	is_paid,
@@ -58,7 +58,7 @@ ORDER BY
 	cost_type
 ```
 
-4. 更新同一专利号代缴费专利里有标记的年费信息其中比较小的年份的 is_paid=1 (重复tag年费表示国资局是已缴费状态)
+### 更新同一专利号代缴费专利里有标记的年费信息其中比较小的年份的 is_paid=1 (重复tag年费表示国资局是已缴费状态)
 ```sql
 UPDATE t_ip_fee 
 SET is_paid = 1 
@@ -115,7 +115,7 @@ WHERE
 	)
 ```
 
-5. 找出所有有效的有滞纳金的专利信息
+### 找出所有有效的有滞纳金的专利信息
 ```sql
 SELECT
     info.apply_id,
@@ -141,7 +141,7 @@ WHERE fee.cost_type NOT LIKE '%年年费%' AND fee.is_paid=0 AND fee.is_monitor=
 ORDER BY fee.x_date 
 ```
 
-6. 近几天未缴费的数据
+### 近几天未缴费的数据
 ```sql
 SELECT
     info.apply_id as 专利号,
@@ -154,7 +154,7 @@ FROM t_ip_fee as fee INNER JOIN t_ip_info as info ON fee.apply_id=info.apply_id
 WHERE fee.is_paid=0 AND fee.is_monitor=1 AND info.is_del=0 AND fee.x_date BETWEEN (CURRENT_DATE - INTERVAL 3 DAY) AND (CURRENT_DATE + INTERVAL 7 DAY) ORDER BY fee.x_date;
 ```
 
-7. 创建表
+### 创建表
 ```sql
 CREATE TABLE `kfq_qys` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -167,7 +167,7 @@ CREATE TABLE `kfq_qys` (
 );
 ```
 
-8. 组成 300s 未响应的 kill 语句
+### 组成 300s 未响应的 kill 语句
 ```sql
 SELECT
 	concat( 'kill ', id, ';' ) 
@@ -180,7 +180,7 @@ ORDER BY
 	Time DESC;
 ```
 
-9. 通过正则表达式搜索到某些字段
+### 通过正则表达式搜索到某些字段
 ```sql
 SELECT
 	* 
@@ -190,7 +190,7 @@ WHERE
 	`name` REGEXP '招聘|地块|价格|道德模范|规划|电价|展位|消防|民心工程|报告|事故|安全|治理|隐患|竣工|同志|放假|街道|执法|免费|住房|环保招聘|地块|价格|道德模范|规划|电价|展位|消防|民心工程|报告|事故|安全|治理|隐患|竣工|同志|放假|街道|执法|免费|住房|环保';
 ```
 
-10. 发文状态与对应的通知书名称查询
+1### 发文状态与对应的通知书名称查询
 ```sql
 SELECT
 	info.apply_id,
@@ -211,15 +211,27 @@ ORDER BY
 	info.update_time DESC
 ```
 
-11. 替换括号
+### 替换括号
 ```sql
 UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'（','(');
 UPDATE `t_ip_info` SET proposer=REPLACE(proposer,'）',')');
 ```
 
-12. TAG
+### TAG
 ```sql
 SELECT id, apply_id, cost_type, x_date FROM t_ip_fee WHERE apply_id IN (SELECT apply_id FROM `t_ip_fee` WHERE is_paid=0 AND is_monitor=1 AND cost_type LIKE "%年年费%" GROUP BY apply_id HAVING COUNT(tag)>1) AND is_paid=0 AND tag=1 AND cost_type LIKE "%年年费%" ORDER BY apply_id, update_time DESC
 
 UPDATE t_ip_fee SET tag=NULL WHERE id IN (SELECT id FROM (SELECT max(id) as id, apply_id, x_date FROM t_ip_fee WHERE apply_id IN (SELECT apply_id FROM `t_ip_fee` WHERE is_paid=0 AND is_monitor=1 AND cost_type LIKE "%年年费%" GROUP BY apply_id HAVING COUNT(tag)>1) AND is_paid=0 AND tag=1 AND cost_type LIKE "%年年费%"  GROUP BY apply_id ORDER BY apply_id DESC) as t)
+```
+
+### left join, right join, inner join 连接
+```sql
+-- A left join B: A 所有, B 中与 A 的交集
+SELECT 
+	a.*,
+	b.score
+FROM student AS a
+LEFT JOIN SC AS b
+ON a.id=b.id
+[WHERE b.score IS NOT NULL]
 ```

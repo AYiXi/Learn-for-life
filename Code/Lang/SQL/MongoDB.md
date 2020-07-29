@@ -52,5 +52,4 @@ db.test_li.find(
 db.pc_bianli_kechengbiao.getIndexes()
 db.pc_bianli_kechengbiao.createIndex({"ts_short":1})
 db.pc_bianli_kechengbiao.totalIndexSize()
-
 ```

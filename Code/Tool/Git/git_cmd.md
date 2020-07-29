@@ -58,7 +58,7 @@
 3. git config user.email 821346679@qq.com
 4. git config --global core.editor vim
 5. git config credential.helper store
-6. git config --global http.proxy socks5://127.0.0.1:1080
+6. git config --global http.proxy socks5://127.0.0.1:1080 [http 代理只针对 http 有效, 对 ssh 协议无效]
 7. git config --global http.proxy http://127.0.0.1:1081
 8. git config --global --unset https.proxy
 
@@ -132,7 +132,7 @@
     git config --global alias.pu push &
     git config --global alias.rt remote &
     git config --global alias.lg "log --pretty=format:'%h - %an, %ar : %s'" &
-    ```
+   ```
 
 
 ## Push

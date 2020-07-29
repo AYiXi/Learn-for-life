@@ -86,3 +86,6 @@ mysql -u root -p 密码;
 - NULL is unknown
 - `is null` is faster than `= null`
 - 5 not in (1,2,3,null) -> null (not true)
+
+##### Mysql 执行顺序
+- ![Mysql 执行顺序](images/sql%20执行顺序.jpg)
