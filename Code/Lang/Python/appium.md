@@ -28,7 +28,12 @@ export PATH=$ANDROID_HOME:$PATH
 - adb start-server   
 
 - adb devices [-l]
-- adb install com.douguo....apk
+- adb [-s 127.0.0.1:62001] install com.douguo....apk
+- adb -s emulator-5554 shell
+- delete apk
+  - adb shell
+  - cd /data/app/  + ls
+  - adb uninstall com.jingdong.app.mall
 
 ### [Charles Settings](https://www.jianshu.com/p/73b134559c76)
 
@@ -41,3 +46,11 @@ export PATH=$ANDROID_HOME:$PATH
   - !(~c 200) -> not 200 request
   - ~d baidu.com
   - ~m post & ~u baidu.com
+
+### Android SDK
+- software development kit
+  - 软件开发工具包, 是软件开发工程师用于特定的软件包, 软件框架, 硬件平台, 操作系统等建立应用软件的开发工具的集合
+- [下载地址](http://sdk.android-studio.org/)
+- Android SDK Manager Proxy:
+  - mirrors.neusoft.edu.cn:80
+  - ![settings](Images/android%20sdk%20manager%20settings.png)

@@ -33,3 +33,11 @@
 
 ### ADB
 - brew cask install android-platform-tools
+
+### Mysql 
+- Install
+  - Download .dmg file
+- Soft link
+  - sudo ln -s /usr/local/mysql/bin/mysql /usr/local/bin/mysql
+  - sudo ln -s /usr/local/mysql/bin/mysql /usr/bin/mysql 
+    - [Operation not permitted operate /usr/bin]

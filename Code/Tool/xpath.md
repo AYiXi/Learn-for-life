@@ -12,3 +12,6 @@
 - p[not(contains(@class, "nodelete"))]
 - pre[not(ancestor::blockquote)]
 - (//div[@class="text"])[2]
+- a/preceding-sibling::a[1]  -> previous sibling node
+- a/following-sibling::a[1]  -> next sibling node
+- /root/(* except a) == /root/*[not(self::a)]   <-> xpath 2.0, xpath 1.0
