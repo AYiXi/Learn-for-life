@@ -17,8 +17,9 @@ export JAVA_HOME=$(/usr/libexec/java_home)/bin/java
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASS_PATH=$JAVA_HOME/lib
 
-export ANDROID_HOME=/usr/local/share/android-sdkb
-export PATH=$ANDROID_HOME:$PATH
+ANDROID_HOME=/Users/ayixi/Documents/Soft/android-sdk-macosx
+export ANDROID_HOME
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ```
 
 
@@ -34,6 +35,16 @@ export PATH=$ANDROID_HOME:$PATH
   - adb shell
   - cd /data/app/  + ls
   - adb uninstall com.jingdong.app.mall
+- adb shell screencap /sdcard/test.png
+- adb pull /sdcard/test.png ~/Downloads/test.png
+- adb push ~/Downloads/test.png /sdcard/test2.png
+- adb shell
+  - logcat | grep cmp= 
+  - open apk
+  - find "appPackage": "com.tal.kaoyan", "appActivity": "com.tal.kaoyan.ui.activity.SplashActivity"
+  - build-tools/29.0.3/aapt dump badging ~/Downloads/com.douguo.recipe_6.9.65.2_544.apk | grep activity
+- pip install --pre weditor
+- python -m weditor
 
 ### [Charles Settings](https://www.jianshu.com/p/73b134559c76)
 
@@ -51,6 +62,13 @@ export PATH=$ANDROID_HOME:$PATH
 - software development kit
   - 软件开发工具包, 是软件开发工程师用于特定的软件包, 软件框架, 硬件平台, 操作系统等建立应用软件的开发工具的集合
 - [下载地址](http://sdk.android-studio.org/)
+- open SDK Manager
 - Android SDK Manager Proxy:
   - mirrors.neusoft.edu.cn:80
   - ![settings](Images/android%20sdk%20manager%20settings.png)
+- Download:
+  - platform-tools
+  - tools
+  - build-tools
+  - extra > all
+  - some apis

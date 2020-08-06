@@ -11,6 +11,7 @@
 - export https_proxy=http://127.0.0.1:1081 http_proxy=http://127.0.0.1:1081 all_proxy=socks5://127.0.0.1:1080
 - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 - sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- export HOMEBREW_NO_AUTO_UPDATE=true
 
 ### [Redis](https://www.jianshu.com/p/3bdfda703552)
 - mv redis.tar.gz -> /usr/local/redis-3.2.8
@@ -31,9 +32,6 @@
 ### Mac ShortKeys
 - ⇧ ⌘ .            -> 显示隐藏文件夹
 
-### ADB
-- brew cask install android-platform-tools
-
 ### Mysql 
 - Install
   - Download .dmg file
@@ -41,3 +39,9 @@
   - sudo ln -s /usr/local/mysql/bin/mysql /usr/local/bin/mysql
   - sudo ln -s /usr/local/mysql/bin/mysql /usr/bin/mysql 
     - [Operation not permitted operate /usr/bin]
+
+### You-get CERTIFICATE_VERIFY_FAILED
+- /Applications/Python\ 3.8/Install\ Certificates.command
+
+### Tesseract
+- brew install tesseract
