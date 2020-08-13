@@ -89,3 +89,4 @@ mysql -u root -p 密码;
 
 ##### Mysql 执行顺序
 - ![Mysql 执行顺序](images/sql%20执行顺序.jpg)
+

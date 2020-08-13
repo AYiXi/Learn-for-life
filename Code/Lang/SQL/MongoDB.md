@@ -52,4 +52,11 @@ db.test_li.find(
 db.pc_bianli_kechengbiao.getIndexes()
 db.pc_bianli_kechengbiao.createIndex({"ts_short":1})
 db.pc_bianli_kechengbiao.totalIndexSize()
+
+-- 数据库编码问题
+SHOW VARIABLES LIKE '%char%';
+SHOW FULL COLUMNS FROM `medium`;
+
+ALTER DATABASE <DB_NAME> CHARACTER SET utf8mb4;
+ALTER TABLE <TABLE_NAME> CONVERT TO CHARACTER SET utf8mb4;
 ```

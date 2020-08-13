@@ -11,6 +11,13 @@
 > install appium-doctor
   - sudo npm install appium-doctor -g
   - brew install carthage
+- npm install -g anyproxy
+- pip install --pre weditor
+- sudo npm install -g anyproxy
+  - 设置手机的代理
+  - 在手机和电脑上安装证书 127.0.0.1:1082
+- 项目目录: npm install redis
+
 
 ```shell
 export JAVA_HOME=$(/usr/libexec/java_home)/bin/java
@@ -43,7 +50,8 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
   - open apk
   - find "appPackage": "com.tal.kaoyan", "appActivity": "com.tal.kaoyan.ui.activity.SplashActivity"
   - build-tools/29.0.3/aapt dump badging ~/Downloads/com.douguo.recipe_6.9.65.2_544.apk | grep activity
-- pip install --pre weditor
+  
+- python -m uiautomator2 init
 - python -m weditor
 
 ### [Charles Settings](https://www.jianshu.com/p/73b134559c76)
@@ -72,3 +80,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
   - build-tools
   - extra > all
   - some apis
+
+### Package
+- pip install uiautomator2
+- pip install -U facebook-wda
