@@ -10,6 +10,7 @@
 - Maven Helper
 - Grep Console
 - Rainbow Brackets
+- CPU Usage Indicator
 
 ### Vscode
 - Eva Theme
@@ -35,3 +36,4 @@
 - LeetCode
 - Draw.io Integration
 - Better Align
+- Cyberpunk

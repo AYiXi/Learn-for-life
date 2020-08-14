@@ -25,3 +25,8 @@ pycharm64.exe.vmoptions
 
 ### Goland
 - 折叠 #gosetup -> Registry : go.run.processes.with.pty
+
+### Settings
+- show directories with changed descendants
+- show virtual space at the bottom of the file
+- 

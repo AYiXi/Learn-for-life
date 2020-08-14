@@ -20,3 +20,8 @@
   SHOW processlist;
   KILL id
   ```
+
+- 更改表名
+  ```sql
+  RENAME TABLE stackoverflow.medium_url TO stackoverflow.medium
+  ```
