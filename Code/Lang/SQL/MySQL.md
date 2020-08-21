@@ -25,7 +25,13 @@ mysql -u root -p 密码;
 2.在阿里云上面配置安全组
 ```
 
-
+## [Shell 下免密码快速登陆 MySQL 数据库背景](https://imlonghao.com/7.html)
+- vim ~/.my.cnf
+- [client]   
+  password=your_pass   
+  user=your_user
+- chmod 400 ~/.my.cnf
+- export MYSQL_PWD=your_pass [或许不需要]
 
 ### 三范式
 
