@@ -25,3 +25,7 @@
   ```sql
   RENAME TABLE stackoverflow.medium_url TO stackoverflow.medium
   ```
+
+- view
+  - create view user_count as select username, count(*) as count from medium group by username;
+  - select * from user_count;

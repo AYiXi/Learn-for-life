@@ -157,3 +157,7 @@ HTTPS 其实就是建构在 SSL/TLS 之上的 HTTP 协议，所以，要比较 H
       - $or, $not, $ne, $lt, $lt[e], $gt[e]
     - regular
       - $regex
+
+### execjs
+- 执行大型 js 会比较慢
+- 特殊的编码输入输出可能报错, 可以用 base64 编码解码一下

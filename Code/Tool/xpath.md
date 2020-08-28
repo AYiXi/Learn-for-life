@@ -15,3 +15,4 @@
 - a/preceding-sibling::a[1]  -> previous sibling node
 - a/following-sibling::a[1]  -> next sibling node
 - /root/(* except a) == /root/*[not(self::a)]   <-> xpath 2.0, xpath 1.0
+- '//div[text()="410"] and //div[text()="Error"]' == '1' or '0'
