@@ -18,3 +18,7 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Version
 source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
 
 ZSH_THEME=random
+
+# 显示中文
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8

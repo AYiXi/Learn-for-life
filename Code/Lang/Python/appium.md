@@ -55,6 +55,8 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 - python -m weditor
 
 ### [Charles Settings](https://www.jianshu.com/p/73b134559c76)
+- ![反向代理](Images/反向代理.png)
+- map local/remote, 把网页内容映射到本地/远程
 
 ### Mitmproxy
 - pip install mitmproxy

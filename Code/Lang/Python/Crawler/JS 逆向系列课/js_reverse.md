@@ -39,8 +39,19 @@ function main() {
   - set-cookie-name:d_c0
   - <img src="images/chrome%20filter.png" alt="其他 filter" style="zoom:50%;" />
   - 按住 shift 悬停在请求上, 可以找到请求的发起者和产生的请求
+  - is: running, 查看 websocket 请求
 - Source Panel
   - XHR breakpoints
   - DOM breakpoints
   - Event Listener breakpoints
   - Conditional breakpoint
+
+### 无限 debugger
+- 条件断点
+- hook
+- reres 替换本地修改过的文件
+- 重写关键函数如上所述
+- 对于 (function () {}).constructor === Function
+  - Function.prototype.constructor = function() {}
+- 点击刷新之后, 很快的点击取消, 可能定位到未跳转的 js, html 等
+- `!function() {}`, 这种函数会在 F12 打开调试时自动执行
