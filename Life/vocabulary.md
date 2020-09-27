@@ -7,3 +7,50 @@
 - This book is for *intermediate* Python developers. *Prior* knowledge of design patterns is not required to enjoy this book.
   - 中间
   - 事前
+
+- Computer Systems, A programmer's perspective
+  - invoke the kernel to perform these operations (调用)
+  - Each time we return, from a function, it contracts. (收缩)
+  - sophisticated interaction (复杂的交互)
+  - modeled (模型化)
+  - blissfully (幸福的)
+  - In practice (实践中)
+  - Linus Torvalds modestly announced a new Unix-like operating system kernel (谦虚的)
+  - poll (轮询)
+  - my OS resembles it somewhat (类似)
+  - practical reason (实际原因)
+  - advent (来临)
+  - mainframe
+  - infrastructure
+  - compliant
+  - forces
+  - wristwatch
+  - familiar
+  - similar
+  - made a simple but insightful observation about the effectiveness of improving a part of a system
+  - factor k
+  - fraction alpha
+  - substantial improvement
+  - constitutes (构成)
+  - verbally (口头上)
+  - concurrency and parallelism
+  - demands (需求)
+  - two demands have been constant forces in driving improvements
+  - We use the term concurrency to refer to the general concept of a system with multiple, simultaneous (同时) activities
+  - and the term parallelism to refer to the use of concurrency to make a system run faster
+  - exploited (利用)
+  - hierarchy (等级制)
+  - simulated (模拟的)
+  - uniprocessor system
+  - juggler
+  - commonplace
+  - hyperthreading
+  - a genre of science fiction set in a lawless subculture of an oppressive society dominated by computer technology.
+  - taxonomy (分类)
+  - intergrated-circuit chip (集成电路芯片)
+  - unified cache (高速缓存)
+  - prevalent (流行)
+  - ultimately (最终的)
+  - formulated and studied for over 50 years (形成和研究)
+  - vintage (复古的)
+  - sustain (支持)

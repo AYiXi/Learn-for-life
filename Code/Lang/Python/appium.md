@@ -86,3 +86,8 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ### Package
 - pip install uiautomator2
 - pip install -U facebook-wda
+
+### RUN 
+- adb devices
+- appium
+- anyproxy --rule /Users/ayixi/Documents/Code/wechat/wechatest.js -i
