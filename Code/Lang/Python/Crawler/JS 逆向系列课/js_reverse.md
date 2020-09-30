@@ -55,3 +55,22 @@ function main() {
   - Function.prototype.constructor = function() {}
 - 点击刷新之后, 很快的点击取消, 可能定位到未跳转的 js, html 等
 - `!function() {}`, 这种函数会在 F12 打开调试时自动执行
+
+
+### 高阶课
+- Accept-Encoding: gzip, deflate;  requests 包不会自动带, 可能有暗坑 
+- [双核浏览器](http://chrome.cqttech.com/)
+- 追溯参数
+  - 明文搜索
+  - xhr
+  - hook
+  - 调用栈, 全局断点
+  - dom断点
+  - 主动debugger
+  - warning/error追溯
+  - 内存优化分析
+  - 事件监听
+- 搜索
+  - ( w ), (w: function) ...
+  - Promise 请求参数
+    - 尝试搜索 this.interceptors[.request]

@@ -54,3 +54,27 @@
   - formulated and studied for over 50 years (形成和研究)
   - vintage (复古的)
   - sustain (支持)
+
+- MapReduce: Simplified Data Processing on Large Clusters
+  - intermediate (中间)
+  - commodity machines (商用机器)
+  - partitioning the input data
+  - utilize the resource of a large distributed system
+  - terabytes (兆兆字节 TB)
+  - derived data (派生的数据)
+  - inverted indices (倒排索引)
+  - various representations of the graph structure of web documents
+  - summaries (总结, 摘要)
+  - computations (计算)
+  - conspire (合作)
+  - obscure (朦胧, 灰度)
+  - fault-tolerance (容错)
+  - primitives present (存在的原语)
+  - functional (功能性)
+  - appropriately (适当的)
+  - tailored (量身定制)
+  - refinements (细化)
+  - invocation (调用)
+  - pseudo-code (伪代码)
+  - emit (发射)
+  - particular (特定)

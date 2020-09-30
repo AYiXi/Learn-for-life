@@ -88,6 +88,10 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 - pip install -U facebook-wda
 
 ### RUN 
-- adb devices
+- adb devices 确认连接上
+  - 核对代码中的 desc
 - appium
 - anyproxy --rule /Users/ayixi/Documents/Code/wechat/wechatest.js -i
+  - 手机设置代理 192.168.80.182 8001
+  - 下载证书
+- 
