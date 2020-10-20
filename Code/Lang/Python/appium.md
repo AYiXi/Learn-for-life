@@ -1,17 +1,11 @@
 ### Install environment of appium
-
-> install appium desktop
-  - 
-> install adb
-  - brew cask install android-platform-tools
-> install android-sdk
-  - brew cask install android-sdk
-> link adb to sdk
-  - ln -s /usr/local/bin/adb /usr/local/share/android-sdk/tools/adb
-> install appium-doctor
+> install appium
+  - sudo npm install -g appium
+  - sudo npm install -g appium --chromedriver-skip-install
+  - pip install appium-python-client
+> install appium-doctor [可能不需要]
   - sudo npm install appium-doctor -g
   - brew install carthage
-- npm install -g anyproxy
 - pip install --pre weditor
 - sudo npm install -g anyproxy
   - 设置手机的代理
@@ -20,7 +14,7 @@
 
 
 ```shell
-export JAVA_HOME=$(/usr/libexec/java_home)/bin/java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASS_PATH=$JAVA_HOME/lib
 
@@ -28,7 +22,7 @@ ANDROID_HOME=/Users/ayixi/Documents/Soft/android-sdk-macosx
 export ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ```
-
+- 配置完环境变量之后, 如果报错 `the java_home environment variable must be set for android tools to work properly` 需要重启电脑
 
 ### adb Command
 - adb connect 127.0.0.1:5555
@@ -40,6 +34,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 - adb -s emulator-5554 shell
 - delete apk
   - adb shell
+    - su root
   - cd /data/app/  + ls
   - adb uninstall com.jingdong.app.mall
 - adb shell screencap /sdcard/test.png
@@ -72,7 +67,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 - software development kit
   - 软件开发工具包, 是软件开发工程师用于特定的软件包, 软件框架, 硬件平台, 操作系统等建立应用软件的开发工具的集合
 - [下载地址](http://sdk.android-studio.org/)
-- open SDK Manager
+- open SDK Manager (android-sdk-macosx/tools/android) 需要 jdk 1.8 (百度网盘)
 - Android SDK Manager Proxy:
   - mirrors.neusoft.edu.cn:80
   - ![settings](Images/android%20sdk%20manager%20settings.png)

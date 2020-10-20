@@ -1,0 +1,28 @@
+### 逆向步骤
+
+- 查壳
+  - 脱壳
+- apk 拖入 JEB 分析
+  - 全局搜索
+    - api 网址
+    - 关键词
+  - 右键 -> 反编译
+  - 双击跟进
+  - 分析(需要 java 基础)
+  - apk Attach
+    - 开启全局调试: 
+      - adb push tcpdump /data/local/tcpdump
+      - adb shell & cd /data/local
+      - chmod 777 tcpdump
+      - ./tcpdump
+      - ./mprop ro.debuggable 1
+      - getprop ro.debuggable (1)
+  - xposed 模块安装 (xposed plus: my name is nanshan)
+  - sdk -> adt -> sdk -> tools -> ddms.bat
+    - Hook 一些加密参数的值
+  - ![ddms](../images/ddms.png)
+  - 精易编程助手 V3.95 (加密解密, 哈希等)
+  - ![bczs](../images/bczs.png)
+  - WT-JS_DEBUG v1.8.3
+  - ![wt-js](../images/wt_js.png)
+- 
