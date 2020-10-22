@@ -9,31 +9,48 @@ alias dk="docker"
 alias pag="ps -aux | grep"
 alias pa="ps -aux"
 alias redis="redis-cli"
-alias youget="you-get -x 127.0.0.1:1081"
+alias youget="you-get -x 127.0.0.1:1081 -o /Users/ayixi/Downloads"
 alias jn="cd /Users/ayixi/Documents/Code/jupyter_notebook;jupyter notebook"
 alias vscode="open -a Visual\ Studio\ Code"
 alias pycharm="open -a Pycharm"
+alias goland="open -a goLand"
+
 alias dc="cd ~/Documents"
 alias dn="cd ~/Downloads"
+alias fo="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/foreign_blog"
+alias si="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/single"
+alias me="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/medium"
+alias we="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/wechat_appium"
+alias sites="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites"
+alias js="cd /Users/ayixi/Documents/Code/anyproxy/js"
+alias dex2jar="sh /Users/ayixi/Documents/Soft/dex2jar/d2j-dex2jar.sh"
 
-export GO111MODULE=on
+alias mas="git ck master"
+alias dev="git ck dev"
+alias vsz="vscode ~/.zshrc"
+
+
+# homebrew not auto update
+export HOMEBREW_NO_AUTO_UPDATE=true
+
+export GO111MODULE=auto
 export GOPROXY=https://goproxy.cn
-export GOPATH=/Users/ayixi/go
+export GOPATH=/Users/ayixi/gopath
 export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
+# export PATH=$PATH:$GOBIN
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home
 export CLASS_PATH=$JAVA_HOME/lib
 export PATH=$JAVA_HOME/bin:$PATH
 
 export HADOOP_HOME=/usr/local/hadoop-3.1.3
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
-export PYTHON_PATH=/Users/ayixi/Library/Python/3.8/bin
 export PYTHONPATH2=/Users/ayixi/Documents/Code/move_blog_spider
 export PYTHONPATH3=/Users/ayixi/Documents/Code/move_blog_spider_local
-export PYTHONPATH=$PYTHONPATH3:$PYTHONPATH2
-# export PATH=$PATH:$PYTHON_PATH:$PYTHONPATH2
+export PYTHONPATH4=/Users/ayixi/Documents/Code/move_video_spider
+export PYTHONPATH=$PYTHONPATH2:$PYTHONPATH4
 
 GRADLE_HOME=/usr/local/Cellar/gradle/6.5
 export GRADLE_HOME
@@ -42,15 +59,17 @@ export PATH=$PATH:$GRADLE_HOME/bin
 export M3_HOME=/usr/local/maven/apache-maven-3.6.3
 export PATH=$M3_HOME/bin:$PATH
 
-export ANDROID_HOME=/usr/local/share/android-sdkb
-export PATH=$ANDROID_HOME:$PATH
+# export ANDROID_HOME=/usr/local/share/android-sdkb
+ANDROID_HOME=/Users/ayixi/Documents/Soft/android-sdk-macosx
+export ANDROID_HOME
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 export LANG=en_US.UTF-8
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME=random
+ZSH_THEME="jonathan"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

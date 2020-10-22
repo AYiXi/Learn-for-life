@@ -12,7 +12,7 @@
   - apk Attach
     - 开启全局调试: 
       - adb push tcpdump /data/local/tcpdump
-      - adb shell & cd /data/local
+      - adb shell [-s ZX1G22QXW6] & cd /data/local
       - chmod 777 tcpdump
       - ./tcpdump
       - ./mprop ro.debuggable 1
@@ -20,9 +20,14 @@
   - xposed 模块安装 (xposed plus: my name is nanshan)
   - sdk -> adt -> sdk -> tools -> ddms.bat
     - Hook 一些加密参数的值
-  - ![ddms](../images/ddms.png)
+  - DDMS
+    - ![ddms](../images/ddms.png)
   - 精易编程助手 V3.95 (加密解密, 哈希等)
-  - ![bczs](../images/bczs.png)
+    - ![bczs](../images/bczs.png)
   - WT-JS_DEBUG v1.8.3
-  - ![wt-js](../images/wt_js.png)
-- 
+    - ![wt-js](../images/wt_js.png)
+  - 易语言(加密狗版)- windows窗口程序
+- 其他工具
+  - 证书信任
+    - ![certificate](../images/certificate.png)
+  - jadx-gui

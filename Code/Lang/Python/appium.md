@@ -40,11 +40,12 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 - adb shell screencap /sdcard/test.png
 - adb pull /sdcard/test.png ~/Downloads/test.png
 - adb push ~/Downloads/test.png /sdcard/test2.png
-- adb shell
+- adb shell -s [xxx]
   - logcat | grep cmp= 
   - open apk
   - find "appPackage": "com.tal.kaoyan", "appActivity": "com.tal.kaoyan.ui.activity.SplashActivity"
   - build-tools/29.0.3/aapt dump badging ~/Downloads/com.douguo.recipe_6.9.65.2_544.apk | grep activity
+- adb forward tcp:18989 tcp:18989 [建立手机与本地的端口映射]
   
 - python -m uiautomator2 init
 - python -m weditor

@@ -1,0 +1,6 @@
+- snippaste 
+  - 截图快捷键
+  - F3 -> ⌥ 4
+- vscode 
+  - show all commands
+  - F1 -> ⌘ P
