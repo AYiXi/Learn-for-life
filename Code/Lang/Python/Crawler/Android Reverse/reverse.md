@@ -2,6 +2,8 @@
 
 - 查壳
   - 脱壳
+  - Apk 查壳工具
+    - ![apk_check_shell](../images/apk_check_shell.png)
 - apk 拖入 JEB 分析
   - 全局搜索
     - api 网址
@@ -9,7 +11,7 @@
   - 右键 -> 反编译
   - 双击跟进
   - 分析(需要 java 基础)
-  - apk Attach
+  - JEB -> apk Attach 
     - 开启全局调试: 
       - adb push tcpdump /data/local/tcpdump
       - adb shell [-s ZX1G22QXW6] & cd /data/local
@@ -31,3 +33,6 @@
   - 证书信任
     - ![certificate](../images/certificate.png)
   - jadx-gui
+  - 手机抓包工具(主要针对需要关闭代理的 App)
+    - HttpCanary
+    - http analyzer v7(PC端显示 )
