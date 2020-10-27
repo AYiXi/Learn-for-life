@@ -8,6 +8,9 @@
   - 全局搜索
     - api 网址
     - 关键词
+    - 找不到的话, 尝试 ddms 查看日志 
+    - 查看控件
+      - class: android.webkit.WebView -> 网页 
   - 右键 -> 反编译
   - 双击跟进
   - 分析(需要 java 基础)
@@ -22,7 +25,7 @@
   - xposed 模块安装 (xposed plus: my name is nanshan)
   - sdk -> adt -> sdk -> tools -> ddms.bat
     - Hook 一些加密参数的值
-  - DDMS
+  - DDMS[如果挂掉可能需要重开]
     - ![ddms](../images/ddms.png)
   - 精易编程助手 V3.95 (加密解密, 哈希等)
     - ![bczs](../images/bczs.png)
@@ -36,3 +39,9 @@
   - 手机抓包工具(主要针对需要关闭代理的 App)
     - HttpCanary
     - http analyzer v7(PC端显示 )
+- 调试 H5 的 App
+  - 解压
+  - .apk/asserts/widget/..html
+  - Android Killer 寻找入口
+    - ![android_killer](../images/android_killer.png) 
+  -  

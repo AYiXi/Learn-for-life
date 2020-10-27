@@ -1,0 +1,3 @@
+- [Cannot access androidx.lifecycle.HasDefaultViewModelProviderFactory](https://blog.csdn.net/u013739139/article/details/106091907)
+  - implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+  - implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0'
