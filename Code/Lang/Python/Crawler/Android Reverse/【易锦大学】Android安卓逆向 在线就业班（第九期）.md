@@ -6,6 +6,7 @@
   - sdk
   - ndk
 - <img alt="env" src="../images/环境.png" style="zoom: 30%;" />
+- <img alt="env" src="../images/环境.png" height="30px" />
 
 ## apk 结构
 - lib
