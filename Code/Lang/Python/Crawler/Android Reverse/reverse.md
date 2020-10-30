@@ -3,7 +3,7 @@
 - 查壳
   - 脱壳
   - Apk 查壳工具
-    - <img alt="apk_check_shell" src="../images/apk_check_shell.png" style="zoom:30%;" />
+    - <img alt="apk_check_shell" src="../images/apk_check_shell.png" height="400px" />
 - apk 拖入 JEB 分析
   - 全局搜索
     - api 网址
@@ -26,15 +26,15 @@
   - sdk -> adt -> sdk -> tools -> ddms.bat
     - Hook 一些加密参数的值
   - DDMS[如果挂掉可能需要重开]
-    - <img alt="ddms" src="../images/ddms.png" style="zoom: 30%" />
+    - <img alt="ddms" src="../images/ddms.png" height="400px" />
   - 精易编程助手 V3.95 (加密解密, 哈希等)
-    - <img alt="bczs" src="../images/bczs.png" style="zoom:30%;" />
+    - <img alt="bczs" src="../images/bczs.png" height="400px" />
   - WT-JS_DEBUG v1.8.3
-    - <img alt="wt-js" src="../images/wt_js.png" style="zoom: 20%;" />
+    - <img alt="wt-js" src="../images/wt_js.png" height="400px" />
   - 易语言(加密狗版)- windows窗口程序
 - 其他工具
   - 证书信任
-    - <img alt="cert" src="../images/certificate.png" style="zoom:30%;" />
+    - <img alt="cert" src="../images/certificate.png" height="400px" />
   - jadx-gui
   - 手机抓包工具(主要针对需要关闭代理的 App)
     - HttpCanary
@@ -43,4 +43,4 @@
   - 解压
   - .apk/asserts/widget/..html
   - Android Killer 寻找入口
-    - <img alt="android_killer" src="../images/android_killer.png" style="zoom:30%;" />
+    - <img alt="android_killer" src="../images/android_killer.png" height="400px" />

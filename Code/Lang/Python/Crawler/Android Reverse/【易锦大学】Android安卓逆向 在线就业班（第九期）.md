@@ -5,8 +5,7 @@
 - Android
   - sdk
   - ndk
-- <img alt="env" src="../images/环境.png" style="zoom: 30%;" />
-- <img alt="env" src="../images/环境.png" height="400px" />
+- <img alt="env" src="../images/环境.png" height="400px"` />
 
 ## apk 结构
 - lib
@@ -18,4 +17,4 @@
   - MANIFEST.MF
   - MYCERT.RSA
   - MYCERT.SF
-  - <img alt="sign" src="../images/sign.png" style="zoom:30%;" />
+  - <img alt="sign" src="../images/sign.png" height="400px" />
