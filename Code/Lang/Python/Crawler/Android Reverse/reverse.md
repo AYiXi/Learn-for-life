@@ -26,15 +26,15 @@
   - sdk -> adt -> sdk -> tools -> ddms.bat
     - Hook 一些加密参数的值
   - DDMS[如果挂掉可能需要重开]
-    - <img alt="ddms" src="../images/ddms.png" style="zoom:30%;" />
+    - <img alt="ddms" src="../images/ddms.png" style="zoom: 30%" />
   - 精易编程助手 V3.95 (加密解密, 哈希等)
     - <img alt="bczs" src="../images/bczs.png" style="zoom:30%;" />
   - WT-JS_DEBUG v1.8.3
-    - <img alt="wt-js" src="../images/wt_js.png" style="zoom:30%;" />
+    - <img alt="wt-js" src="../images/wt_js.png" style="zoom: 20%;" />
   - 易语言(加密狗版)- windows窗口程序
 - 其他工具
   - 证书信任
-    - ![certificate](../images/certificate.png)
+    - <img alt="cert" src="../images/certificate.png" style="zoom:30%;" />
   - jadx-gui
   - 手机抓包工具(主要针对需要关闭代理的 App)
     - HttpCanary
