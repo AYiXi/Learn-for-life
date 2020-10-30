@@ -3,7 +3,7 @@
 - 查壳
   - 脱壳
   - Apk 查壳工具
-    - ![apk_check_shell](../images/apk_check_shell.png)
+    - <img alt="apk_check_shell" src="../images/apk_check_shell.png" style="zoom:30%;" />
 - apk 拖入 JEB 分析
   - 全局搜索
     - api 网址
@@ -26,11 +26,11 @@
   - sdk -> adt -> sdk -> tools -> ddms.bat
     - Hook 一些加密参数的值
   - DDMS[如果挂掉可能需要重开]
-    - ![ddms](../images/ddms.png)
+    - <img alt="ddms" src="../images/ddms.png" style="zoom:30%;" />
   - 精易编程助手 V3.95 (加密解密, 哈希等)
-    - ![bczs](../images/bczs.png)
+    - <img alt="bczs" src="../images/bczs.png" style="zoom:30%;" />
   - WT-JS_DEBUG v1.8.3
-    - ![wt-js](../images/wt_js.png)
+    - <img alt="wt-js" src="../images/wt_js.png" style="zoom:30%;" />
   - 易语言(加密狗版)- windows窗口程序
 - 其他工具
   - 证书信任
@@ -43,5 +43,4 @@
   - 解压
   - .apk/asserts/widget/..html
   - Android Killer 寻找入口
-    - ![android_killer](../images/android_killer.png) 
-  -  
+    - <img alt="android_killer" src="../images/android_killer.png" style="zoom:30%;" />
