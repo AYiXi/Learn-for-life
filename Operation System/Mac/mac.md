@@ -12,6 +12,8 @@
 - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 - sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 - export HOMEBREW_NO_AUTO_UPDATE=true
+- scutil --proxy [查看代理使用情况]
+- lsof -i:1081 [查看端口使用情况]
 
 ### [Redis](https://www.jianshu.com/p/3bdfda703552)
 - mv redis.tar.gz -> /usr/local/redis-3.2.8
@@ -45,3 +47,4 @@
 
 ### Tesseract
 - brew install tesseract
+
