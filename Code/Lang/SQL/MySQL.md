@@ -96,3 +96,67 @@ mysql -u root -p 密码;
 ##### Mysql 执行顺序
 - ![Mysql 执行顺序](images/sql%20执行顺序.jpg)
 
+### [时间函数](https://www.bilibili.com/video/BV1Qz4y1X7ZE)
+```sql
+-- 日期获取
+NOW(); -- 执行一开始就获取时间
+- 2020-11-15 18:19:50
+
+select now(3)  -- 3 位毫秒, 后面是 000
+- 2020-11-15 18:23:02.720000
+
+select now(), sleep(3), now(); -- 两次时间一样
+- 2020-11-15 18:20:05 0 2020-11-15 18:20:05
+
+SYSDATE() -- 执行动态获取
+- 2020-11-15 18:20:54
+select sysdate(), sleep(3), sysdate(); -- 两次时间不一样
+- 2020-11-15 18:20:54 0 2020-11-15 18:20:57
+
+current_date() == curdate()
+- 2020-11-15
+
+current_time() == curtime()
+- 18:20:54
+
+-- 日期格式化
+str_to_date('2020/01/02', '%Y/%m/%d')
+- 2020-01-02
+
+date_format(curdate(), '%Y.%m.%d')
+- 2020.11.15
+
+select year(now())
+- 2020
+
+select extract(year_month from now())
+- 2020
+
+-- 日期计算
+date_sub(now(), interval 1 day)
+date_add(now(), interval 2 day)
+date_add(now(), interval '01:20:30' hour_second)
+datediff('2020-08-08', '2020-09-09')
+- 32
+timediff('2020-08-08 01:00:00', '2020-09-09 02:00:00')
+- -33 days, 23:00:00
+timestampdiff(unit, begin, end)
+timestampdiff(year, '2020-01-01', '2018-02-03')
+- -1
+
+-- 练习
+1. 获取年龄
+select year(now()) - year(birth) as age
+2. 获取年龄, 根据出生日期, 不足一年不算
+select timestampdiff(year, birth, curdate())
+select *, case 
+    when substr(birth, 6, 5) < substr(now(), 6, 5) then year(now()) - year(birth) 
+    when substr(birth, 6, 5) > substr(now(), 6, 5) then year(now()) - year(birth) -1
+3. 获取本周过生日的
+select *, week(bitrh) as week, 
+          yearweek(birth) as yweek,
+          extract(week from birth) as eweek,
+          extract(week from now()) as nweek
+      from student
+      where extract(week from birth) = extract(week from now())
+```
