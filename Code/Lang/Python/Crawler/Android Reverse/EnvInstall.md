@@ -11,7 +11,7 @@
   - chmod +x d2j-jar2dex.sh d2j_invoke.sh
   - alias dex2jar="sh /Users/ayixi/Documents/Soft/dex2jar/d2j-dex2jar.sh"
   - dex2jar xxx.apk
-- [jd-gui](http://java-decompiler.github.io/)
+- [jadx-gui](http://java-decompiler.github.io/)
 
 ### mprop
 - 调试 app

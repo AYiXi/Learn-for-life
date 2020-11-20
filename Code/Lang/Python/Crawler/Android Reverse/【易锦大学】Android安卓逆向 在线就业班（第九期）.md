@@ -70,6 +70,7 @@
   - ...
 
 ## Dalvik
+- [Smali语法](https://www.jianshu.com/p/9931a1e77066)
 - 寄存器命名
 - <img alt="register_param" src="../images/register_param.png" height="400px" />
 - dex 文件反汇编
@@ -80,5 +81,12 @@
   - Smali.jar: smali -> dex
     - java -jar smali.jar smali_out/ -o classes.dex
 - [dalvik 指令集](https://juejin.im/post/6844903871500812296)
-  - 格式
-    - 基础字节码 - 名称后缀/字节码后缀 目的寄存器 源寄存
+  - 字节码
+    - 基础字节码-名称后缀/字节码后缀 目的寄存器 源寄存
+      - move-wide/from16 vAA, vBBBB
+      - move : 基础字节码, opcode
+      - wide : 名称后缀, 标识指令操作的数据宽度为 64 位
+      - from16 : 字节码后缀, 标识源为一个 16 位的寄存器引用变量
+      - vAA : 目的寄存器, 它始终在源的前面, 取值为 v0~v255
+      - vBBBB : 源寄存, 取值为 v0~v65535
+    - [java2smali](https://plugins.jetbrains.com/plugin/7385-java2smali)
