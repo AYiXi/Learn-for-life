@@ -70,7 +70,6 @@
   - ...
 
 ## Dalvik
-- [Smali语法](https://www.jianshu.com/p/9931a1e77066)
 - 寄存器命名
 - <img alt="register_param" src="../images/register_param.png" height="400px" />
 - dex 文件反汇编
@@ -90,3 +89,6 @@
       - vAA : 目的寄存器, 它始终在源的前面, 取值为 v0~v255
       - vBBBB : 源寄存, 取值为 v0~v65535
     - [java2smali](https://plugins.jetbrains.com/plugin/7385-java2smali)
+
+## Smali 文件详解
+- [Smali语法](https://www.jianshu.com/p/9931a1e77066)
