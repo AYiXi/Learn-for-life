@@ -46,7 +46,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
   - find "appPackage": "com.tal.kaoyan", "appActivity": "com.tal.kaoyan.ui.activity.SplashActivity"
   - build-tools/29.0.3/aapt dump badging ~/Downloads/com.douguo.recipe_6.9.65.2_544.apk | grep activity
 - adb forward tcp:18989 tcp:18989 [建立手机与本地的端口映射]
-- adb -s 11a97d54 shell dumpsys activity top | grep ACTIVITY [查看当前 activity]
+- adb -s 11a97d54 shell dumpsys activity top | grep [ACTIVITY|mFocusedActivity] [查看当前 activity]
 
 - python -m uiautomator2 init
 - python -m weditor
@@ -92,3 +92,9 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
   - 手机设置代理 192.168.80.182 8001
   - 下载证书
 - 
+
+
+## adb debugger
+- [Android修改ro.debuggable 华为真机adb调试所有进程](https://www.renyiwei.com/archives/1704.html)
+- [mprop](https://github.com/wpvsyou/mprop)
+- [JustTrustMe](https://github.com/Fuzion24/JustTrustMe)

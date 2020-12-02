@@ -2,7 +2,7 @@
   - clarification
   - possible solutions
     - compare(time/space)
-    - optimal
+    - optional
   - coding
   - test cases
 

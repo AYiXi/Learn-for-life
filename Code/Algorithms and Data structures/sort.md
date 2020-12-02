@@ -1,4 +1,2 @@
-# QuickSort
-```py
-quicksort = lambda l: quicksort([i for i in l[1:] if i < l[0]]) + [l[0]] + quicksort([j for j in l[1:] if j >= l[0]]) if l else []
-```
+## 排序复杂度
+- <img alt="time_complex" src="./images/time_complex.png" height="400px" />

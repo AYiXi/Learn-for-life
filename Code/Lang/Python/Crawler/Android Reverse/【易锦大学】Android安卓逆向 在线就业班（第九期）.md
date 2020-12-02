@@ -92,3 +92,11 @@
 
 ## Smali 文件详解
 - [Smali语法](https://www.jianshu.com/p/9931a1e77066)
+- 语法
+  1. 描述当前 smali 信息 <img alt="smali1" src="../images/smali1.png" height="400px" />
+  2. 静态字段 `# static field`
+  3. 实例字段(java 中的普通字段) `# instance field`
+  4. 直接方法 `# direct methods`
+  5. 虚方法 (java 中的普通方法) `# virtual methods`
+  6. 接口
+  7. ...
