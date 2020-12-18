@@ -6,7 +6,7 @@ export ZSH="/Users/ayixi/.oh-my-zsh"
 alias z="zsh"
 alias c="clear"
 alias dk="docker"
-alias pag="ps -aux | grep"
+alias pag="ps -ef | grep"
 alias pa="ps -aux"
 alias redis="redis-cli"
 alias youget="you-get -x 127.0.0.1:1081 -o /Users/ayixi/Downloads"
@@ -14,21 +14,36 @@ alias jn="cd /Users/ayixi/Documents/Code/jupyter_notebook;jupyter notebook"
 alias vscode="open -a Visual\ Studio\ Code"
 alias pycharm="open -a Pycharm"
 alias goland="open -a goLand"
+alias idea="open -a IntelliJ\ IDEA"
+alias studio="open -a Android\ Studio"
+alias iterm="open -a iTerm"
 
 alias dc="cd ~/Documents"
 alias dn="cd ~/Downloads"
-alias fo="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/foreign_blog"
-alias si="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/single"
-alias me="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/medium"
-alias we="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/wechat_appium"
-alias sites="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites"
-alias js="cd /Users/ayixi/Documents/Code/anyproxy/js"
+alias code="cd ~/Documents/Code"
+
+alias blog="cd /Users/ayixi/Documents/Code/move_blog_spider"
+alias blog_fo="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/foreign_blog"
+alias blog_si="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/single"
+alias blog_medium="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/medium"
+alias blog_wechat_appium="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/wechat_appium"
+
+alias blink="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider"
+alias blink_sites="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider/sites"
+alias blink_weibo="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider/sites/weibo"
+alias blink_douyin="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider/sites/douyin"
+
+alias video_sites="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites"
+alias video_bilibili="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites/bilibili"
+alias video_youtube="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites/youtube"
+
+alias anyproxy_js="cd /Users/ayixi/Documents/Code/anyproxy/js"
 alias dex2jar="sh /Users/ayixi/Documents/Soft/dex2jar/d2j-dex2jar.sh"
 
 alias mas="git ck master"
 alias dev="git ck dev"
 alias vsz="vscode ~/.zshrc"
-
+alias sv="source ~/.vimrc"
 
 # homebrew not auto update
 export HOMEBREW_NO_AUTO_UPDATE=true
@@ -40,7 +55,7 @@ export GOBIN=$GOPATH/bin
 # export PATH=$PATH:$GOBIN
 
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
 export CLASS_PATH=$JAVA_HOME/lib
 export PATH=$JAVA_HOME/bin:$PATH
 
@@ -48,9 +63,11 @@ export HADOOP_HOME=/usr/local/hadoop-3.1.3
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 export PYTHONPATH2=/Users/ayixi/Documents/Code/move_blog_spider
-export PYTHONPATH3=/Users/ayixi/Documents/Code/move_blog_spider_local
+export PYTHONPATH3=/Users/ayixi/Documents/Code/python/SourceCode
 export PYTHONPATH4=/Users/ayixi/Documents/Code/move_video_spider
-export PYTHONPATH=$PYTHONPATH2:$PYTHONPATH4
+export PYTHONPATH5=/Users/ayixi/Documents/Code/move_blink_spider
+export PYTHONPATH6=/Users/ayixi/Documents/Code/python/Crawler
+export PYTHONPATH=$PYTHONPATH2:$PYTHONPATH4:$PYTHONPATH5:$PYTHONPATH6
 
 GRADLE_HOME=/usr/local/Cellar/gradle/6.5
 export GRADLE_HOME
@@ -63,6 +80,9 @@ export PATH=$M3_HOME/bin:$PATH
 ANDROID_HOME=/Users/ayixi/Documents/Soft/android-sdk-macosx
 export ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# mongodb
+export PATH=/usr/local/mongodb/bin:$PATH
 
 export LANG=en_US.UTF-8
 # Set name of the theme to load --- if set to "random", it will
