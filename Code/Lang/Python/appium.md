@@ -54,6 +54,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ### [Charles Settings](https://www.jianshu.com/p/73b134559c76)
 - ![反向代理](Images/反向代理.png)
 - map local/remote, 把网页内容映射到本地/远程
+- [Charles抓https显示unknown解决方法](https://zhuanlan.zhihu.com/p/35498250)
 
 ### Mitmproxy
 - pip install mitmproxy

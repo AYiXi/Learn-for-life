@@ -1,31 +1,9 @@
-### 登录ECS云服务器
-
-```sh
-login：root
-password：实例密码，可以自己设置
-远程登录： ssh root@39.105.37.123
-  	                  NIANshao1
-```
-
 ### VIM 显示行号
 
 ```sh
 vim ~/.vimrc
 set number
 ```
-
-
-
-### 美化终端教程
-
-```sh
-https://sspai.com/post/45332
-```
-
-### 重新连接
-
-
-
 
 ### 上传文件/下载文件
 
@@ -36,8 +14,6 @@ scp -r Patent\ root@39.105.37.123:~ 
 scp root@39.105.37.123:/var/www/test.txt
 ```
 
-
-
 ### SSH连接超时
 
 ```sh
@@ -47,16 +23,12 @@ TCPKeepAlive yes
 
 ![1567670888529](images/1567670888529.png)
 
-
-
 ### 生成/安装 requirements.txt(需要虚拟环境)
 
 ```sh
 pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
-
-
 
 ### 定时任务 crontab
 

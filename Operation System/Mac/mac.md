@@ -16,17 +16,20 @@
 - lsof -i:1081 [查看端口使用情况]
 
 ### [Redis](https://www.jianshu.com/p/3bdfda703552)
-- mv redis.tar.gz -> /usr/local/redis-3.2.8
-- cd redis-3.2.8
-- make
-- sudo make install 
+- sudo mv redis.tar.gz /usr/local/redis.tar.gz
+- cd /usr/local/
+- tar -zxvf redis.tar.gz
+- cd redis
+- sudo make
+- sudo make install
 
 ### [Charles](https://juejin.im/post/5c0a430f51882516207d205d)
 - https://zhile.io
 - 48891cf209c6d32bf4
 
 ### [JAVA_HOME](https://blog.csdn.net/caoxiaohong1005/article/details/73611424)
-- /usr/libexec/java_home -V
+- 查询 mac 下的所有 java
+  - /usr/libexec/java_home -V
 
 ### [Termius 中文乱码](https://www.jianshu.com/p/48228ee59c46)
 - export LANG=en_US.UTF-8
@@ -48,3 +51,6 @@
 ### Tesseract
 - brew install tesseract
 
+### SSHPASS
+- cd ~/Downloads
+- curl -O -L http://downloads.sourceforge.net/project/sshpass/sshpass/1.06/sshpass-1.06.tar.gz && tar xvzf sshpass-1.06.tar.gz && cd sshpass-1.06 && ./configure && make && sudo make install
