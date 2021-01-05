@@ -1,4 +1,5 @@
 # sudo 权限
+# mac 下不行, 只适用于 linux
 cd ~
 yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel git vim zsh curl net-tools tree epel-release
 wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz

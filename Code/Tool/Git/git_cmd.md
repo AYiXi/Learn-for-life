@@ -49,8 +49,6 @@
         - git push origin v1.4
         - git push origin --tags [传送所有tag]
         
-## 分支模型
-
 
 ## git
 1. yum install -y git
@@ -109,6 +107,8 @@
 - git push Github :my-test [删除远程分支]
 - git branch -r -d Github/my-test [删除远程分支]
 - git branch --set-upstream-to=Github/master master[设置默认远程分支]
+- git branch -m [new_name]: rename branch
+- git branch -d dev: delete branch
 
 ## New repository
 - 在公司服务器上新建一个项目
