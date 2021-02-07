@@ -108,7 +108,7 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 11. 修改iptables  有些版本需要安装iptables-services # yum install iptables-services 然后修改进目录 /etc/sysconfig/iptables   修改内容
 
 
-## adduser
+### adduser
 1. useradd ayixi
 2. passwd ayixi
 3. usermod –g root ayixi
@@ -118,29 +118,32 @@ centos7.3 上述方式可能无法开启，可以先#systemctl unmask firewalld.
 7. userdel -r ayixi
    
 
-## change permission
+### change permission
 1. chown ayixi .*
 2. chgrp [-R] ayixi .*
 3. chown root:root /tmp/
 
-## kill 
-1. 杀死多个进程: ps -aux | grep ep_info/crawl.py | awk '{print $2}' | xargs kill
+### kill 
+1. 杀死多个进程: ps -aux | grep python | awk '{print $2}' | xargs kill -9
 
-## [grep](https://www.dutycode.com/linux_chazhaowenjian_chazhaozifuchuan_suozaiwenjian.html)
+### [grep](https://www.dutycode.com/linux_chazhaowenjian_chazhaozifuchuan_suozaiwenjian.html)
 - -v:反向选择: ps -aux | grep python | grep -v main.js 
 - grep "python" crawl.log
 
-## find and remove
+### find and remove
 - find /tmp/ -name 'exechs*.js' | xargs rm
 - find ./ -name "*.xls" -print | wc -l
 
-## top detail command
+### top detail command
 1. top
 2. c
 
-## net
+### net
 - `firewall` 端口的开放 `firewall-cmd --zone=public --add-port=50070/tcp --permanent`, `firewall-cmd --reload`
 - 查看开放的网络端口 `netstat -tpnl`
 
-# 复制最新的是个文件到指定目录
+### 复制最新的是个文件到指定目录
  - `ls | head -n 10 | xargs -i cp -r {} ~/libowang/captcha_crack_pytorch`
+
+### 查看系统信息
+- cat /proc/version

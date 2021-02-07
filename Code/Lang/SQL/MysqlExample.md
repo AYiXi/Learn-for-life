@@ -255,3 +255,8 @@ ALTER TABLE move_blink_user DROP INDEX idx_csdn_username;
 
 CREATE UNIQUE INDEX idx_csdn_username ON move_blink_user (`csdn_username`) USING BTREE COMMENT 'csdn 的唯一索引';
 ```
+
+### 查询 cods_names 里面有但 cods_company 里面没有的公司名称
+```sql
+select `name` from cods_names left join (select name as i from cods_company) as t1 ON cods_names.name=t1.i where t1.i is null
+```

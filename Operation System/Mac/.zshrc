@@ -9,33 +9,24 @@ alias dk="docker"
 alias pag="ps -ef | grep"
 alias pa="ps -aux"
 alias redis="redis-cli"
+alias py="python3"
+alias jshell="/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/bin/jshell"
 alias youget="you-get -x 127.0.0.1:1081 -o /Users/ayixi/Downloads"
-alias jn="cd /Users/ayixi/Documents/Code/jupyter_notebook;jupyter notebook"
 alias vscode="open -a Visual\ Studio\ Code"
 alias pycharm="open -a Pycharm"
 alias goland="open -a goLand"
 alias idea="open -a IntelliJ\ IDEA"
 alias studio="open -a Android\ Studio"
 alias iterm="open -a iTerm"
+alias jn="/Users/ayixi/Documents/Code/jupyter_notebook;python -m jupyter notebook"
+alias scalene="python -m scalene"
+
+alias mycli_cods="mycli -u jindi -h rm-2zep7vx0h4ofn327s.mysql.rds.aliyuncs.com -p J1ndiGSreset -D prism_zz"
 
 alias dc="cd ~/Documents"
 alias dn="cd ~/Downloads"
 alias code="cd ~/Documents/Code"
-
-alias blog="cd /Users/ayixi/Documents/Code/move_blog_spider"
-alias blog_fo="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/foreign_blog"
-alias blog_si="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/single"
-alias blog_medium="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/medium"
-alias blog_wechat_appium="cd /Users/ayixi/Documents/Code/move_blog_spider/move_blog_spider/spiders/wechat_appium"
-
-alias blink="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider"
-alias blink_sites="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider/sites"
-alias blink_weibo="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider/sites/weibo"
-alias blink_douyin="cd /Users/ayixi/Documents/Code/move_blink_spider/move_blink_spider/sites/douyin"
-
-alias video_sites="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites"
-alias video_bilibili="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites/bilibili"
-alias video_youtube="cd /Users/ayixi/Documents/Code/move_video_spider/move_video_spider/sites/youtube"
+alias activate="source venv/bin/activate"
 
 alias anyproxy_js="cd /Users/ayixi/Documents/Code/anyproxy/js"
 alias dex2jar="sh /Users/ayixi/Documents/Soft/dex2jar/d2j-dex2jar.sh"
@@ -62,12 +53,9 @@ export PATH=$JAVA_HOME/bin:$PATH
 export HADOOP_HOME=/usr/local/hadoop-3.1.3
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
-export PYTHONPATH2=/Users/ayixi/Documents/Code/move_blog_spider
-export PYTHONPATH3=/Users/ayixi/Documents/Code/python/SourceCode
-export PYTHONPATH4=/Users/ayixi/Documents/Code/move_video_spider
-export PYTHONPATH5=/Users/ayixi/Documents/Code/move_blink_spider
-export PYTHONPATH6=/Users/ayixi/Documents/Code/python/Crawler
-export PYTHONPATH=$PYTHONPATH2:$PYTHONPATH4:$PYTHONPATH5:$PYTHONPATH6
+export PYTHONPATH2=/Users/ayixi/Documents/Code/python/Banshan
+export PYTHONPAT3=/Users/ayixi/Documents/Code/python/GsxtSpider
+export PYTHONPATH=$PYTHONPATH2:$PYTHONPAT3
 
 GRADLE_HOME=/usr/local/Cellar/gradle/6.5
 export GRADLE_HOME
@@ -149,7 +137,24 @@ ZSH_THEME="jonathan"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+)
+
+# plugins=(
+#     git
+#     zsh-syntax-highlighting
+#     zsh-autosuggestions
+#     wd
+#     z
+#     colored-man-pages
+#     tmux
+#     extract
+#     virtualenv
+#     colored-man-pages
+# )
+
 
 source $ZSH/oh-my-zsh.sh
 
