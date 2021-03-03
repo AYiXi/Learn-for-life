@@ -1,7 +1,4 @@
-
-### adb
-
-### [mac上Android反编译工具apktool、dex2jar入门](https://www.jianshu.com/p/9554ab3f444f)
+## [mac上Android反编译工具apktool、dex2jar入门](https://www.jianshu.com/p/9554ab3f444f)
 - [apktool](http://ibotpeaches.github.io/Apktool/install/)
   - chmod a+x apktool apktool.jar
   - apktool d xxx.apk [反编译]
@@ -13,7 +10,5 @@
   - dex2jar xxx.apk
 - [jadx-gui](http://java-decompiler.github.io/)
 
-### mprop
+## mprop
 - 调试 app
-  
-### apk 查壳工具

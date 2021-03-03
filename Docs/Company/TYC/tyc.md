@@ -11,4 +11,4 @@
 - 打包: `"/home/work/apache-maven-3.6.1/bin/mvn" package -f "/home/work/libowang/gsxt_spider/consumer/pom.xml"`
 - 传输: `scp /home/work/libowang/gsxt_spider/consumer/target/consumer.jar work@172.24.114.25:/home/work/commonlibs-gsxt/companyfetcher/consumer.jar`
 - 重启: `/home/work/beijing_spider/companyfetcher-product/bin/companyfetcher restart`
-- 
+- 日志: `cd /home/work/beijing_spider/companyfetcher-product/logs`
