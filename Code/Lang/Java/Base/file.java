@@ -1,5 +1,3 @@
-### java 文件操作
-```java
 // 读取文件
 public static String readToString(String fileName) {
     String encoding = "UTF-8";
@@ -23,4 +21,3 @@ public static String readToString(String fileName) {
         return null;
     }
 }
-```
