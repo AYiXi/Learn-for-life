@@ -1,0 +1,1 @@
+git clone libowang@tianyancha.com:NIANshao1\!@https://git.tianyancha.com/ayixi/GsxtPythonSpider.git

@@ -6,6 +6,7 @@
    3. 把远程机器的 .pub 放入 authorized_keys 中
 4. yum install -y git zsh
 5. sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   - [无法翻墙的安装方式](https://www.jianshu.com/p/6b47198fd430)
 6. 备份 .zshrc
    1. 安装 [python](https://segmentfault.com/a/1190000015628625)
    2. pip install virtualenvwrapper

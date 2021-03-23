@@ -73,6 +73,8 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH=/usr/local/mongodb/bin:$PATH
 
 export LANG=en_US.UTF-8
+export LC_ALL="en_US.UTF-8"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
