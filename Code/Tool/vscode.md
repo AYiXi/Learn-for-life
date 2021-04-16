@@ -21,7 +21,7 @@ settings.json:
 - Shortcuts
   - run                     -> ⌥ r
   - run in terminal         -> ⌥ f
-  - find next/previous      -> ⌥ []
+  - find next/previous       -> ⌥ []
   - reveal in sidebar       -> ⌥ v
   - fold                    -> ⌘ .
   - unfold                  -> ⌘ ,

@@ -160,3 +160,15 @@ select *, week(bitrh) as week,
       from student
       where extract(week from birth) = extract(week from now())
 ```
+
+### 表操作
+```sql
+-- 更改字段
+ALTER TABLE company_xzcf_merge MODIFY COLUMN `source_url` VARCHAR(500) DEFAULT NULL COMMENT '来源url'
+
+-- 添加字段
+ALTER TABLE cods_company ADD before_name VARCHAR(255) DEFAULT NULL COMMENT "曾用名"
+
+-- 添加索引
+ALTER TABLE `table_name` ADD INDEX (`column`)
+```
