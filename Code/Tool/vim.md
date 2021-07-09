@@ -40,3 +40,6 @@
   - u -> clear
   - f -> forward
   - b -> back
+
+- 查询出现次数:
+  - `:%s/字符串//ng`

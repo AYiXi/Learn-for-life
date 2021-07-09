@@ -170,5 +170,35 @@ ALTER TABLE company_xzcf_merge MODIFY COLUMN `source_url` VARCHAR(500) DEFAULT N
 ALTER TABLE cods_company ADD before_name VARCHAR(255) DEFAULT NULL COMMENT "曾用名"
 
 -- 添加索引
-ALTER TABLE `table_name` ADD INDEX (`column`)
+ALTER TABLE `cods_company` ADD INDEX `idx_cods_property4` (`property4`)
+
+-- 合并修改表语句
+ALTER TABLE cods_company DROP COLUMN jyfw, ADD COLUMN djh VARCHAR(40) NOT NULL DEFAULT '' COMMENT '登记号'
+
+-- ON DUPLICATE KEY UPDATE warning
+INSERT INTO `cods_company_change_base` (company_id, name, estiblish_time, legal_person_name, reg_captial, reg_location, reg_number, update_time)
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s) AS data
+ON DUPLICATE KEY UPDATE company_id=data.company_id, name=data.name, estiblish_time=data.estiblish_time, legal_person_name=data.legal_person_name, reg_captial=data.reg_captial, reg_location=data.reg_location, reg_number=data.reg_number, update_time=data.update_time
+```
+
+### 更改存储路径
+```sh
+# https://www.jianshu.com/p/e15ddfb183b5
+
+"/etc/my.cnf"
+
+[client]
+port        = 3306
+socket      =/data/mysql/mysql.sock
+
+[mysqld_safe]
+nice        = 0
+socket      =/data/mysql/mysql.sock
+
+[mysqld]
+datadir=/data/mysql
+socket=/data/mysql/mysql.sock
+
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
 ```

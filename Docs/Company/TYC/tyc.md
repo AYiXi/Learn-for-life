@@ -18,7 +18,11 @@
 ### Tail -F
 - gee_redis_server: 
   - tail -f j.out | perl -pe 's/(.* DEBUG .*)|(.* INFO .*)|(.* ERROR .*)|(.* WARNING .*)|(.* SUCCESS .*)/\e[1;34m$1\e[0m\e[1;33m$2\e[0m\e[1;31m$3\e[0m\e[1;34m$4\e[0m\e[1;32m$5\e[0m/g'
-- cods_company_all
-  - tail -f company_all.out | perl -pe 's/(.* DEBUG .*)|(.* INFO .*)|(.* ERROR .*)|(.* WARNING .*)|(.* SUCCESS .*)/\e[1;34m$1\e[0m\e[1;33m$2\e[0m\e[1;31m$3\e[0m\e[1;34m$4\e[0m\e[1;32m$5\e[0m/g'
+- loguru > out
+  - tail -f fgs.out | perl -pe 's/(.* DEBUG .*)|(.* INFO .*)|(.* ERROR .*)|(.* WARNING .*)|(.* SUCCESS .*)/\e[1;34m$1\e[0m\e[1;33m$2\e[0m\e[1;31m$3\e[0m\e[1;34m$4\e[0m\e[1;32m$5\e[0m/g'
 - makepolo phone
   - tail -f mp.out | perl -pe 's/(.*id.*phone.*)/\e[1;34m$1\e[0m\e/g'
+- loguru
+  - tail -f gee.log | perl -pe 's/(.* - DEBUG)|(.* - INFO)|(.* - ERROR)|(.* - WARNING)|(.* - SUCCESS)/\e[1;34m$1\e[0m\e[1;33m$2\e[0m\e[1;31m$3\e[0m\e[1;34m$4\e[0m\e[1;32m$5\e[0m/g'
+- scrapy
+  - tail -f qymgc.out | perl -pe 's/(.*] DEBUG:.*)|(.*] INFO:.*)|(.*] ERROR:.*)|(.*] WARNING:.*)|(.*] SUCCESS:.*)/\e[1;34m$1\e[0m\e[1;33m$2\e[0m\e[1;31m$3\e[0m\e[1;34m$4\e[0m\e[1;32m$5\e[0m/g'
